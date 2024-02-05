@@ -18,6 +18,26 @@
 }
 
 .mylogo{
-    width: 12rem;
+    width: 4rem;
     height: auto;
+}
+
+.nav-content ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-content li{
+    margin: 0.1rem;
+}
+
+.menu-item{
+    text-decoration: none;
+    font-size: 0.9;
+    font-weight: 500;
+    color: #ffff;
+    position: relative;
+    cursor: pointer;
 }
