@@ -1,7 +1,8 @@
 .home-container{
     display: flex;
+    justify-content: center;
     align-items: center;
-    position: relative;
+   
     margin: 2rem;
 }
 
@@ -13,17 +14,31 @@
     font-size: 3.0rem;
     font-weight: 600;
     line-height: 5rem;
-    padding: 2%;
+    padding: 3%;
     color: #ffff;
 }
 
 .home-content p{
     width: 80%;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 2rem;
+    padding-top: 2%;
 }
 
-.home-content hr{
+hr.custom-hr{
     color: #09BE67;
+}
+
+.home-content a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #09BE67;
+    border-radius: 10px;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;text-align: center;
+    margin:  0 10px;
 }
