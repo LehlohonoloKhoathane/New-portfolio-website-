@@ -3,7 +3,12 @@ import './MobileNav.css'
 
 const MobileNav = ( {isOpen, toggleMenu}) => {
     return (
-        <div>MobileNav</div>
+        <>
+            <div
+                className={`mobile-menu ${isOpen ? 'active' : ''}`} 
+                onClick={toggleMenu}
+            ></div>
+        </>
     )
 }
 
