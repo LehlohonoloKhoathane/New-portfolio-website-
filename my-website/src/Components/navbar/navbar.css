@@ -50,7 +50,16 @@
     width: 2.5rem;
     height: 2.5rem;
     font-size: 1.5rem;
-    
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 0.4rem;
+    color: #ffff;
+    background: linear-gradient(90deg, #a993fe -8.13, #7e61e7 99.87%);
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: none;
 }
 
 
