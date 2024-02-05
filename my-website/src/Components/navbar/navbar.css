@@ -45,3 +45,25 @@
 .menu-item:hover{
     color: #09BE67;
 }
+
+@media (max-width: 425px) {
+    .mylogo{
+        width: 10rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 769px) {
+    .menu-button{
+        display: block;
+    }
+    .nav-content ul{
+        display: none;
+    }
+}
+
+@media (max-width: 1325) {
+    .nav-wrapper{
+        padding: 0 2rem;
+    }
+}

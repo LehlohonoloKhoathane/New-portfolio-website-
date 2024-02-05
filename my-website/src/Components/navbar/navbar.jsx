@@ -21,10 +21,14 @@ const NavBar = () => {
               <a className='menu-item' >Contact</a>
             </li>
           </ul>
+          
+          {/* <button class='menu-button' onClick={()=>{}}>
+        
+          </button> */}
         </div>
       </nav>
     </>
-  )
-}
+  );
+};
 
 export default NavBar;
