@@ -1,5 +1,5 @@
 .nav-wrapper{
-    background: rgba(0, 0, 0, 0.1);
+    background: #05052C;
     padding:  0.5rem 0;
     position: sticky;
     top: 0;
@@ -40,4 +40,8 @@
     color: #ffff;
     position: relative;
     cursor: pointer;
+}
+
+.menu-item:hover{
+    color: #09BE67;
 }
