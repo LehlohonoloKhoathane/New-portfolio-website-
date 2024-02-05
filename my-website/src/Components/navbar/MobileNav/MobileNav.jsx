@@ -3,8 +3,10 @@ import './MobileNav.css'     // Importing the styles for the MobileNav component
 
 // Defining a functional component named MobileNav, which takes isOpen and toggleMenu as props.
 const MobileNav = ( {isOpen, toggleMenu}) => {
+    // Return the following JSX code.
     return (
         <>
+        {/* Create a <div> element with the 'mobile-menu' class, and conditionally add 'active' class based on the isOpen prop. */}
             <div
                 className={`mobile-menu ${isOpen ? 'active' : ''}`} 
                 onClick={toggleMenu}
