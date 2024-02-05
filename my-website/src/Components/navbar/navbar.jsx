@@ -11,6 +11,8 @@ const NavBar = () => {
 
   return (
     <>
+      <MobileNav isOpen={openMenu} toggleMenu={toggleMenu}/>
+
       <nav className='nav-wrapper'>
         <div className='nav-content'>
           <img className='mylogo' src="./assets/images/myLogo.png" alt="logo" />
@@ -29,9 +31,9 @@ const NavBar = () => {
             </li>
           </ul>
           
-          {/* <button class='menu-button' onClick={()=>{}}>
-        
-          </button> */}
+          {<button class='menu-button' onClick={()=>{}}>
+            
+          </button>}
         </div>
       </nav>
     </>
