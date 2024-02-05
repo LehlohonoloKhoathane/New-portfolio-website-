@@ -1,13 +1,12 @@
 import React from 'react';
-import navbar from './Components/NavBar/navbar';
-import './App.css'
+import NavBar from './Components/NavBar/NavBar';
 
-function App() {
+const App = () => {
   return (
     <>
-      < navbar />
+      <NavBar />
     </>
   );
-}
+};
 
 export default App;
