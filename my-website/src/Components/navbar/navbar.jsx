@@ -1,7 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './NavBar.css'
+import MobileNav from './MobileNav/MobileNav';
 
 const NavBar = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu);
+  };
+
   return (
     <>
       <nav className='nav-wrapper'>
