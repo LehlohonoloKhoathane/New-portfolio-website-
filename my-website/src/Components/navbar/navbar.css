@@ -46,6 +46,14 @@
     color: #09BE67;
 }
 
+.menu-button{
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    
+}
+
+
 @media (max-width: 425px) {
     .mylogo{
         width: 10rem;

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './NavBar.css'
 import MobileNav from './MobileNav/MobileNav';
+// import { FaBars, FaTimes } from 'react-icons/fa'
 
 const NavBar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -31,12 +32,14 @@ const NavBar = () => {
             </li>
           </ul>
           
-          {<button class='menu-button' onClick={() => {}}>
+          <button class='menu-button' onClick={() => {}}>
             <span 
-              class={'material-symbol-outlined'}
-              style={{ fontSize: "1.8rem"}}
-              ></span>
-          </button>}
+              class={'material-symbols-outlined'} 
+                style={{fontStyle: '1.8rem'}}
+                >
+                  Menu
+                </span>
+          </button>
         </div>
       </nav>
     </>
