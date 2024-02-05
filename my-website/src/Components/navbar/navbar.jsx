@@ -3,7 +3,9 @@ import './NavBar.css'
 
 const NavBar = () => {
   return (
-    <div>NavBar </div>
+    <>
+      <nav className='nav-wrapper'></nav>
+    </>
   )
 }
 
