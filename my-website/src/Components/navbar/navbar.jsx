@@ -31,8 +31,11 @@ const NavBar = () => {
             </li>
           </ul>
           
-          {<button class='menu-button' onClick={()=>{}}>
-            
+          {<button class='menu-button' onClick={() => {}}>
+            <span 
+              class={'material-symbol-outlined'}
+              style={{ fontSize: "1.8rem"}}
+              ></span>
           </button>}
         </div>
       </nav>
