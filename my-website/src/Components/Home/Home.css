@@ -2,4 +2,28 @@
     display: flex;
     align-items: center;
     position: relative;
+    margin: 2rem;
+}
+
+.home-content{
+    flex: 1;
+}
+
+.home-content h2{
+    font-size: 3.0rem;
+    font-weight: 600;
+    line-height: 5rem;
+    padding: 2%;
+    color: #ffff;
+}
+
+.home-content p{
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.home-content hr{
+    color: #09BE67;
 }
