@@ -6,19 +6,19 @@ const NavBar = () => {
     <>
       <nav className='nav-wrapper'>
         <div className='nav-content'>
-          <img className='mylogo' src="" alt="logo" />
+          <img className='mylogo' src="./assets/images/myLogo.png" alt="logo" />
           <ul>
             <li>
-              <a className='menu-item' href=''>About</a>
+              <a className='menu-item'>About</a>
             </li>
             <li>
-              <a className='menu-item' href=''>Services</a>
+              <a className='menu-item' >Services</a>
             </li>
             <li>
-              <a className='menu-item' href=''>Work</a>
+              <a className='menu-item' >Work</a>
             </li>
             <li>
-              <a className='menu-item' href=''>Contact</a>
+              <a className='menu-item' >Contact</a>
             </li>
           </ul>
         </div>
