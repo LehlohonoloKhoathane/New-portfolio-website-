@@ -33,8 +33,23 @@ const About = () => {
                 <p>I bring dynamic set of skills to propel projects forward. Dive deeper into my <span>technological prowess.</span></p>
                 <div className='skills-development'>
                     <p>Development</p>
-                    <div className='skill-icon'>
-                        <img src="./Assets/Images/Java.png" alt="" />
+                    <div className='skills-icons'>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/Java.png" alt="" />
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/javas.png" alt="" />
+                            <h3>Java</h3>
+                        </div>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/html.png" alt="" />
+                            <h3>Html & CSS</h3>
+                        </div>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/C++.png" alt="" />
+                            <h3>C++</h3>
+                        </div>
                     </div>
                 </div>
             </div>
