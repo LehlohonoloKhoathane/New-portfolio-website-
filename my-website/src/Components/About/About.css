@@ -5,8 +5,25 @@
     padding: 15px 50px 10px 50px;
 }
 
+.about {
+    display: flex; 
+}
+
+.about-info {
+    flex: 1; 
+}
+
 .profile-picture {
     width: 300px; 
-    height: auto; 
+    height: auto;
   }
   
+  .about-container h4, .about-container h6{
+    text-align: center;
+    margin: 10px;
+  }
+
+  .about-content p{
+    text-align: center;
+    font-size: 1rem;
+  }
