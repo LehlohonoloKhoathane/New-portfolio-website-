@@ -16,3 +16,24 @@
     text-align: center;
     padding: 10px;
 }
+
+.Services-content{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.Service-item{
+    border: 2px solid #09BE67;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.Service-item img{
+    width: 200px;
+    height: auto;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
