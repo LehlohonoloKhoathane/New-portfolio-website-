@@ -8,7 +8,11 @@ const Services = () =>{
             <hr />
             <p>Explore the synergy of expertise and capabilities that define my professional journey.</p>
             <div className="Services-content">
-                <div ></div>
+                <div className="Service-item">
+                    <img src="./assets/images/web_dev.png" alt="" />
+                    <h5>Web Developer</h5>
+                    <p></p>
+                </div>
             </div>
         </section>
     );
