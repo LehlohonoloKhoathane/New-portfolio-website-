@@ -1,11 +1,7 @@
 .about-container{
-    border: 2px solid red;
+    border: 2px solid #09BE67;
+    border-radius: 10px;
     margin: 10px;
-    padding: 10px;
+    padding: 15px 50px 10px 50px;
 }
 
-.vertical-line {
-    width: 2px; /* Width of the vertical line */
-    height: 100%; /* Height of the vertical line */
-    background-color: #000; /* Color of the vertical line */
-  }

@@ -1,4 +1,5 @@
 import React from 'react';
+import './About.css'
 import './VerticalLine.css'; // Import CSS file for styling
 
 const VerticalLine = ({ height }) => {
@@ -16,6 +17,7 @@ const About = () => {
             <div className="about-content">
                 <p>Aspiring Full Stack Software Developer <VerticalLine height="1em" /> Aspiring Data Scientist</p>
                 <div className="about">
+                    <img src="./" alt="" />
                     <div className="about-info"></div>
                 </div>
             </div>
