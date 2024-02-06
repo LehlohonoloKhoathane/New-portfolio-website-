@@ -63,6 +63,9 @@ hr{
     hr{
         width: auto;
     }
+    .home-content a{
+        font-size: 1rem;
+    }
 }
 @media (max-width: 768px) {
     .home-container{
@@ -71,6 +74,14 @@ hr{
 
     .home-content h2{
         margin-top: 3rem;
+    }
+
+    hr{
+        width: auto;
+    }
+
+    .home-content a{
+        flex-direction: row;
     }
 
     .home-content h2, .home-content p{
@@ -92,5 +103,23 @@ hr{
     .home-container::before{
         bottom: 2rem;
         right: 0rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .home-content h2{
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+    .home-content p{
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+    hr{
+        width: auto;
+    }
+    .home-content a{
+        font-size: 0,.8rem;
+        line-height: 3rem;
     }
 }
