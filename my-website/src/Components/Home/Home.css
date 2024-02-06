@@ -50,3 +50,17 @@
 hr{
     border: 1px solid #09BE67;
 }
+
+@media (max-width: 1025px) {
+    .home-content h2{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .home-content p{
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
+    hr{
+        width: auto;
+    }
+}
