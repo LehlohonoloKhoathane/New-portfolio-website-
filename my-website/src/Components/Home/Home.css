@@ -16,6 +16,7 @@
     line-height: 5rem;
     padding: 3%;
     color: #ffff;
+    margin: 0px 20px 0px 20px;
 }
 
 .home-content p{
@@ -24,10 +25,7 @@
     font-weight: 400;
     line-height: 2rem;
     padding-top: 2%;
-}
-
-hr.custom-hr{
-    color: #09BE67;
+    margin: 0px 10px 5px 0px;
 }
 
 .home-content a{
@@ -40,10 +38,15 @@ hr.custom-hr{
     text-decoration: none;
     font-weight: 400;
     font-size: 20px;text-align: center;
-    margin:  0 10px;
+    margin:  30px 10px 0px 200px;
 }
 
 .home-content a:hover{
     background-color: #09BE67;
     color: #ffff;
+    
+}
+
+hr{
+    border: 1px solid #09BE67;
 }
