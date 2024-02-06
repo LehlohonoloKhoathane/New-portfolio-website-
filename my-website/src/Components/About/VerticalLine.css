@@ -1,0 +1,7 @@
+.vertical-line {
+    width: 2px;
+    background-color: #09BE67; /* Color of the vertical line */
+    display: inline-block;
+    margin: 0 10px; /* Adjust as needed */
+  }
+  
