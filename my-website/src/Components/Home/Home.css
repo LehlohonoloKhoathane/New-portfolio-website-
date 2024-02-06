@@ -72,8 +72,15 @@ hr{
     .home-content h2{
         margin-top: 3rem;
     }
+
     .home-content h2, .home-content p{
         width: auto;
         text-align: center;
+    }
+
+    .home-container::after, .home-container::before{
+        content: "";
+        width: 18rem;
+        height: 18rem;
     }
 }
