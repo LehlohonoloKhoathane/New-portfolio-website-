@@ -17,10 +17,17 @@ const About = () => {
             <div className="about-content">
                 <p>Aspiring Full Stack Software Developer <VerticalLine height="1em" /> Aspiring Data Scientist</p>
                 <div className="about">
-                    <img src="./" alt="" />
-                    <div className="about-info"></div>
+                    <img className='profile-picture' src="./assets/images/lehlohonolo.jpg" alt="my profile" />
+                    <div className="about-info">
+                        <p>I'm a versatile aspiring full-stack software developer with a solid background in BSc Computer Science and
+                            Statistics. Equipped with a degree in these fields, I bring a unique blend of analytical thinking and technical
+                            prowess to projects. Proficient in diverse programming languages and technologies, I excel in crafting end-to-
+                            end solutions, seamlessly integrating front-end and back-end development. My passion lies in delivering
+                            products that not only meet but exceed client expectations.</p>
+                    </div>
                 </div>
             </div>
+            <hr />
         </section>
     )
 }
