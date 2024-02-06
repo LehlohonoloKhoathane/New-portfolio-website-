@@ -42,3 +42,8 @@ hr.custom-hr{
     font-size: 20px;text-align: center;
     margin:  0 10px;
 }
+
+.home-content a:hover{
+    background-color: #09BE67;
+    color: #ffff;
+}
