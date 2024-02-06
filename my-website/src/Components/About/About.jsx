@@ -50,8 +50,41 @@ const About = () => {
                             <img src="./Assets/Images/C++.png" alt="" />
                             <h3>C++</h3>
                         </div>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/figma.png" alt="" />
+                            <h3>Figma</h3>
+                        </div>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/flutter.png" alt="" />
+                            <h3>Flutter</h3>
+                        </div>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/vscode.png" alt="" />
+                            <h3>Vs Code</h3>
+                        </div>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/tailwind.png" alt="" />
+                            <h3>TailWind</h3>
+                        </div>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/git.png" alt="" />
+                            <h3>Git</h3>
+                        </div>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/react.png" alt="" />
+                            <h3>React.Js</h3>
+                        </div>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/nodejs.png" alt="" />
+                            <h3>Node.Js</h3>
+                        </div>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/Django.png" alt="" />
+                            <h3>Django</h3>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </section>
     )
