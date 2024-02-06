@@ -48,6 +48,11 @@
     font-size: 1rem;
   }
 
+  .skills-container p{
+    text-align: center;
+    padding: 20px;
+  }
+
 .skills-container h1{
     text-align: center;
     color: #ffff;
@@ -55,7 +60,7 @@
     padding: 10px;
 }
 
-.skills-container p{
+.skills-container h2{
     text-align: center;
     color: #ffff;
     padding: 10px;
@@ -87,3 +92,11 @@
     flex-direction: row;
     padding: 5px;
 }
+
+.skills-data{
+    border: 2px solid #09BE67;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: #202041;
+}
+

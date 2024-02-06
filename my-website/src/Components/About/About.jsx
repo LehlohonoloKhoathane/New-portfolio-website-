@@ -32,7 +32,7 @@ const About = () => {
                 <hr />
                 <p>I bring dynamic set of skills to propel projects forward. Dive deeper into my <span>technological prowess.</span></p>
                 <div className='skills-development'>
-                    <p>Development</p>
+                    <h2>Development</h2>
                     <div className='skills-icons'>
                         <div className='skill-icon'>
                             <img src="./Assets/Images/Java.png" alt="" />
@@ -84,7 +84,43 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                
+                <div className='skills-data'>
+                    <h2>Data Analysis</h2>
+                    <div className='skills-icons'>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/python.png" alt="" />
+                            <h3>Python</h3>
+                        </div>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/sql.png" alt="" />
+                            <h3>SQL/NoSql</h3>
+                        </div>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/scikit-learn.png" alt="" />
+                            <h3>Scikit-Learn</h3>
+                        </div>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/powerBI.png" alt="" />
+                            <h3>Power BI</h3>
+                        </div>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/excel.png" alt="" />
+                            <h3>Excel</h3>
+                        </div>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/SPSS.png" alt="" />
+                            <h3>SPSS</h3>
+                        </div>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/r-learn.png" alt="" />
+                            <h3>R</h3>
+                        </div>
+                        <div className='skill-icon'>
+                            <img src="./Assets/Images/mongodb.png" alt="" />
+                            <h3>Mongo</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     )
