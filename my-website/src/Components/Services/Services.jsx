@@ -6,7 +6,7 @@ const Services = () =>{
         <section className="Services-container">
             <h4>Expertise Capabilities</h4>
             <hr />
-            <p>Explore the synergy of expertise and capabilities that define my professional journey.</p>
+            <p className="Service-underP">Explore the synergy of expertise and capabilities that define my professional journey.</p>
             <div className="Services-content">
                 <div className="Service-item">
                     <img src="./assets/images/web_dev.png" alt="" />

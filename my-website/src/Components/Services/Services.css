@@ -9,5 +9,10 @@
     margin-bottom: 1rem;
     text-align: center;
     color: #ffff;
-    
+}
+
+.Services-container .Service-underP{
+    color: #ffff;
+    text-align: center;
+    padding: 10px;
 }
