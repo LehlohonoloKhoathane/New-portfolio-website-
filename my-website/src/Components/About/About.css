@@ -52,4 +52,15 @@
     text-align: center;
     color: #ffff;
     font-size: 2rem;
+    padding: 10px;
+}
+
+.skills-container p{
+    text-align: center;
+    color: #ffff;
+    padding: 10px;
+}
+
+.skills-container p span{
+    color: #09BE67;
 }

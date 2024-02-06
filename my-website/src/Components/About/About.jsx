@@ -31,6 +31,12 @@ const About = () => {
                 <h1>Tech Expertise</h1>
                 <hr />
                 <p>I bring dynamic set of skills to propel projects forward. Dive deeper into my <span>technological prowess.</span></p>
+                <div className='skills-development'>
+                    <p>Development</p>
+                    <div className='skill-icon'>
+                        <img src="./Assets/Images/Java.png" alt="" />
+                    </div>
+                </div>
             </div>
         </section>
     )
