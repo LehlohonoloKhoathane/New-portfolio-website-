@@ -23,6 +23,16 @@
     margin-right: 20px;
   }
   
+  .about-container h6{
+    font-size: 1.5rem;
+    color: #ffff;
+  }
+
+  .about-container h4{
+    font-size: 2rem;
+    color: #ffff;
+  }
+
   .about-container h4, .about-container h6{
     text-align: center;
     margin: 10px;
