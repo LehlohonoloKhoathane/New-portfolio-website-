@@ -83,4 +83,14 @@ hr{
         width: 18rem;
         height: 18rem;
     }
+
+    .home-container::after{
+        top: 0rem;
+        left: 0rem;
+    }
+
+    .home-container::before{
+        bottom: 2rem;
+        right: 0rem;
+    }
 }
