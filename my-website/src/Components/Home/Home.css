@@ -64,3 +64,16 @@ hr{
         width: auto;
     }
 }
+@media (max-width: 768px) {
+    .home-container{
+        flex-direction: column;
+    }
+
+    .home-content h2{
+        margin-top: 3rem;
+    }
+    .home-content h2, .home-content p{
+        width: auto;
+        text-align: center;
+    }
+}
