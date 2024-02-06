@@ -7,15 +7,20 @@
 
 .about {
     display: flex; 
+    
 }
 
 .about-info {
-    flex: 1; 
+    flex: 1;
+    color: #ffff; 
+    padding: 30px;
+    font-size: 10rem;
 }
 
 .profile-picture {
     width: 300px; 
     height: auto;
+    margin-right: 20px;
   }
   
   .about-container h4, .about-container h6{
