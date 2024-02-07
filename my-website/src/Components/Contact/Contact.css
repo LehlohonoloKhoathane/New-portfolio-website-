@@ -1,10 +1,30 @@
+.contact-container h2{
+    text-align: center;
+    color: #ffff;
+    padding: 10px;
+    font-size: 3rem;
+}
+
+.contact-content{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+
 .contact-content-form{
     border: 2px solid #09BE67;
     border-radius: 10px;
     padding: 15px;
     margin: 10px;
     width: 600px;
-    height: auto;
+    height: 500px;
+}
+
+.contact-content-form h3{
+    text-align: center;
+    color: #ffff;
+    font-size: 1.5rem;
 }
 
 .contact-content-form .input-box{
@@ -13,7 +33,31 @@
     height: auto;
 }
 
-.contact-content-form .input-box input, .contact-content-form .input-box textarea{
+.contact-content-form .input-box input {
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+ .contact-content-form .input-box textarea{
     width: 500px;
     height: auto;
+}
+
+.contact-content-info{
+    margin: 20px;
+    width: 500px;
+    height: auto;
+}
+
+.contact-content-info p{
+    font-size: 2rem;
+}
+
+.contact-content-form button{
+    text-align: center;
+    align-items: center;
+    
+    background-color: #09BE67;
+    color: #ffff;
 }
