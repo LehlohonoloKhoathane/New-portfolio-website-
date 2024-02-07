@@ -44,4 +44,17 @@
     height: auto;
 }
 
-.
+.work-testimonials{
+    padding: 10px;
+}
+
+.testimonial-items{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.item-testi img{
+    width: 200px;
+    height: auto;
+}
