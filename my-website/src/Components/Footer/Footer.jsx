@@ -12,7 +12,6 @@ const Footer = () => {
             <div className="footer"> Copyright &copy; 2024. All rights reserved | Designed & Developed by Lehlohonolo Khoathane</div>
         </div>
        </section>
-    )
-}
-
+    );
+};
 export default Footer;
