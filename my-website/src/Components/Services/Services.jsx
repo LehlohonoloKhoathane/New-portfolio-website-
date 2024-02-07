@@ -2,6 +2,12 @@ import React from "react";
 import './Services.css'
 
 const Services = () =>{
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500, 
+    }
+
     return (
         <section className="Services-container">
             <h4>Expertise Capabilities</h4>
