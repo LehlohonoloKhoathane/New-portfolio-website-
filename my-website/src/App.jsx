@@ -18,8 +18,8 @@ const App = () => {
         <Services/>
         <Work />
         <Contact/>
-        <Footer/>
       </div>
+      <Footer/>
     </>
   );
 };

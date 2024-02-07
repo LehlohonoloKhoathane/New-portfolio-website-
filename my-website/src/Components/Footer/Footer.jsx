@@ -3,7 +3,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <div>Footer</div>
+        <div className="footer"> Copyright &copy; 2024. All rights reserved | Designed & Developed by Lehlohonolo Khoathane</div>
     )
 }
 
