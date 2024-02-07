@@ -10,6 +10,7 @@ const Contact = () =>{
                 <h1> South Africa</h1>
             </div>
             <div className="contact-content-form">
+                <h3>New Message</h3>
                 <form id="my-form" action="" method="">
                 <div class="input-box" >
                     <input class="form-input" id="nameId" type="text" name="name" value="" placeholder="Name" />
@@ -35,4 +36,4 @@ const Contact = () =>{
     );
 };
 
-export default Contact
+export default Contact;

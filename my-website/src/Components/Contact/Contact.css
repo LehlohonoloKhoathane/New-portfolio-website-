@@ -1,0 +1,19 @@
+.contact-content-form{
+    border: 2px solid #09BE67;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 600px;
+    height: auto;
+}
+
+.contact-content-form .input-box{
+    margin: 10px;
+    width: 500px;
+    height: auto;
+}
+
+.contact-content-form .input-box input, .contact-content-form .input-box textarea{
+    width: 500px;
+    height: auto;
+}
