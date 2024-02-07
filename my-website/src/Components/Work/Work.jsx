@@ -17,10 +17,14 @@ const Work = () => {
                         <img src="./assets/images/websitecol.png" alt="project2" />
                         <p>This website is for an IT group of young people to make them available on the internet and do some work.</p>
                     </div>
+                    <div className="work-item-in">
+                        <img src="./assets/images/festival.png" alt="project3" />
+                        <p>Crafted this immersive Cape Town Festival website experience, seamlessly blending sleek design with responsive functionality. It is not hosted as yet.</p>
+                    </div>
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default Work
