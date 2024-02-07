@@ -1,5 +1,6 @@
 import React from "react";
-import './Contact.css'
+import './Contact.css';
+import { BiMap } from "react-icons/bi";
 
 const Contact = () =>{
     return (
@@ -8,7 +9,10 @@ const Contact = () =>{
             <hr />
             <div className="contact-content">
                 <div className="contact-content-info">
-                    <p>Are you ready to team up? Find me on socials,connect me through this form, or write to me directly using the following email. khoathanelehlohonol@gmail.com</p>
+                    <p>Are you ready to team up? Find me on socials,connect me through this form, or write to me directly using the following email. <span className="email">khoathanelehlohonolo@gmail.com</span></p>
+                    <div className="map-container">
+                        <BiMap className="map"/>
+                    </div>
                     <h1> South Africa</h1>
                 </div>
                 <div className="contact-content-form">
@@ -29,8 +33,10 @@ const Contact = () =>{
                     <div class="input-box">
                         <textarea id="messageId" name="message" rows="8" cols="80" placeholder="Message"></textarea>
                         <span class="Error" id="messageError"></span>
+                    </div>
+                    <div className="send-btn-container">
+                    <button type="submit" class="send-btn" id="submit-btn" onclick="sendMail()">Send</button>
                     </div>            
-                        <button type="submit" class="send-btn" id="submit-btn" onclick="sendMail()">Send</button>
                     <p id="my-form-status"></p>
                     </form>
                 </div>

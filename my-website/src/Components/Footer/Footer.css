@@ -10,11 +10,14 @@
 
 .footer{
     text-align: center;
+    color: black;
+    font-weight: 600;
 }
 
 .socials{
     color: black;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     margin: 20px;
     font-size: 2.5rem;
     display: flex;
