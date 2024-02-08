@@ -121,50 +121,20 @@
     margin-bottom: 20px;
 }
 
-/* Testimonials */
-.work-testimonials {
-    margin-top: 50px;
+.work-testimonials{
+    padding: 10px;
 }
 
-/* Testimonial items */
-.testimonial-items {
+.testimonial-items{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
 }
 
-/* Individual testimonial item */
-.item-testi {
-    text-align: center;
+.item-testi img{
+    width: 200px;
+    height: auto;
 }
-
-/* Testimonial image */
-.item-testi img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-/* Testimonial name */
-.name {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-/* Testimonial title */
-.title {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-/* Testimonial text */
-.item-testi p {
-    font-size: 14px;
-    color: #ffff;
-}
-
 
 .slick-dots {
     bottom: 20px; /* Adjust position */
@@ -172,7 +142,7 @@
 
 .slick-dots li button {
     font-size: 18px; /* Adjust dot size */
-    color: #fff; /* Dot color */
+   
 }
 
 /* Arrow style */
@@ -180,8 +150,14 @@
 .slick-next {
     font-size: 30px; /* Adjust arrow size */
     background: none; /* Remove background */
-    color: #000; /* Arrow color */
+    /* Arrow color */
     z-index: 1; /* Ensure arrows are on top */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Change cursor on hover */
+    position: absolute; /* Position arrows absolutely */
+    top: 50%; /* Align arrows vertically in the middle */
+    transform: translateY(-50%);
 }
 
 .slick-prev {
