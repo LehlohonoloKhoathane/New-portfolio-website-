@@ -86,47 +86,59 @@ const About = () => {
                 </div>
                 <div className='skills-data'>
                     <h2>Data Analysis</h2>
-                    <div className='skills-icons'>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/python.png" alt="" />
-                            <h3>Python</h3>
-                        </div>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/sql.png" alt="" />
-                            <h3>SQL/NoSql</h3>
-                        </div>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/scikit-learn.png" alt="" />
-                            <h3>Scikit-Learn</h3>
-                        </div>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/powerBI.png" alt="" />
-                            <h3>Power BI</h3>
-                        </div>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/excel.png" alt="" />
-                            <h3>Excel</h3>
-                        </div>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/SPSS.png" alt="" />
-                            <h3>SPSS</h3>
-                        </div>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/r-learn.png" alt="" />
-                            <h3>R</h3>
-                        </div>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/mongodb.png" alt="" />
-                            <h3>Mongo</h3>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>
     )
 }
 
-
+const dataT = [
+    {
+        name: `Node.Js`,
+        img: `./Assets/Images/nodejs.png`
+    },
+    {
+        name: `Git`,
+        img: `./Assets/Images/git.png`
+    },
+    {
+        name: `Vs Code`,
+        img: `./Assets/Images/vscode.png`
+    },
+    {
+        name: `Flutter`,
+        img: `./Assets/Images/flutter.png`
+    },
+    {
+        name: `TailWind`,
+        img: `./Assets/Images/tailwind.png`
+    },
+    {
+        name: `React.Js`,
+        img: `./Assets/Images/react.png`
+    },
+    {
+        name: `Django`,
+        img: `./Assets/Images/django-py.png`
+    },
+    {
+        name: `Figma`,
+        img: `./Assets/Images/figma.png`
+    },
+    {
+        name: `JavaScript`,
+        img: `./Assets/Images/Java.png`
+    },
+    {
+        name: `Java`,
+        img: `./Assets/Images/javas.png`
+    },
+    {
+        name: `Html & CSS`,
+        img: `./Assets/Images/html.png`
+    }
+]
 
 const dataD = [
     {
