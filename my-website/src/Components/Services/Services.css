@@ -23,7 +23,8 @@
     padding: 5px;
 }
 
-.Service-item{
+
+.service-item{
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -31,20 +32,24 @@
     border: 2px solid #09BE67;
     border-radius: 10px;
     padding: 10px;
-    margin: 10px;
+    /* margin: 0px 10px; */
+    width: 10px;
+    gap: 10px;
 }
 
 .Service-item img{
     width: 200px;
     height: auto;
+    align-content: center;
 }
 
-.Service-item h5{
+.service-item h4{
     text-align: center;
     font-size: 2rem;
+    color: #09BE67;
 }
 
-.Service-item p{
+.service-item p{
     text-align: center;
     color: #ffff;
 }
@@ -53,4 +58,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 300px;
 }
+
+.service-image img {
+    max-width: 50%;
+    max-height: 100%;
+}
+
