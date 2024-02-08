@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import './Work.css'; // Assuming you have a CSS file for styling
+import './Work.css';
 
 const Work = () => {
     const settings = {
@@ -9,8 +9,6 @@ const Work = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2000
     };
 
     return (

@@ -69,7 +69,7 @@
 
 /* Work content */
 .work-content {
-    max-width: 500px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -82,15 +82,15 @@
 
 /* Horizontal rule */
 .work-content hr {
-    border: 1px solid #333;
+    border: 1px solid #09BE67;
     margin: 20px auto;
-    width: 50%;
+    width: 80%;
 }
 
 /* Paragraph */
 .work-content p {
     font-size: 16px;
-    color: #666;
+    color: #ffff;
     line-height: 1.6;
     text-align: justify;
 }
@@ -98,7 +98,7 @@
 /* Span within paragraph */
 .work-content span {
     font-weight: bold;
-    color: #007bff;
+    color: #09BE67;
 }
 
 /* Work items */
@@ -162,5 +162,32 @@
 /* Testimonial text */
 .item-testi p {
     font-size: 14px;
-    color: #777;
+    color: #ffff;
+}
+
+
+.slick-dots {
+    bottom: 20px; /* Adjust position */
+}
+
+.slick-dots li button {
+    font-size: 18px; /* Adjust dot size */
+    color: #fff; /* Dot color */
+}
+
+/* Arrow style */
+.slick-prev,
+.slick-next {
+    font-size: 30px; /* Adjust arrow size */
+    background: none; /* Remove background */
+    color: #000; /* Arrow color */
+    z-index: 1; /* Ensure arrows are on top */
+}
+
+.slick-prev {
+    left: 0; /* Position arrow */
+}
+
+.slick-next {
+    right: 0; /* Position arrow */
 }
