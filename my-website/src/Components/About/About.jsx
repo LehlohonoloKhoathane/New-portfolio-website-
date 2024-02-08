@@ -20,7 +20,7 @@ const About = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 2,
+        slidesToShow: 4,
         slidesToScroll: 1
     };
 
@@ -48,26 +48,41 @@ const About = () => {
                 <p>I bring dynamic set of skills to propel projects forward. Dive deeper into my <span>technological prowess.</span></p>
                 <div className='skills-development'>
                     <h2>Development</h2>
-                    
+                    <div className="skills-dev">
+                        <div className="skills-content-items">
+                            <Slider {...settings}>
+                            {dataT.map((d) => (
+                                <div className="skils-item">
+                                    <div className="skills-image">
+                                        <img src={d.img} alt="" />
+                                    </div>
+                                    <div>
+                                        <h4>{d.name}</h4>
+                                    </div>
+                                </div>
+                            ))}
+                            </Slider>
+                        </div>
+                    </div>
                 </div>
                 <div className='skills-data'>
                     <h2>Data Analysis</h2>
-                    <div className="skills-development">
-                <div className="service-content-items">
-                    <Slider {...settings}>
-                    {dataD.map((d) => (
-                        <div className="service-item">
-                            <div className="service-image">
-                                <img src={d.img} alt="" />
-                            </div>
-                            <div>
-                                <h4>{d.name}</h4>
-                            </div>
+                    <div className="skills-data-analysis">
+                        <div className="skills-content-items">
+                            <Slider {...settings}>
+                            {dataD.map((d) => (
+                                <div className="skils-item">
+                                    <div className="skills-image">
+                                        <img src={d.img} alt="" />
+                                    </div>
+                                    <div>
+                                        <h4>{d.name}</h4>
+                                    </div>
+                                </div>
+                            ))}
+                            </Slider>
                         </div>
-                    ))}
-                    </Slider>
-                </div>
-            </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -132,31 +147,31 @@ const dataD = [
     },
     {
         name: `R`,
-        img: `./asstes/Images/r-learn.png`
+        img: `./asstes/images/r-learn.png`
     },
     {
         name: `SPSS`,
-        img: `./Assets/Images/SPSS.png`
+        img: `./assets/images/SPSS.webp`
     },
     {
         name: `Excel`,
-        img: `./Assets/Images/excel.png`
+        img: `./assets/images/excel.png`
     },
     {
         name: `Power BI`,
-        img: `./Assets/Images/powerBI.png`
+        img: `./assets/images/powerBI.png`
     },
     {
         name: `Scikit-Learn`,
-        img: `./Assets/Images/scikit-learn.png`
+        img: `./assets/images/scikit-learn.png`
     },
     {
         name: `SQL/NoSql`,
-        img: `./Assets/Images/sql.png`
+        img: `./assets/images/sql.png`
     },
     {
         name:`Python`,
-        img: `./Assets/Images/python.png`
+        img: `./assets/images/python-logo.png`
     }
 ]
 

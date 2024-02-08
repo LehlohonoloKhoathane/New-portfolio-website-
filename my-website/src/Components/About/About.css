@@ -71,7 +71,7 @@
 }
 
 .skills-development{
-    border: 2px solid #09BE67;
+   border: 2px solid #09BE67;
     border-radius: 10px;
     padding: 10px;
     background-color: #202041;
@@ -100,3 +100,19 @@
     background-color: #202041;
 }
 
+.skills-image{
+  width: 200px;
+  height: auto;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.skills-image img{
+  width: 100px;
+  height: auto;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
