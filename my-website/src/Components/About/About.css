@@ -1,8 +1,9 @@
 .about-container{
     border: 2px solid #09BE67;
     border-radius: 10px;
-    margin: 80px;
+    margin:  60px;
     padding: 15px 50px 10px 50px;
+
 }
 
 .about {
@@ -11,11 +12,12 @@
 }
 
 .about-info {
+  border: 2px solid red;
     flex: 1;
     color: #ffff; 
-    padding: 30px;
+    padding: 0 20px;
     font-size: 10rem;
-     line-height: 1.5;
+    line-height: 1.5;
 }
 
 .about-info span{
@@ -43,9 +45,16 @@
     margin: 10px;
   }
 
-  .about-content p{
-    text-align: center;
-    font-size: 1rem;
+.about-heading{
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 20px;
+}
+
+ .about-description{
+  border: 2px solid red;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
   }
 
   .skills-container p{

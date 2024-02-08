@@ -29,11 +29,11 @@ const About = () => {
             <hr />
             <h6>Lehlohonolo Khoathane</h6>
             <div className='about-content'>
-                <p>Aspiring Full Stack Software Developer <VerticalLine height='1em' /> Aspiring Data Scientist</p>
+                <p className='about-heading'>Aspiring Full Stack Software Developer <VerticalLine height='1em' /> Aspiring Data Scientist</p>
                 <div className='about'>
                     <img className='profile-picture' src='./assets/images/lehlohonolo.jpg' alt='my profile' />
                     <div className="about-info">
-                        <p>I'm a versatile aspiring full-stack software developer with a solid background in <span className='degree'>BSc Computer Science and
+                        <p className='about-description'>I'm a versatile aspiring full-stack software developer with a solid background in <span className='degree'>BSc Computer Science and
                             Statistics.</span> Equipped with a degree in these fields, I bring a unique blend of analytical thinking and technical
                             prowess to projects. Proficient in diverse programming languages and technologies, I excel in crafting end-to-
                             end solutions, seamlessly integrating front-end and back-end development. My passion lies in delivering
