@@ -1,6 +1,12 @@
 import React from 'react';
 import './About.css'
 import './VerticalLine.css'; // Import CSS file for styling
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
+
+
 
 const VerticalLine = ({ height }) => {
   return (
@@ -9,6 +15,15 @@ const VerticalLine = ({ height }) => {
 }
 
 const About = () => {
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1
+    };
+
     return (
         <section className='about-container'>
             <h4>The Person behind the work</h4>
@@ -33,60 +48,26 @@ const About = () => {
                 <p>I bring dynamic set of skills to propel projects forward. Dive deeper into my <span>technological prowess.</span></p>
                 <div className='skills-development'>
                     <h2>Development</h2>
-                    <div className='skills-icons'>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/Java.png" alt="" />
-                            <h3>JavaScript</h3>
-                        </div>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/javas.png" alt="" />
-                            <h3>Java</h3>
-                        </div>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/html.png" alt="" />
-                            <h3>Html & CSS</h3>
-                        </div>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/C++.png" alt="" />
-                            <h3>C++</h3>
-                        </div>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/figma.png" alt="" />
-                            <h3>Figma</h3>
-                        </div>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/flutter.png" alt="" />
-                            <h3>Flutter</h3>
-                        </div>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/vscode.png" alt="" />
-                            <h3>Vs Code</h3>
-                        </div>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/tailwind.png" alt="" />
-                            <h3>TailWind</h3>
-                        </div>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/git.png" alt="" />
-                            <h3>Git</h3>
-                        </div>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/react.png" alt="" />
-                            <h3>React.Js</h3>
-                        </div>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/nodejs.png" alt="" />
-                            <h3>Node.Js</h3>
-                        </div>
-                        <div className='skill-icon'>
-                            <img src="./Assets/Images/Django.png" alt="" />
-                            <h3>Django</h3>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div className='skills-data'>
                     <h2>Data Analysis</h2>
-                    
+                    <div className="skills-development">
+                <div className="service-content-items">
+                    <Slider {...settings}>
+                    {dataD.map((d) => (
+                        <div className="service-item">
+                            <div className="service-image">
+                                <img src={d.img} alt="" />
+                            </div>
+                            <div>
+                                <h4>{d.name}</h4>
+                            </div>
+                        </div>
+                    ))}
+                    </Slider>
+                </div>
+            </div>
                 </div>
             </div>
         </section>
@@ -137,6 +118,10 @@ const dataT = [
     {
         name: `Html & CSS`,
         img: `./Assets/Images/html.png`
+    },
+    {
+        name: `C++`,
+        img: `./Assets/Images/C++.png`
     }
 ]
 
