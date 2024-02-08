@@ -7,7 +7,6 @@ import 'slick-carousel/slick/slick-theme.css'
 
 
 
-
 const VerticalLine = ({ height }) => {
   return (
     <div className='vertical-line' style={{ height: height }}></div>
@@ -21,7 +20,7 @@ const About = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 2
     };
 
     return (
