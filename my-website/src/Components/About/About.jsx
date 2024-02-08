@@ -126,4 +126,42 @@ const About = () => {
     )
 }
 
+
+
+const dataD = [
+    {
+        name: `MongoDb`,
+        img: `./assets/images/mongodb.png`
+    },
+    {
+        name: `R`,
+        img: `./asstes/Images/r-learn.png`
+    },
+    {
+        name: `SPSS`,
+        img: `./Assets/Images/SPSS.png`
+    },
+    {
+        name: `Excel`,
+        img: `./Assets/Images/excel.png`
+    },
+    {
+        name: `Power BI`,
+        img: `./Assets/Images/powerBI.png`
+    },
+    {
+        name: `Scikit-Learn`,
+        img: `./Assets/Images/scikit-learn.png`
+    },
+    {
+        name: `SQL/NoSql`,
+        img: `./Assets/Images/sql.png`
+    },
+    {
+        name:`Python`,
+        img: `./Assets/Images/python.png`
+    }
+]
+
+
 export default About;
