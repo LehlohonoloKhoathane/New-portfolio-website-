@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import NavBar from './Components/NavBar/NavBar';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';

@@ -1,4 +1,4 @@
-.work-container{
+/* .work-container{
     border: 2px solid #09BE67;
     border-radius: 10px;
     padding: 10px;
@@ -57,4 +57,110 @@
 .item-testi img{
     width: 200px;
     height: auto;
+} */
+
+/* Work container */
+.work-container {
+    border: 2px solid #09BE67;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 4rem;
+}
+
+/* Work content */
+.work-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Section heading */
+.work-content h2 {
+    font-size: 28px;
+    color: #ffff;
+    text-align: center;
+}
+
+/* Horizontal rule */
+.work-content hr {
+    border: 1px solid #333;
+    margin: 20px auto;
+    width: 50%;
+}
+
+/* Paragraph */
+.work-content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Span within paragraph */
+.work-content span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Work items */
+.work-items {
+    margin-top: 30px;
+    border: 2px solid #09BE67;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* Work item container */
+.work-item-in {
+    text-align: center;
+}
+
+/* Work item image */
+.work-item-in img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Testimonials */
+.work-testimonials {
+    margin-top: 50px;
+}
+
+/* Testimonial items */
+.testimonial-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Individual testimonial item */
+.item-testi {
+    text-align: center;
+}
+
+/* Testimonial image */
+.item-testi img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Testimonial name */
+.name {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Testimonial title */
+.title {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Testimonial text */
+.item-testi p {
+    font-size: 14px;
+    color: #777;
 }
