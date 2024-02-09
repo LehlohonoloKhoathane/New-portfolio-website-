@@ -19,7 +19,9 @@ const Services = () =>{
         <section className="Services-container">
             <h4>Expertise Capabilities</h4>
             <hr />
-            <p className="Service-underP">Explore the synergy of expertise and capabilities that define my professional journey.</p>
+            <div className="service-subheading">
+                <p className="Service-underP">Explore the synergy of expertise and capabilities that define my professional journey.</p>
+            </div>
             <div className="service-content">
                 <div className="service-content-items">
                     <Slider {...settings}>

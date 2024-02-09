@@ -1,10 +1,12 @@
 .Services-container{
+    border: 2px solid red;
+    padding: 20px;
     margin: 4rem;
     position: relative;
 }
 
 .Services-container h4{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
     text-align: center;
@@ -12,9 +14,16 @@
 }
 
 .Services-container .Service-underP{
+    border: 2px solid red;
+    font-size: 1.5rem;
     color: #ffff;
+    width: 55rem;
+    margin: 20px;
+}
+
+.service-subheading{
     text-align: center;
-    padding: 10px;
+    padding-left: 130px;
 }
 
 .Services-content{

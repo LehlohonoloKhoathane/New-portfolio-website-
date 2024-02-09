@@ -58,7 +58,6 @@
   }
 
   .skills-container{
-    border: 1px solid red;
     margin-top: 60px;
   }
 
@@ -93,13 +92,13 @@
 }
 
 .skills-development{
-   border: 2px solid yellow;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #202041;
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
+  border: 2px solid #09BE67;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #202041;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
 }
 .skill-icon{
     margin-right: 20px;
@@ -123,8 +122,12 @@
 .skills-data{
     border: 2px solid #09BE67;
     border-radius: 10px;
-    margin: 20px;
+    padding: 10px;
     background-color: #202041;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 28px;
 }
 
 .skills-image{
