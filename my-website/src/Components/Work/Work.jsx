@@ -52,7 +52,7 @@ const Work = () => {
                                     <img src="./assets/images/khoathane.jpg" alt="testmonial" />
                                     <h3 className="name">King</h3>
                                     <h4 className="title">Ceo</h4>
-                                    <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
+                                    <p>Mr Khoathane delivers excellence! Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
                                 </div>
                     </div>
                 </div>
