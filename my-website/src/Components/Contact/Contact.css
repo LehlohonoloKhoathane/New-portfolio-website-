@@ -1,3 +1,8 @@
+.contact-container{
+    border: 2px solid red;
+    margin: 0 4rem;
+}
+
 .contact-container h2{
     text-align: center;
     color: #ffff;
@@ -6,9 +11,10 @@
 }
 
 .contact-content{
+    border: 2px solid yellow;
     display: flex;
     flex-direction: row;
-    padding: 15px;
+    margin: 2rem;
 }
 
 
@@ -16,7 +22,6 @@
     border: 2px solid #09BE67;
     border-radius: 10px;
     padding: 15px;
-    margin: 10px;
     width: 600px;
     height: 500px;
 }
@@ -45,7 +50,7 @@
 }
 
 .contact-content-info{
-    margin: 20px;
+  
     width: 500px;
     height: auto;
     display: flex;
@@ -55,11 +60,17 @@
 .contact-content-info p{
     font-size: 1.5rem;
     color: #ffff;
-
+    margin-top: 1.5rem;
 }
 
 .contact-content-info p span{
     color: #09BE67;
+}
+
+.contact-content-info h1{
+    color: #ffff;
+    text-align: center;
+    font-size: 3rem;
 }
 
 .send-btn-container {
@@ -93,4 +104,9 @@
     font-size: 4rem; 
     width: 100%;
     padding-top: 4rem;
+}
+
+.map{
+    color: #ffff;
+    font-size: 10rem;
 }
