@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import './Services.css'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
@@ -58,7 +58,7 @@ const data = [
     {
         name: `Data Analysis`,
         img: `./assets/images/dataA.png`,
-        description: `I examine and interpret data to extract meaningful  insights and make informed decisions.`
+        description: `I analyze and interpret data to derive valuable insights, enabling informed decision-making.`
     },
     {
         name: `UX/UI Design`,

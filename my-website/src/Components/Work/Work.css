@@ -101,10 +101,27 @@
     color: #09BE67;
 }
 
+.work-item{
+    border: 2px solid yellow;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.work-item img{
+    width: 400px;
+    height: auto;
+    align-content: center;
+}
+
+.work-image{
+    display: flex;
+    justify-content: center;
+    text-align: center
+}
+
 /* Work items */
 .work-items {
     margin-top: 30px;
-    border: 2px solid #09BE67;
     border-radius: 10px;
     padding: 15px;
 }
@@ -145,25 +162,8 @@
    
 }
 
-/* Arrow style */
-.slick-prev,
-.slick-next {
-    font-size: 30px; /* Adjust arrow size */
-    background: none; /* Remove background */
-    /* Arrow color */
-    z-index: 1; /* Ensure arrows are on top */
-    border: none; /* Remove border */
-    outline: none; /* Remove outline */
-    cursor: pointer; /* Change cursor on hover */
-    position: absolute; /* Position arrows absolutely */
-    top: 50%; /* Align arrows vertically in the middle */
-    transform: translateY(-50%);
-}
-
-.slick-prev {
-    left: 0; /* Position arrow */
-}
-
-.slick-next {
-    right: 0; /* Position arrow */
+.work-items .slick-slide > div{
+   width: 600px;
+   height: auto;
+   align-content: center;
 }

@@ -20,8 +20,8 @@ const Work = () => {
                 <div className="work-items">
                     <Slider {...settings}>
                     {data.map((d) => (
-                        <div className="service-item">
-                            <div className="service-image">
+                        <div className="work-item" style={{ width: '50px' }}>
+                            <div className="work-image">
                                 <img src={d.img} alt="" />
                             </div>
                             <div>

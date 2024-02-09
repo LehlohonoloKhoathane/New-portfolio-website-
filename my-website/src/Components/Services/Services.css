@@ -1,5 +1,4 @@
 .Services-container{
-    border: 2px solid red;
     padding: 20px;
     margin: 4rem;
     position: relative;
@@ -14,7 +13,6 @@
 }
 
 .Services-container .Service-underP{
-    border: 2px solid red;
     font-size: 1.5rem;
     color: #ffff;
     width: 55rem;
@@ -23,27 +21,33 @@
 
 .service-subheading{
     text-align: center;
-    padding-left: 130px;
+    padding-left: 110px;
 }
 
 .Services-content{
     display: flex;
-    flex-direction: row;
-    padding: 5px;
+    flex-direction: column;
+    padding: 100px;
 }
 
 
 .service-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    text-align: center; 
     border: 2px solid #09BE67;
     border-radius: 10px;
     padding: 10px;
-    /* margin: 0px 10px; */
-    width: 10px;
-    gap: 10px;
+    /* */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    border-radius: 10px;
+    
+    width: 2px;
+    */
+}
+
+.slick-slide > div{
+    margin: 20px 30px;
 }
 
 .Service-item img{
@@ -54,11 +58,13 @@
 
 .service-item h4{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #09BE67;
+    margin-bottom: 10px;
 }
 
 .service-item p{
+    font-size: 1.2rem;
     text-align: center;
     color: #ffff;
 }
@@ -66,8 +72,7 @@
 .service-image {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 300px;
+    text-align: center;
 }
 
 .service-image img {
@@ -75,3 +80,6 @@
     max-height: 100%;
 }
 
+.service-content-items{
+    margin: 0px 50px;
+}
