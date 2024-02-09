@@ -12,7 +12,6 @@
 }
 
 .about-info {
-  border: 2px solid red;
     flex: 1;
     color: #ffff; 
     padding: 0 20px;
@@ -25,7 +24,7 @@
 }
 
 .profile-picture {
-    width: 300px; 
+    width: 280px; 
     height: auto;
     margin-right: 20px;
   }
@@ -33,11 +32,13 @@
   .about-container h6{
     font-size: 1.5rem;
     color: #ffff;
+    margin: 0px;
   }
 
   .about-container h4{
     font-size: 2rem;
     color: #ffff;
+    margin-bottom: 10px;
   }
 
   .about-container h4, .about-container h6{
@@ -48,13 +49,17 @@
 .about-heading{
   text-align: center;
   font-size: 1.5rem;
-  margin: 20px;
+  margin: 15px;
 }
 
  .about-description{
-  border: 2px solid red;
-    font-size: 1.5rem;
-    line-height: 2.1rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .skills-container{
+    border: 1px solid red;
+    margin-top: 50px;
   }
 
   .skills-container p{
@@ -67,12 +72,18 @@
     color: #ffff;
     font-size: 2rem;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 .skills-container h2{
     text-align: center;
     color: #ffff;
     padding: 10px;
+}
+
+.skills-container p{
+  color: #ffff;
+  font-size: 1.4rem;
 }
 
 .skills-container p span{

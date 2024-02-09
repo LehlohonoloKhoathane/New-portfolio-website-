@@ -34,16 +34,15 @@ const About = () => {
                     <img className='profile-picture' src='./assets/images/lehlohonolo.jpg' alt='my profile' />
                     <div className="about-info">
                         <p className='about-description'>I'm a versatile aspiring full-stack software developer with a solid background in <span className='degree'>BSc Computer Science and
-                            Statistics.</span> Equipped with a degree in these fields, I bring a unique blend of analytical thinking and technical
-                            prowess to projects. Proficient in diverse programming languages and technologies, I excel in crafting end-to-
-                            end solutions, seamlessly integrating front-end and back-end development. My passion lies in delivering
-                            products that not only meet but exceed client expectations.</p>
+                            Statistics.</span> Equipped with a degree in these fields and one year of experience in software development, I bring a unique blend of analytical thinking and technical
+                            prowess to projects. Proficient in diverse programming languages and technologies, I excel in crafting end-to-end solutions, seamlessly integrating front-end and back-end 
+                            development. My passion lies in delivering products that not only meet but exceed client expectations.</p>
                     </div>
                 </div>
             </div>
             <div className='skills-container'>
                 <h1>Tech Expertise</h1>
-                <hr />
+                <hr className=''/>
                 <p>I bring dynamic set of skills to propel projects forward. Dive deeper into my <span>technological prowess.</span></p>
                 <div className='skills-development'>
                     <h2>Development</h2>
