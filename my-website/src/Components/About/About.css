@@ -59,12 +59,7 @@
 
   .skills-container{
     border: 1px solid red;
-    margin-top: 50px;
-  }
-
-  .skills-container p{
-    text-align: center;
-    padding: 20px;
+    margin-top: 60px;
   }
 
 .skills-container h1{
@@ -81,12 +76,16 @@
     padding: 10px;
 }
 
-.skills-container p{
+.skills-subheading{
   text-align: center;
-  border: 1px solid red;
+  padding-left: 55px;
+}
+
+.skills-subheading p{
+  margin-top: 20px;
   color: #ffff;
-  font-size: 1.4rem;
-  width: 50rem;
+  font-size: 1.5rem;
+  width: 60rem;
 }
 
 .skills-container p span{
@@ -94,12 +93,13 @@
 }
 
 .skills-development{
-   border: 2px solid #09BE67;
+   border: 2px solid yellow;
     border-radius: 10px;
     padding: 10px;
     background-color: #202041;
     display: flex;
     flex-direction: column;
+    margin-top: 80px;
 }
 .skill-icon{
     margin-right: 20px;
