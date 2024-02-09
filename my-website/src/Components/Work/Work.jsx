@@ -13,10 +13,11 @@ const Work = () => {
 
     return (
         <section className="work-container">
-            <div className="work-content">
                 <h2>Creations</h2>
                 <hr />
-                <p>Witness the harmony of <span>design</span> and <span>functionality</span>, and immerse yourself in the visual allure of <span>innovations</span>. Let my creations speak for themselves.</p>
+                <div className='work-content-subheading'>
+                    <p className='work-content-p'>Witness the harmony of <span>design</span> and <span>functionality</span>, and immerse yourself in the visual allure of <span>innovations</span>. Let my creations speak for themselves.</p>
+                </div>
                 <div className="work-items">
                     <Slider {...settings}>
                     {data.map((d) => (
@@ -39,19 +40,19 @@ const Work = () => {
                             <div className="testimonial-items">
                                 <div className="item-testi">
                                     <img src="./assets/images/khoathane.jpg" alt="testmonial" />
-                                    <h2 className="name">King</h2>
+                                    <h3 className="name">King</h3>
                                     <h4 className="title">Ceo</h4>
                                     <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
                                 </div>
                                 <div className="item-testi">
                                     <img src="./assets/images/khoathane.jpg" alt="testmonial" />
-                                    <h2 className="name">King</h2>
+                                    <h3 className="name">King</h3>
                                     <h4 className="title">Ceo</h4>
                                     <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
                                 </div>
                                 <div className="item-testi">
                                     <img src="./assets/images/khoathane.jpg" alt="testmonial" />
-                                    <h2 className="name">King</h2>
+                                    <h3 className="name">King</h3>
                                     <h4 className="title">Ceo</h4>
                                     <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
                                 </div>
@@ -59,7 +60,7 @@ const Work = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </section>
     );
 };

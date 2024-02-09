@@ -63,41 +63,47 @@
 .work-container {
     border: 2px solid #09BE67;
     border-radius: 10px;
-    padding: 50px;
+    padding: 20px;
     margin: 4rem;
 }
 
 /* Work content */
 .work-content {
-    max-width: 800px;
+    border: 2px solid red;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 /* Section heading */
-.work-content h2 {
-    font-size: 28px;
+.work-container h2 {
+    font-size: 2.5rem;
     color: #ffff;
     text-align: center;
+    margin-bottom: 1rem;
 }
+
+.work-content-subheading {
+    text-align: center;
+    margin: 20px;
+}
+
 
 /* Horizontal rule */
 .work-content hr {
-    border: 1px solid #09BE67;
-    margin: 20px auto;
-    width: 80%;
+    border: 2px solid #09BE67;
+    width: 100%;
 }
 
 /* Paragraph */
-.work-content p {
-    font-size: 16px;
+.work-content-subheading p {
     color: #ffff;
     line-height: 1.6;
-    text-align: justify;
+    font-size: 1.5rem;
+    margin: 10px;
 }
 
 /* Span within paragraph */
-.work-content span {
-    font-weight: bold;
+.work-content-subheading p span {
     color: #09BE67;
 }
 
@@ -121,9 +127,20 @@
 
 /* Work items */
 .work-items {
-    border-radius: 10px;
-    padding: 15px;
+    width: 100%; /* Ensure the slider takes full width of its container */
+    display: flex;
+    justify-content: center;
 }
+
+
+.work-items .slick-list {
+     /* Center the slider list */
+    max-width: 900px; /* Ensure the slider list takes full width of its container */
+ }
+ 
+ .work-items .slick-slide {
+    margin: 0 10px; /* Adjust slide margins as needed */
+ }
 
 /* Work item container */
 .work-item-in {
@@ -153,12 +170,11 @@
 }
 
 .slick-dots {
-    bottom: 20px; /* Adjust position */
+    bottom: 20px; 
 }
 
 .slick-dots li button {
-    font-size: 18px; /* Adjust dot size */
-   
+    font-size: 18px; 
 }
 
 .work-items .slick-slide > div{
@@ -171,4 +187,5 @@
 
 .work-item p {
     font-size: 1.2rem;
+    color: #ffff;
 }
