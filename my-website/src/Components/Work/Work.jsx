@@ -24,7 +24,7 @@ const Work = () => {
                             <div className="work-image">
                                 <img src={d.img} alt="" />
                             </div>
-                            <div>
+                            <div className='work-item-decription'>
                                 <p>{d.description}</p>
                             </div>
                         </div>

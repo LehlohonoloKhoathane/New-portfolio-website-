@@ -121,7 +121,6 @@
 
 /* Work items */
 .work-items {
-    margin-top: 30px;
     border-radius: 10px;
     padding: 15px;
 }
@@ -166,4 +165,10 @@
    width: 600px;
    height: auto;
    align-content: center;
+   text-align: center;
+   align-items: center;
+}
+
+.work-item p {
+    font-size: 1.2rem;
 }
