@@ -69,7 +69,7 @@
 
 /* Work content */
 .work-content {
-    border: 2px solid red;
+
     max-width: 900px;
     margin: 0 auto;
 }
@@ -108,7 +108,7 @@
 }
 
 .work-item{
-    border: 2px solid yellow;
+    border: 2px solid #09BE67;
     border-radius: 10px;
     padding: 10px;
 }
@@ -138,9 +138,9 @@
     max-width: 900px; /* Ensure the slider list takes full width of its container */
  }
  
- .work-items .slick-slide {
+ /* .work-items .slick-slide {
     margin: 0 10px; /* Adjust slide margins as needed */
- }
+
 
 /* Work item container */
 .work-item-in {
@@ -155,18 +155,43 @@
 }
 
 .work-testimonials{
+    border: 2px solid red;
     padding: 10px;
+    margin: 3rem 4rem 2rem;
 }
 
 .testimonial-items{
+    border: 2px solid yellow;
     display: flex;
     flex-direction: row;
     padding: 10px;
+    margin-top: 2rem;margin-left: 25px;
+}
+
+.item-testi{
+    margin: 0 5px;
 }
 
 .item-testi img{
     width: 200px;
     height: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.item-testi h3{
+    color: #ffff;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+.item-testi h4{
+    margin-bottom: 10px;
+}
+
+.item-testi p{
+    color: #ffff;
+    width: 300px;
 }
 
 .slick-dots {
