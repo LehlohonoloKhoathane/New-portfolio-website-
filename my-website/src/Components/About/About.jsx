@@ -42,8 +42,10 @@ const About = () => {
             </div>
             <div className='skills-container'>
                 <h1>Tech Expertise</h1>
-                <hr className=''/>
-                <p>I bring dynamic set of skills to propel projects forward. Dive deeper into my <span>technological prowess.</span></p>
+                <hr className='horizontal-line'/>
+                <div className='skills-subheading'>
+                    <p>I bring dynamic set of skills to propel projects forward. Dive deeper into my <span>technological prowess.</span></p>
+                </div>
                 <div className='skills-development'>
                     <h2>Development</h2>
                     <div className="skills-dev">

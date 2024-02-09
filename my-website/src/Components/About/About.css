@@ -82,8 +82,11 @@
 }
 
 .skills-container p{
+  text-align: center;
+  border: 1px solid red;
   color: #ffff;
   font-size: 1.4rem;
+  width: 50rem;
 }
 
 .skills-container p span{
@@ -111,6 +114,10 @@
     display: flex;
     flex-direction: row;
     padding: 5px;
+}
+
+.horizontal-line{
+  margin-bottom: 0px;
 }
 
 .skills-data{
