@@ -1,18 +1,166 @@
-/* .work-container{
+.work-container{
     border: 2px solid #09BE67;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     margin: 4rem;
     position: relative;
 }
 
-.work-content h2{
-    font-size: 1.5rem;
+.work-container h2{
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
     text-align: center;
     color: #ffff;
 }
+
+.work-content-subheading{
+    text-align: center;
+}
+
+.work-content-p{
+    font-size: 1.5rem;
+    color: #ffff;
+    margin: 20px;
+}
+
+.work-content{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.work-content-items{
+    margin: 0px 50px;
+    border: 2px solid #09BE67;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.slick-slide > div{
+    margin: 30px 60px;
+}
+
+.work-image img{
+    width: 200px;
+    height: auto;
+    align-content: center;
+}
+
+.work-content-items p{
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ffff;
+}
+
+.work-image {
+    display: flex;
+    justify-content: center;
+}
+
+.work-image img {
+    max-width: 50%;
+    max-height: 100%;
+}
+
+.work-content{
+    margin: 0px 50px;
+    width: 100%;
+}
+
+.work-testimonials{
+    padding: 10px;
+    margin: 3rem 4rem 2rem;
+}
+
+.work-testimonials h2{
+    color: #ffff;
+    text-align: center;
+}
+
+.testimonial-items{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.item-testi img{
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+.name{
+    color: #ffff;
+    margin: 5px;
+}
+
+.name span{
+    color: #09BE67;
+}
+
+.item-testi p{
+    color: #ffff;
+    margin: 10px 5px;
+}
+
+
+@media (max-width:768px) {
+    .work-container{
+        margin: 20px;
+    }
+
+    .work-container h2{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #ffff;
+    }
+
+    .work-content-p{
+        font-size: 13px;
+        color: #ffff;
+        margin: 10px;
+    }
+
+    .slick-slide > div{
+        margin: 10px 15px;
+    }
+
+    work-items .slick-slide > div{
+        margin: 0 10px;
+        width: 40%;
+     }
+
+
+    .work-content{
+        margin: 0px 15px;
+    }
+
+    .work-item-decscription p{
+        font-size: 13px;
+        text-align: center;
+        color: #ffff;
+    }
+
+    .work-testimonials{
+        padding: 0px;
+        margin: 1.5rem 2rem 1rem;
+    }
+
+    .work-testimonials h3{
+        font-size: 1.3rem;
+        color: #ffff;
+    }
+
+    .testimonial-items {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*
 
 .work-items{
     display: flex;
@@ -60,61 +208,61 @@
 } */
 
 /* Work container */
-.work-container {
+/* .work-container {
     border: 2px solid #09BE67;
     border-radius: 10px;
     padding: 20px;
     margin: 4rem;
-}
+} */
 
 /* Work content */
-.work-content {
+/* .work-content {
     max-width: 200px;
     margin: 0 auto;
-}
+} */
 
 /* Section heading */
-.work-container h2 {
+/* .work-container h2 {
     font-size: 2.5rem;
     color: #ffff;
     text-align: center;
     margin-bottom: 1rem;
-}
+} */
 
-.work-content-subheading {
+/* .work-content-subheading {
     text-align: center;
     margin: 20px;
-}
+} */
 
 
 /* Horizontal rule */
-.work-content hr {
+/* .work-content hr {
     border: 2px solid #09BE67;
     width: 100%;
-}
+} */
 
 /* Paragraph */
-.work-content-subheading p {
+/* .work-content-subheading p {
     color: #ffff;
     line-height: 1.6;
     font-size: 1.5rem;
     margin: 10px;
-}
+} */
 
 /* Span within paragraph */
-.work-content-subheading p span {
+/* .work-content-subheading p span {
     color: #09BE67;
-}
-
+} */
+/* 
 .work-item{
     display: flex;
     justify-content: center;
     border: 2px solid #09BE67;
     border-radius: 10px;
     padding: 10px;
-    width: 100%;
+    width: 100%; */
 /* Set the maximum width to fit its parent container */
-}
+/* }
 
 .work-item img{
     display: flex;
@@ -128,11 +276,11 @@
     text-align: center;
     display: flex;
     justify-content: center;
-}
+} */
 
 /* Work items */
-.work-items {/* Ensure the slider takes full width of its container */
-    display: flex;
+/* .work-items {Ensure the slider takes full width of its container */
+    /* display: flex;
     justify-content: center;
     width: 100%;
 }
@@ -143,13 +291,13 @@
     padding: 20px;
 }
 
-.work-items .slick-list {
+.work-items .slick-list { */
      /* Center the slider list */
-    max-width: 900px; /* Ensure the slider list takes full width of its container */
+    /* max-width: 900px; Ensure the slider list takes full width of its container
  }
- 
+  */
 /* Work item container */
-.work-item-in {
+/* .work-item-in {
     text-align: center;
 }
 
@@ -168,19 +316,16 @@
     justify-content: center;
     color: #09be66;
     font-size: 1rem;
-}
+} */
 
 /* Work item image */
-.work-item-in img {
+/* .work-item-in img {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
 
-.work-testimonials{
-    padding: 10px;
-    margin: 3rem 4rem 2rem;
-}
+
 
 .testimonial-items{
     display: flex;
@@ -227,10 +372,10 @@
     font-size: 18px; 
 }
 
-.work-items .slick-slide > div{
+.work-items .slick-slide > div{ */
    /* width: 600px;
    height: auto; */
-   margin: 0 10rem;
+   /* margin: 0 10rem;
 }
 
 .work-item p {
@@ -245,12 +390,12 @@
     gap: 20px;
 }
 
-.my-recaptcha {
-    margin-bottom: 20px; /* Add spacing between reCAPTCHA and send button */
+.my-recaptcha { */
+/*    margin-bottom: 20px;  Add spacing between reCAPTCHA and send button */
     /* Adjust width and height of reCAPTCHA */
-    width: 300px;
-    height: 5px; /* Auto height to maintain aspect ratio */
-}
+    /* width: 300px; */
+   /* height: 5px;  Auto height to maintain aspect ratio */
+/* }
 
 @media (max-width:768px) {
     .work-container {
@@ -318,20 +463,20 @@
 
     .testimonial-items {
         display: flex;
-        flex-direction: column;
-        align-items: center; /* Center items horizontally */
-    }
+        flex-direction: column; */
+      /*  align-items: center;  Center items horizontally */
+    /* }
 
     .item-testi {
         margin-bottom: 20px; 
-        /* text-align: center;  */
-    }
+        text-align: center; 
+    } */
 
-    .item-testi h3{
+    /* .item-testi h3{
         font-size: 1.3rem;
     }
 
     .item-testi h3 span {
         color: #09BE67;
     }
-}
+} */

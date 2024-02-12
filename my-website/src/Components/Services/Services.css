@@ -114,11 +114,11 @@
         margin: 10px 15px;
     }
 
-    .Services-content{
+    /* .service-content{
         display: flex;
         flex-direction: column;
         padding: 20px;
-    }
+    } */
 
     .service-content-items{
         margin: 0px 15px;
