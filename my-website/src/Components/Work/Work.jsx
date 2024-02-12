@@ -9,6 +9,15 @@ const Work = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 768, // Adjust breakpoint as needed
+                settings: {
+                    slidesToShow: 2, // Display two items at a time on tablets
+                    slidesToScroll: 2, // Scroll two items at a time
+                }
+            }
+        ]
     };
 
     return (

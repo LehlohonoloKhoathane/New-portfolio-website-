@@ -35,7 +35,7 @@ const Contact = () =>{
                         <span class="Error" id="messageError"></span>
                     </div>
                     <div className="send-btn-container">
-                        <button type="submit" class="send-btn" id="submit-btn" onclick="sendMail()">Send</button>
+                    <button type="submit" class="send-btn" id="submit-btn" onclick="sendMail()">Send</button>
                     </div>            
                     <p id="my-form-status"></p>
                     </form>

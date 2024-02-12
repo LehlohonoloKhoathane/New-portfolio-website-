@@ -115,3 +115,29 @@
     color: #ffff;
     font-size: 10rem;
 }
+
+@media (max-width:768px) {
+    .contact-container{
+        margin: 0 1rem;
+    }
+
+    .contact-container h2{
+        text-align: center;
+        color: #ffff;
+        padding: 10px;
+        font-size: 1.3rem;
+    }
+
+    .contact-content-info p{
+        font-size: 13px;
+        color: #ffff;
+        margin-top: 5px;
+    }
+
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+    }
+
+}
