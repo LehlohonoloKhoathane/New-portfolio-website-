@@ -19,8 +19,25 @@ const About = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 2
+        slidesToShow: 4,   //Display 3 items on a tables
+        slidesToScroll: 2, //Scroll 2 items at a time
+
+        responsive: [
+            {
+                breakpoint: 768, 
+                seettings: {
+                    slidesToShow: 3, // Display 3 items on tablets
+                    slidesToScroll: 3, // Scroll 3 items at a time
+                }
+            },
+            {
+                breakpoint: 480, 
+                settings: {
+                    slidesToShow: 2, // Display 2 items on mobile devices
+                    slidesToScroll: 2, // Scroll 2 items at a time
+                }
+            }
+        ]
     };
 
     return (
@@ -34,7 +51,7 @@ const About = () => {
                     <img className='profile-picture' src='./assets/images/lehlohonolo.jpg' alt='my profile' />
                     <div className="about-info">
                         <p className='about-description'>I'm a versatile aspiring full-stack software developer with a solid background in <span className='degree'>BSc Computer Science and
-                            Statistics.</span> Equipped with a degree in these fields and one year of experience in software development, I bring a unique blend of analytical thinking and technical
+                            Statistics.</span> Equipped with a degree in these fields and <span>one year of experience</span> in software development, I bring a unique blend of analytical thinking and technical
                             prowess to projects. Proficient in diverse programming languages and technologies, I excel in crafting end-to-end solutions, seamlessly integrating front-end and back-end 
                             development. My passion lies in delivering products that not only meet but exceed client expectations.</p>
                     </div>

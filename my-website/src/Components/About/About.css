@@ -3,12 +3,10 @@
     border-radius: 10px;
     margin:  60px;
     padding: 15px 50px 10px 50px;
-
 }
 
 .about {
     display: flex; 
-    
 }
 
 .about-info {
@@ -77,14 +75,14 @@
 
 .skills-subheading{
   text-align: center;
-  padding-left: 55px;
+  /* padding-left: 55px; */
 }
 
 .skills-subheading p{
   margin-top: 20px;
   color: #ffff;
   font-size: 1.5rem;
-  width: 60rem;
+  /* width: 60rem; */
 }
 
 .skills-container p span{
@@ -145,4 +143,100 @@
   align-items: center;
   align-content: center;
   text-align: center;
+}
+
+@media (max-width:768px) {
+  .about-container{
+    border: 2px solid #09BE67;
+    border-radius: 10px;
+    margin:  15px;
+    padding: 5px 5px 5px 5px;
+  }
+
+  .about-container h4{
+    font-size: 1.2rem;
+    color: #ffff;
+    margin-bottom: 10px;
+  }
+
+  .about-container h6{
+    font-size: 1rem;
+    color: #ffff;
+    margin: 0px;
+  }
+
+  .about-heading{
+    text-align: center;
+    font-size: 0.6rem;
+    margin: 10px;
+    margin-bottom: 15px;
+  }
+
+  .about {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .profile-picture {
+    width: 240px; 
+    height: auto;
+    margin-right: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-description{
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 1.2rem;
+  }
+
+  .skills-container{
+    margin-top: 40px;
+  }
+
+  .skills-container h1{
+    text-align: center;
+    color: #ffff;
+    font-size: 1.2rem;
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .skills-subheading p{
+    margin: 10px 5px;
+    color: #ffff;
+    font-size: 13px;
+  }
+
+  .skills-development{
+    border: 2px solid #09BE67;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #202041;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin: 15px;
+  }
+
+  .skills-image{
+    width: 100px;
+    height: auto;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .skills-image img{
+    width: 50px;
+    height: auto;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+  
 }
