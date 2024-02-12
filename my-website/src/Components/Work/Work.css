@@ -186,6 +186,10 @@
     margin-left: 0px;
 }
 
+.item-testi h3 span {
+    color: #09BE67;
+}
+
 .item-testi h4{
     margin-bottom: 10px;
 }
@@ -269,9 +273,11 @@
      }
 
      .item-testi img{
-        width: 100px;
+        width: 200px;
         height: auto;
         text-align: center;
+        align-items: center;
+        align-content: center;
         border-radius: 10px;
     }
 
@@ -279,5 +285,24 @@
         width: 200px;
         height: auto;
         align-content: center;
+    }
+
+    .testimonial-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+    }
+
+    .item-testi {
+        margin-bottom: 20px; 
+        /* text-align: center;  */
+    }
+
+    .item-testi h3{
+        font-size: 1.3rem;
+    }
+
+    .item-testi h3 span {
+        color: #09BE67;
     }
 }

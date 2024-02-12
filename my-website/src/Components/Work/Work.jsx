@@ -48,20 +48,17 @@ const Work = () => {
 
                                 <div className="item-testi">
                                     <img src="./assets/images/khoathane.jpg" alt="testmonial" />
-                                    <h3 className="name">King</h3>
-                                    <h4 className="title">Ceo</h4>
+                                    <h3 className="name">King, <span>Ceo</span></h3>
                                     <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
                                 </div>
                                 <div className="item-testi">
                                     <img src="./assets/images/khoathane.jpg" alt="testmonial" />
-                                    <h3 className="name">King</h3>
-                                    <h4 className="title">Ceo</h4>
+                                    <h3 className="name">King, <span>Ceo</span></h3>
                                     <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
                                 </div>
                                 <div className="item-testi">
                                     <img src="./assets/images/khoathane.jpg" alt="testmonial" />
-                                    <h3 className="name">King</h3>
-                                    <h4 className="title">Ceo</h4>
+                                    <h3 className="name">King, <span>Ceo</span></h3>
                                     <p>Mr Khoathane delivers excellence! Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
                                 </div>
                     </div>
