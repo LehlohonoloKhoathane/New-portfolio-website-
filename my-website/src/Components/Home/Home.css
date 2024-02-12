@@ -1,8 +1,8 @@
-.home-container{
-    display: flex;
+ .home-container{
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 0 5rem 0 5rem;
+    align-items: center; */
+    /* margin: 0 5rem 0 5rem; */
     padding: 20px;
     border: 1px solid red;
 }
@@ -15,14 +15,29 @@
     text-align: center;
 }
 
-.home-content h2{
-    font-size: 3.0rem;
+.heading-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid red;
+    padding: 10px;
+    margin: 10px 60px;
+}
+
+.heading-container h2{
+    font-size: 3rem;
+    color: #ffff;
+}
+
+/* .home-content h2{
+    font-size: 3rem;
     font-weight: 600;
     line-height: 5rem;
     color: #ffff;
     text-align: center;
     margin-bottom: 10px;
-}
+} */
 
 .home-content p{
     margin: 15px;
@@ -33,7 +48,6 @@
 }
 
 .home-content a{
-    
     position: relative;
     display: inline-block;
     padding: 15px 30px; 
@@ -58,7 +72,7 @@ hr{
     margin: 10px auto;
     width: 90% ;
 }
-
+/*
 @media (max-width: 1025px) {
     .home-content h2{
         font-size: 3rem;
@@ -81,7 +95,7 @@ hr{
     }
 
     .home-content h2{
-        margin-top: 3rem;
+       
     }
 
     hr{
@@ -130,4 +144,82 @@ hr{
         font-size: 0,.8rem;
         line-height: 3rem;
     }
+} */
+
+
+
+/* Home.css */
+
+/* .home-container {
+    padding: 20px;
 }
+
+.home-content {
+    text-align: center;
+}
+
+.home-content h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.custom-hr {
+    width: 50%;
+    margin: 0 auto 20px;
+    border: 1px solid #ccc;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.links-container a:hover {
+    background-color: #0056b3;
+} */
+
+@media (max-width: 768px) {
+    /* .home-content h2 {
+        font-size: 32px;
+    } */
+    .heading-container{
+        margin: 0px;
+    }
+
+    .heading-container h2{
+        font-size: 25px;
+    }
+    
+    .paragraph-container{
+        margin: 0px;
+        text-align: center;
+    }
+
+    .home-content p{
+        font-size: 15px;
+        line-height: 18px;
+        margin-left: 10px;
+    }
+    .links-container{
+        flex-direction: row;
+        text-align: center;
+        margin: 5px;
+        gap: 5px;
+    }
+    .links-container a{
+        font-size: 15px;
+        margin: 5px 5px;
+    }
+} 
