@@ -9,7 +9,9 @@ const Contact = () =>{
             <hr />
             <div className="contact-content">
                 <div className="contact-content-info">
-                    <p>Are you ready to team up? Find me on socials,connect me through this form, or write to me directly using the following email. <span className="email">khoathanelehlohonolo@gmail.com</span></p>
+                    <div className="contact-content-paragraph">
+                        <p>Are you ready to team up? Find me on socials,connect me through this form, or write to me directly using the following email. <span className="email">khoathanelehlohonolo@gmail.com</span></p>
+                    </div>
                     <div className="map-container">
                         <BiMap className="map"/>
                     </div>
