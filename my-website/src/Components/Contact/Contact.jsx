@@ -5,10 +5,6 @@ import ReCAPTCHA from 'react-google-recaptcha'
 
 const Contact = () =>{
     const [capVal, setSetCapVal] = useState(null)
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault();
-    //     console.log();
-    // };
 
     return (
         <section className="contact-container">
