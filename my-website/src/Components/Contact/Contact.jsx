@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import './Contact.css';
 import { BiMap } from "react-icons/bi";
+import ReCAPTCHA from 'react-google-recaptcha'
 
 const Contact = () =>{
+    const [capVal, setSetCapVal] = useState(null)
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     console.log();
+    // };
+
     return (
         <section className="contact-container">
             <h2>Connect with Me</h2>
@@ -37,7 +44,8 @@ const Contact = () =>{
                         <span class="Error" id="messageError"></span>
                     </div>
                     <div className="send-btn-container">
-                    <button type="submit" class="send-btn" id="submit-btn" onclick="sendMail()">Send</button>
+                        <ReCAPTCHA className="my-recaptcha" sitekey="6LcGFnApAAAAAAZWCSWxeK0TZ68rzFkdQ519D5ap" onChange={(val) => setSetCapVal(val)}/>
+                        <button type="submit" class="send-btn" id="submit-btn" onclick="sendMail()">Send</button>
                     </div>            
                     <p id="my-form-status"></p>
                     </form>

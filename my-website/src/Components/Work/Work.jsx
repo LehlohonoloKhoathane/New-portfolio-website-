@@ -30,7 +30,7 @@ const Work = () => {
                 <div className="work-items">
                     <Slider {...settings}>
                     {data.map((d) => (
-                        <div className="work-item" style={{ width: '50px' }}>
+                        <div className="work-item" >
                             <div className="work-image">
                                 <img src={d.img} alt="" />
                             </div>
@@ -45,22 +45,21 @@ const Work = () => {
                     <h3>Hear from those I have collaborated with</h3>
                     <hr />
                     <div className="testimonial-items">
-
-                                <div className="item-testi">
-                                    <img src="./assets/images/khoathane.jpg" alt="testmonial" />
-                                    <h3 className="name">King, <span>Ceo</span></h3>
-                                    <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
-                                </div>
-                                <div className="item-testi">
-                                    <img src="./assets/images/khoathane.jpg" alt="testmonial" />
-                                    <h3 className="name">King, <span>Ceo</span></h3>
-                                    <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
-                                </div>
-                                <div className="item-testi">
-                                    <img src="./assets/images/khoathane.jpg" alt="testmonial" />
-                                    <h3 className="name">King, <span>Ceo</span></h3>
-                                    <p>Mr Khoathane delivers excellence! Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
-                                </div>
+                        <div className="item-testi">
+                            <img src="./assets/images/khoathane.jpg" alt="testmonial" />
+                            <h3 className="name">King, <span>Ceo</span></h3>
+                            <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
+                        </div>
+                        <div className="item-testi">
+                            <img src="./assets/images/khoathane.jpg" alt="testmonial" />
+                            <h3 className="name">King, <span>Ceo</span></h3>
+                            <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
+                        </div>
+                        <div className="item-testi">
+                            <img src="./assets/images/khoathane.jpg" alt="testmonial" />
+                            <h3 className="name">King, <span>Ceo</span></h3>
+                            <p>Mr Khoathane delivers excellence! Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
+                        </div>
                     </div>
                 </div>
         </section>

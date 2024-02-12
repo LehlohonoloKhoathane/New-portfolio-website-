@@ -107,30 +107,35 @@
 }
 
 .work-item{
+    display: flex;
+    justify-content: center;
     border: 2px solid #09BE67;
     border-radius: 10px;
     padding: 10px;
+    width: 100%;
 /* Set the maximum width to fit its parent container */
 }
 
 .work-item img{
+    display: flex;
+    justify-content: center;
     width: 400px;
     height: auto;
-    align-content: center;
+    
 }
 
 .work-image{
+    text-align: center;
     display: flex;
     justify-content: center;
-    text-align: center
 }
 
 /* Work items */
 .work-items {/* Ensure the slider takes full width of its container */
     display: flex;
     justify-content: center;
+    width: 100%;
 }
-
 
 .Services-content{
     display: flex;
@@ -138,16 +143,31 @@
     padding: 20px;
 }
 
-
 .work-items .slick-list {
      /* Center the slider list */
     max-width: 900px; /* Ensure the slider list takes full width of its container */
  }
  
-
 /* Work item container */
 .work-item-in {
     text-align: center;
+}
+
+.work-item-decription{
+    border: 2px solid red;
+    width: 100%;
+}
+
+.work-item-decription p {
+    display: flex;
+    justify-content: center;
+}
+
+.work-items .work-item-decription p{
+    display: flex;
+    justify-content: center;
+    color: #09be66;
+    font-size: 1rem;
 }
 
 /* Work item image */
@@ -210,9 +230,6 @@
 .work-items .slick-slide > div{
    /* width: 600px;
    height: auto; */
-   align-content: center;
-   text-align: center;
-   align-items: center;
    margin: 0 10rem;
 }
 
@@ -221,6 +238,19 @@
     color: #ffff;
 }
 
+.send-btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.my-recaptcha {
+    margin-bottom: 20px; /* Add spacing between reCAPTCHA and send button */
+    /* Adjust width and height of reCAPTCHA */
+    width: 300px;
+    height: 5px; /* Auto height to maintain aspect ratio */
+}
 
 @media (max-width:768px) {
     .work-container {
@@ -249,11 +279,11 @@
         margin: 5px;
     }
 
-    /* .work-items {
+     .work-items {
         width: 100%; 
         display: flex;
         justify-content: center;
-    } */
+    } 
 
     .work-testimonials{
         padding: 0px;
@@ -266,10 +296,9 @@
     }
 
     .work-items .slick-slide > div{
-        margin: 0 15px;
-        align-content: center;
-        text-align: center;
-        align-items: center;
+        margin: 0 10px;
+       
+        width: 40%;
      }
 
      .item-testi img{
