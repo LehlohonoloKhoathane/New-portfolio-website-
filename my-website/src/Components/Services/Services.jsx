@@ -12,7 +12,23 @@ const Services = () =>{
         infinite: true,
         speed: 500,
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 768, 
+                seettings: {
+                    slidesToShow: 1, // Display 3 items on tablets
+                    slidesToScroll: 1, // Scroll 3 items at a time
+                }
+            },
+            {
+                breakpoint: 480, 
+                settings: {
+                    slidesToShow: 1, // Display 2 items on mobile devices
+                    slidesToScroll: 1, // Scroll 2 items at a time
+                }
+            }
+        ]
     };
 
     return (

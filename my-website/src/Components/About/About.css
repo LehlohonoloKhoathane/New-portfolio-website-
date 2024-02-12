@@ -238,5 +238,17 @@
     align-content: center;
     text-align: center;
   }
+
+  .skills-data{
+    border: 2px solid #09BE67;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #202041;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin: 15px;
+    margin-bottom: 28px;
+  }
   
 }
