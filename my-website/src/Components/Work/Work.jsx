@@ -13,8 +13,8 @@ const Work = () => {
             {
                 breakpoint: 768, // Adjust breakpoint as needed
                 settings: {
-                    slidesToShow: 2, // Display two items at a time on tablets
-                    slidesToScroll: 2, // Scroll two items at a time
+                    slidesToShow: 1, // Display two items at a time on tablets
+                    slidesToScroll: 1, // Scroll two items at a time
                 }
             }
         ]
@@ -42,9 +42,10 @@ const Work = () => {
                     </Slider>
                 </div>
                 <div className="work-testimonials">
-                    <h2>Hear from those I have collaborated with</h2>
+                    <h3>Hear from those I have collaborated with</h3>
                     <hr />
                     <div className="testimonial-items">
+
                                 <div className="item-testi">
                                     <img src="./assets/images/khoathane.jpg" alt="testmonial" />
                                     <h3 className="name">King</h3>
@@ -65,7 +66,6 @@ const Work = () => {
                                 </div>
                     </div>
                 </div>
-            
         </section>
     );
 };
