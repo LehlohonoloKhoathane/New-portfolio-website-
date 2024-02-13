@@ -1,4 +1,6 @@
 import React, { useRef, useState } from "react";
+import './FirebaseConfig';
+import {getFirestore, addDoc, collection} from 'firebase/firestore'
 import './Contact.css';
 import { BiMap } from "react-icons/bi";
 import ReCAPTCHA from 'react-google-recaptcha'
@@ -21,6 +23,60 @@ const variants = {
 
 
 const Contact = () =>{
+
+    const [user, setUser] = useState(
+        {
+            FullName: '', Email:'', Message:''
+        }
+    )
+
+    console.log(user)
+    let name, value
+    const data = (e) => {
+        name = e.target.name;
+        value = e.target.value;
+        setUser({...user, [name]: value});
+    }
+
+    const getData = async (e) => {
+        const {FullName, Email, Message} = user;
+        e.preventDefault();
+        const options = {
+            method: 'POST',
+            Headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                FullName, Email, Message
+            })
+        }
+
+        const res = await fetch('https://my-react-portfolio-c6d3e-default-rtdb.firebaseio.com/UserData.json',
+            options
+        )
+        console.log(res)
+        if (res){
+            alert('Message Stored')
+        }else{
+            alert('Error Occured')
+        }
+    }
+
+    // const [inputValue1, setInputValue1] = useState('');
+    // const [inputValue2, setInputValue2] = useState('');
+    // const [inputValue3, setInputValue3] = useState('');
+
+    // const db = getFirestore();
+
+    // const savDataToFirestore = async () => {
+    //     const docRef = await addDoc(collection(db, 'myCollection'), {
+    //         field1: inputValue1,
+    //         field2: inputValue2,
+    //         field3: inputValue3
+    //     });
+    //     alert("Message Saved to DataBase");
+    // };
+
     const [capVal, setSetCapVal] = useState(null);
 
     const ref = useRef();
@@ -46,14 +102,14 @@ const Contact = () =>{
                         </svg>
                     </motion.div>
                     <h2>New Messages</h2>
-                    <motion.form initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:4, duration:1}} action="">
-                        <input type="text" placeholder="Full Names" />
-                        <input type="text" placeholder="Email" />
-                        <textarea name="" id="" cols="30" rows="10"placeholder="Message"></textarea>
+                    <motion.form method="POST" initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:4, duration:1}} action="">
+                        <input type="text" name="FullName" placeholder="Full Names" value={user.FullName} onChange={data}/>
+                        <input type="email" name="Email" placeholder="Email" value={user.Email} onChange={data}/>
+                        <textarea name="Message" id="" cols="30" rows="10"placeholder="Message" value={user.Message} onChange={data}></textarea>
                         <div className="send-btn-container">
                             <ReCAPTCHA className="my-recaptcha" sitekey="6LcGFnApAAAAAAZWCSWxeK0TZ68rzFkdQ519D5ap" onChange={(val) => setSetCapVal(val)}/>
                         </div> 
-                        <button>Send</button>
+                        <button onClick={getData}>Send</button>
                     </motion.form>
                 </div>
             </motion.div>
