@@ -9,12 +9,14 @@ import Services from './Components/Services/Services';
 import Work from './Components/Work/Work';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
+import Cursor from './Components/Cursor/Cursor';
 
 const App = () => {
   return (
     <>
       <NavBar />
       <div className='container'>
+        <Cursor/>
         <Home />
         <About/>
         <Services/>
