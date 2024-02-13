@@ -8,7 +8,7 @@ const Cursor = () =>{
 
     useEffect(() => {
         const mouseMove = (e) => {
-            setPosition({x: e.clientX, y: e.clientY})
+            setPosition({ x: e.clientX, y: e.clientY})
         };
 
         window.addEventListener('mousemove', mouseMove);
@@ -19,7 +19,7 @@ const Cursor = () =>{
     }, []);
 
     return(
-        <motion.div className='cursor' animate={{x:position.x-10, y:position.y-10}}></motion.div>
+        <motion.div className='cursor' animate={{x:position.x-55, y:position.y-130}}></motion.div>
     );
 };
 
