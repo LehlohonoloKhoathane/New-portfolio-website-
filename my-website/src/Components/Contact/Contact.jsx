@@ -21,6 +21,7 @@ const Contact = () =>{
                     </div>
                 </div>
                 <div className="formContainer">
+                    <h2>New Message</h2>
                     <form action="">
                         <input type="text" placeholder="Full Names" />
                         <input type="text" placeholder="Email" />
