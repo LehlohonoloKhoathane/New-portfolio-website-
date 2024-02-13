@@ -22,8 +22,25 @@ const variants = {
 };
 
 
-const Contact = () =>{
+const Contact = () => {
 
+    //handlinding the captcha and form
+    const [isCaptchaConfirmed, setIsCaptchaConfirmed] = useState(false);
+    const handleCaptchaChange = (val) => {
+        setIsCaptchaConfirmed(val);
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        if (isCaptchaConfirmed) {
+            console.log('Form submitted successfully!');
+        } else {
+            alert('Please confirm the ReCAPTCHA before submitting the form.');
+        }
+    };
+
+
+    //database firebase storage
     const [user, setUser] = useState(
         {
             FullName: '', Email:'', Message:''
@@ -102,14 +119,14 @@ const Contact = () =>{
                         </svg>
                     </motion.div>
                     <h2>New Messages</h2>
-                    <motion.form method="POST" initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:4, duration:1}} action="">
+                    <motion.form onSubmit={handleSubmit} method="POST" initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:4, duration:1}} action="">
                         <input type="text" name="FullName" placeholder="Full Names" value={user.FullName} onChange={data}/>
                         <input type="email" name="Email" placeholder="Email" value={user.Email} onChange={data}/>
                         <textarea name="Message" id="" cols="30" rows="10"placeholder="Message" value={user.Message} onChange={data}></textarea>
                         <div className="send-btn-container">
-                            <ReCAPTCHA className="my-recaptcha" sitekey="6LcGFnApAAAAAAZWCSWxeK0TZ68rzFkdQ519D5ap" onChange={(val) => setSetCapVal(val)}/>
+                            <ReCAPTCHA className="my-recaptcha" sitekey="6LcGFnApAAAAAAZWCSWxeK0TZ68rzFkdQ519D5ap" onChange={handleCaptchaChange} />
                         </div> 
-                        <button onClick={getData}>Send</button>
+                        <button disabled={!isCaptchaConfirmed} onClick={getData}>Send</button>
                     </motion.form>
                 </div>
             </motion.div>
