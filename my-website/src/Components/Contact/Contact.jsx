@@ -126,7 +126,7 @@ const Contact = () => {
                         <div className="send-btn-container">
                             <ReCAPTCHA className="my-recaptcha" sitekey="6LcGFnApAAAAAAZWCSWxeK0TZ68rzFkdQ519D5ap" onChange={handleCaptchaChange} />
                         </div> 
-                        <button disabled={!isCaptchaConfirmed} onClick={getData}>Send</button>
+                        <button  onClick={getData}>Send</button>
                     </motion.form>
                 </div>
             </motion.div>
