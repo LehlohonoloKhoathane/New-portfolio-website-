@@ -304,6 +304,8 @@
     .phoneSVG{
         stroke: #09BE67;
         position: absolute;
+        margin: auto;
+        z-index: -1;
     }
 }
 
