@@ -8,7 +8,28 @@ const Contact = () =>{
 
     return (
         <section className="contact-container">
-            <h2>Connect with Me</h2>
+            <h1>Connect With Me</h1>
+                <hr />
+            <div className="contact-contents">
+                <div className="textContainer">
+                    <div className="item">
+                        <p>Are you ready to team up? Find me on socials,connect me through this form, or write to me directly using the following email. <span className="email">khoathanelehlohonolo@gmail.com</span></p>
+                    </div>
+                    <div className="item-map">
+                        <BiMap className="map"/>
+                        <h2>South Africa</h2>
+                    </div>
+                </div>
+                <div className="formContainer">
+                    <form action="">
+                        <input type="text" placeholder="Full Names" />
+                        <input type="text" placeholder="Email" />
+                        <textarea name="" id="" cols="30" rows="10"placeholder="Message"></textarea>
+                        <button>Send</button>
+                    </form>
+                </div>
+            </div>
+            {/* <h2>Connect with Me</h2>
             <hr />
             <div className="contact-content">
                 <div className="contact-content-info">
@@ -46,7 +67,7 @@ const Contact = () =>{
                     <p id="my-form-status"></p>
                     </form>
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 };

@@ -1,4 +1,4 @@
-.contact-container{
+/* .contact-container{
     margin: 0 4rem;
 }
 
@@ -37,7 +37,7 @@
     margin: 10px;
     width: 600px;
     height: auto;
-} */
+} 
 
 .contact-content-form .input-box input {
     margin: 10px;
@@ -134,13 +134,13 @@
         font-size: 1.3rem;
     }
 
-    /* .contact-content-info p{
+     .contact-content-info p{
         font-size: 13px;
         color: #ffff;
         margin-top: 5px;
         line-height: 1.6;
         margin: 5px;
-    } */
+    } 
 
     .contact-content{
         display: flex;
@@ -155,7 +155,7 @@
     
     .contact-content-info h1{
         color: #ffff;
-        /* text-align: center; */
+         text-align: center; 
         font-size: 1.5rem;
     }
 
@@ -230,4 +230,41 @@
         padding: 10px;
     }
 
+} */
+
+.contact-container{
+    height: 100%;
+    max-width: 1366px;
+    margin: auto;
+}
+
+.contact-container h1{
+    text-align: center;
+    color: #ffff;
+    padding: 10px;
+    font-size: 3rem;
+}
+
+.contact-contents{
+    display: flex;
+    align-items: center;
+}
+
+.textContainer{
+    align-items: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.formContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formContainer input{
+    
 }
