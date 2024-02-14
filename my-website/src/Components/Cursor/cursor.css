@@ -5,4 +5,8 @@
     border: 2px solid #09BE67;
     position: fixed;
     z-index: 999;
+
+    @media (max-width:768px) {
+        display: none;
+    }
 }

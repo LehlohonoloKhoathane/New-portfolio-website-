@@ -189,9 +189,7 @@ hr{
 } */
 
 @media (max-width: 768px) {
-    /* .home-content h2 {
-        font-size: 32px;
-    } */
+   
     .heading-container{
         margin: 0px;
     }

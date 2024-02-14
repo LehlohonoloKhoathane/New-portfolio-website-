@@ -32,14 +32,18 @@ const NavBar = () => {
             </li>
           </ul>
           
-          <button class='menu-button' onClick={toggleMenu}>
-            <span 
-              class={'material-symbols-outlined'} 
-                style={{fontStyle: '1.8rem'}}
-                >
-                  {openMenu ? 'close' : 'menu'}
-                </span>
-          </button>
+          <div className='menu-button' onClick={toggleMenu}>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12,15H7a3,3,0,0,1-3-3V7A3,3,0,0,1,7,4h5a3,3,0,0,1,3,3v5A3,3,0,0,1,12,15Z"/>
+            <path d="M25,15H20a3,3,0,0,1-3-3V7a3,3,0,0,1,3-3h5a3,3,0,0,1,3,3v5A3,3,0,0,1,25,15Z"/>
+            <path d="M12,28H7a3,3,0,0,1-3-3V20a3,3,0,0,1,3-3h5a3,3,0,0,1,3,3v5A3,3,0,0,1,12,28Z"/>
+            <path d="M25,28H20a3,3,0,0,1-3-3V20a3,3,0,0,1,3-3h5a3,3,0,0,1,3,3v5A3,3,0,0,1,25,28Z"/>
+            </svg>
+          </div>
+
+
+
+
         </div>
       </nav>
     </>

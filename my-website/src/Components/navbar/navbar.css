@@ -14,8 +14,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 0;
-    margin: 0 5rem;
+    padding: 10px 0;
+    margin: 0 5px;
 }
 
 .mylogo{
@@ -56,7 +56,7 @@
     border: none;
     border-radius: 0.4rem;
     color: #ffff;
-    background: linear-gradient(90deg, #a993fe -8.13, #7e61e7 99.87%);
+    
     line-height: 0;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -65,10 +65,16 @@
 
 .menu-button:hover{
     color: #09BE67;
-    background: #0000;
-    border: 1px solid #09BE67;
 }
 
+
+.icon {
+    color: black;
+    transition: color 0.3s;
+  }
+  .icon:hover {
+    color: #09BE67;
+  }
 
 @media (max-width: 425px) {
     .mylogo{
