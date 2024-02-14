@@ -92,7 +92,7 @@ const Contact = () => {
     const isInView = useInView(ref, {margin: "-100px"});
     return (
         
-        <motion.div ref={ref} className="contact-container" variants={variants} initial="initial" whileInView="animate">
+        <motion.div ref={ref} className="contact-container" id="contact-container" variants={variants} initial="initial" whileInView="animate">
             <h1>Connect With Me</h1>
                 <hr />
             <motion.div className="contact-contents" variants={variants}>

@@ -21,7 +21,7 @@ const Work = () => {
     };
 
     return (
-        <section className="work-container">
+        <section className="work-container" id='work-container'>
                 <h2>Creations</h2>
                 <hr />
                 <div className='work-content-subheading'>
