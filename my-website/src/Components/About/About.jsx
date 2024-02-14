@@ -41,7 +41,7 @@ const About = () => {
     };
 
     return (
-        <section className='about-container'>
+        <section className='about-container' id='about-container'>
             <h4>The Person behind the work</h4>
             <hr />
             <h6>Lehlohonolo Khoathane</h6>

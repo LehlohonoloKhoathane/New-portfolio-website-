@@ -19,7 +19,7 @@ const NavBar = () => {
           <img className='mylogo' src="./assets/images/myLogo.png" alt="logo" />
           <ul>
             <li>
-              <a className='menu-item'>About</a>
+              <a className='menu-item' href='#about-container'>About</a>
             </li>
             <li>
               <a className='menu-item' >Services</a>
