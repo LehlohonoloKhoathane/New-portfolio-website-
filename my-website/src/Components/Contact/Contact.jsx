@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import './FirebaseConfig';
+// import './FirebaseConfig';
 import {getFirestore, addDoc, collection} from 'firebase/firestore'
 import './Contact.css';
 import { BiMap } from "react-icons/bi";
