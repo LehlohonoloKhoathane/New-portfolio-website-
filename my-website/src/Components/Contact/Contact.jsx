@@ -86,7 +86,7 @@ const Contact = () => {
     }
 
 
-    const [capVal, setSetCapVal] = useState(null);
+    // const [capVal, setSetCapVal] = useState(null);
 
     const ref = useRef();
     const isInView = useInView(ref, {margin: "-100px"});
@@ -154,6 +154,24 @@ const Contact = () => {
                         <textarea id="messageId" name="message" rows="8" cols="80" placeholder="Message"></textarea>
                         <span class="Error" id="messageError"></span>
                     </div>
+
+
+
+
+
+                    import { animateScroll as scroll } from 'react-scroll';
+
+const Contact = () => {
+  const scrollToTop = () => {
+    scroll.scrollToTop({
+      duration: 500,
+      smooth: 'easeInOutQuart'
+    });
+  };
+
+
+
+
                     <div className="send-btn-container">
                         <ReCAPTCHA className="my-recaptcha" sitekey="6LcGFnApAAAAAAZWCSWxeK0TZ68rzFkdQ519D5ap" onChange={(val) => setSetCapVal(val)}/>
                         <button type="submit" class="send-btn" id="submit-btn" onclick="sendMail()">Send</button>
