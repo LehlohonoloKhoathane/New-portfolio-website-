@@ -10,6 +10,7 @@ import Work from './Components/Work/Work';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Cursor from './Components/Cursor/Cursor';
+import BackToTopButton from './Components/BackToTop/BackToTop';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Services/>
         <Work />
         <Contact/>
+        <BackToTopButton/>
       </div>
       <Footer/>
     </>

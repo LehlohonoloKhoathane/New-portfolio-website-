@@ -1,0 +1,23 @@
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      background-color: #09BE67;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.4s;
+    }
+    .back-to-top:hover {
+      opacity: 0.7;
+    }
+    .icon {
+      font-size: 34px;
+      color: #05052C;
+    }
