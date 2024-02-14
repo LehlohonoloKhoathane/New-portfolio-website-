@@ -306,6 +306,8 @@
         position: absolute;
         margin: auto;
         z-index: -1;
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -330,3 +332,129 @@
     cursor: pointer;
     font-weight: 500;
 }
+
+
+@media (max-width:768px) {
+
+    .contact-container{
+        border-radius: 10px;
+        margin: 1rem;
+        margin: 0 1rem;
+    }
+
+    .contact-container h1{
+        text-align: center;
+        color: #ffff;
+        padding: 10px;
+        font-size: 1.3rem;
+    }
+
+    .contact-contents{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .textContainer p{
+        font-size: 13px;
+        color: #ffff;
+        margin-top: 5px;
+        line-height: 1.6;
+       
+    }
+
+    .item-map .map{
+        color: #ffff;
+        font-size: 3rem;
+    }
+    
+    .formContainer .phoneSVG{
+        max-width: 100px;
+       
+    }
+
+
+    /* 
+     
+
+   
+
+    
+    .contact-content-info h1{
+        color: #ffff;
+         text-align: center; 
+        font-size: 1.5rem;
+    }
+
+    .contact-content-paragraph{
+        text-align: center;
+    }
+
+    .contact-content-paragraph p{
+        font-size: 13px;
+        color: #ffff;
+        margin-top: 5px;
+        line-height: 1.6;
+    }
+
+    .contact-content-form{
+        align-content: center;
+        border: 2px solid #09BE67;
+        border-radius: 10px;
+        padding: 10px;
+        padding-bottom: 25px;
+        width: 320px;
+        height: 400px;
+    }
+
+    .contact-content-form h3{
+        text-align: center;
+        color: #ffff;
+        font-size: 1.3rem;
+    }
+
+    .contact-content-form .input-box input {
+        margin: 5px;
+        width: 290px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    
+     .contact-content-form .input-box textarea{
+        margin: 5px;
+        width: 290px;
+        height: 160px;
+        border-radius: 5px;
+    }
+
+    .send-btn{
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        font-size: 1.5rem;
+        color: #fff;
+        background: #09BE67;
+        display: inline-block;
+        font-weight: 500;
+        letter-spacing: 2px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.5s ease;
+        width: 150px;
+        border: 2px solid white;
+    }
+
+    .map-container{
+        align-items: center;
+        align-content: center;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        font-size: 4rem;
+        border: 2px solid white;
+        padding-top: 10px;
+        padding: 10px;
+    } */
+
+} 

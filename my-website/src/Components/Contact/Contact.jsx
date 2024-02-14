@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
-// import './FirebaseConfig';
-import {getFirestore, addDoc, collection} from 'firebase/firestore'
+
 import './Contact.css';
 import { BiMap } from "react-icons/bi";
 import ReCAPTCHA from 'react-google-recaptcha'
@@ -37,6 +36,13 @@ const Contact = () => {
         } else {
             alert('Please confirm the ReCAPTCHA before submitting the form.');
         }
+
+        setUser({
+            FullName: '',
+            Email: '',
+            Message: ''
+        });
+        
     };
 
 
@@ -54,7 +60,7 @@ const Contact = () => {
         value = e.target.value;
         setUser({...user, [name]: value});
     }
-
+    //post method for sending data to the realtime database
     const getData = async (e) => {
         const {FullName, Email, Message} = user;
         e.preventDefault();
@@ -79,26 +85,13 @@ const Contact = () => {
         }
     }
 
-    // const [inputValue1, setInputValue1] = useState('');
-    // const [inputValue2, setInputValue2] = useState('');
-    // const [inputValue3, setInputValue3] = useState('');
-
-    // const db = getFirestore();
-
-    // const savDataToFirestore = async () => {
-    //     const docRef = await addDoc(collection(db, 'myCollection'), {
-    //         field1: inputValue1,
-    //         field2: inputValue2,
-    //         field3: inputValue3
-    //     });
-    //     alert("Message Saved to DataBase");
-    // };
 
     const [capVal, setSetCapVal] = useState(null);
 
     const ref = useRef();
     const isInView = useInView(ref, {margin: "-100px"});
     return (
+        
         <motion.div ref={ref} className="contact-container" variants={variants} initial="initial" whileInView="animate">
             <h1>Connect With Me</h1>
                 <hr />
