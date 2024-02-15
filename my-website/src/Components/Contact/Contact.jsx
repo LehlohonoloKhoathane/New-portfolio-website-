@@ -5,6 +5,9 @@ import { BiMap } from "react-icons/bi";
 import ReCAPTCHA from 'react-google-recaptcha'
 import { animate, motion, useInView } from 'framer-motion'
 
+
+const FORM_ENDPOINT = "https://public.herotofu.com/v1/55e35e50-cbd9-11ee-b355-cff7da8a1e7a";
+
 const variants = {
     initial:{
         y: 500,
@@ -23,7 +26,12 @@ const variants = {
 
 const Contact = () => {
 
-    //handlinding the captcha and form
+    const [status, setStatus] = useState();
+  
+    
+
+//#####################################################################################
+    //Captcha handling
     const [isCaptchaConfirmed, setIsCaptchaConfirmed] = useState(false);
     const handleCaptchaChange = (val) => {
         setIsCaptchaConfirmed(val);
@@ -37,14 +45,56 @@ const Contact = () => {
             alert('Please confirm the ReCAPTCHA before submitting the form.');
         }
 
-        setUser({
-            FullName: '',
-            Email: '',
-            Message: ''
-        });
-        
+        const injectedData = {
+            DYNAMIC_DATA_EXAMPLE: 123,
+          };
+          const inputs = event.target.elements;
+          const data = {};
+      
+          for (let i = 0; i < inputs.length; i++) {
+            if (inputs[i].name) {
+              data[inputs[i].name] = inputs[i].value;
+            }
+          }
+      
+          Object.assign(data, injectedData);
+      
+          fetch(FORM_ENDPOINT, {
+            method: 'POST',
+            headers: {
+              Accept: 'application/json',
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+          })
+            .then((response) => {
+              // It's likely a spam/bot request, so bypass it to validate via captcha
+              if (response.status === 422) {
+                Object.keys(injectedData).forEach((key) => {
+                  const el = document.createElement('input');
+                  el.type = 'hidden';
+                  el.name = key;
+                  el.value = injectedData[key];
+      
+                  event.target.appendChild(el);
+                });
+      
+                event.target.setAttribute('target', '_blank');
+                event.target.submit();
+      
+                throw new Error('Please finish the captcha challenge');
+              }
+      
+              if (response.status !== 200) {
+                throw new Error(response.statusText);
+              }
+      
+              return response.json();
+            })
+            .then(() => setStatus("We'll be in touch soon."))
+            .catch((err) => setStatus(err.toString()));
     };
-
+    
 
     //database firebase storage
     const [user, setUser] = useState(
@@ -60,36 +110,39 @@ const Contact = () => {
         value = e.target.value;
         setUser({...user, [name]: value});
     }
-    //post method for sending data to the realtime database
+
     const getData = async (e) => {
-        const {FullName, Email, Message} = user;
         e.preventDefault();
+        const { FullName, Email, Message } = user;
         const options = {
             method: 'POST',
-            Headers: {
+            headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
                 FullName, Email, Message
             })
+        };
+    
+        try {
+            const res = await fetch('https://my-react-portfolio-c6d3e-default-rtdb.firebaseio.com/UserData.json', options);
+            if (!res.ok) {
+                throw new Error('Failed to store message');
+            }
+            alert('Message Stored');
+        } catch (error) {
+            alert('Error Occurred: ' + error.message);
         }
-
-        const res = await fetch('https://my-react-portfolio-c6d3e-default-rtdb.firebaseio.com/UserData.json',
-            options
-        )
-        console.log(res)
-        if (res){
-            alert('Message Stored')
-        }else{
-            alert('Error Occured')
-        }
-    }
+    };
+    
 
 
-    // const [capVal, setSetCapVal] = useState(null);
+    const [capVal, setSetCapVal] = useState(null);
 
     const ref = useRef();
     const isInView = useInView(ref, {margin: "-100px"});
+    
+///////##########################################
     return (
         
         <motion.div ref={ref} className="contact-container" id="contact-container" variants={variants} initial="initial" whileInView="animate">
@@ -112,14 +165,14 @@ const Contact = () => {
                         </svg>
                     </motion.div>
                     <h2>New Messages</h2>
-                    <motion.form onSubmit={handleSubmit} method="POST" initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:4, duration:1}} action="">
+                    <motion.form onSubmit={handleSubmit} method="POST" initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:4, duration:1}} action={FORM_ENDPOINT}>
                         <input type="text" name="FullName" placeholder="Full Names" value={user.FullName} onChange={data}/>
                         <input type="email" name="Email" placeholder="Email" value={user.Email} onChange={data}/>
                         <textarea name="Message" id="" cols="30" rows="10"placeholder="Message" value={user.Message} onChange={data}></textarea>
                         <div className="send-btn-container">
                             <ReCAPTCHA className="my-recaptcha" sitekey="6LcGFnApAAAAAAZWCSWxeK0TZ68rzFkdQ519D5ap" onChange={handleCaptchaChange} />
                         </div> 
-                        <button  onClick={getData}>Send</button>
+                        <button onClick={getData}>Send</button>
                     </motion.form>
                 </div>
             </motion.div>

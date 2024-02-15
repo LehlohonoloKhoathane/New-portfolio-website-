@@ -11,6 +11,7 @@ import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Cursor from './Components/Cursor/Cursor';
 import BackToTopButton from './Components/BackToTop/BackToTop';
+import ContactForm from './Components/Contact/form';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <BackToTopButton/>
       </div>
       <Footer/>
+      <ContactForm/>
     </>
   );
 };
