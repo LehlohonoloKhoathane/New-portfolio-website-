@@ -57,6 +57,7 @@
     font-size: 20px;
     text-align: center;
     margin: 20px 50px;
+    cursor: pointer;
 }
 
 .home-content a:hover{
@@ -69,6 +70,16 @@ hr{
     border: 1px solid #09BE67;
     margin: 10px auto;
     width: 90% ;
+}
+
+.slidingTextcontainer{
+    position: absolute;
+    font-size: 20vh;
+    color: #ffffff1f;
+    white-space: nowrap;
+    top: 250px;width: 50%;
+    font-weight: bold;
+    z-index: -1;
 }
 
 /* .HomeBlur{

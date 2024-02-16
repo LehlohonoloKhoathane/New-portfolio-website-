@@ -1,7 +1,7 @@
 .nav-wrapper{
     background: #05052C;
-    padding:  0.5rem 2rem 0px 2rem;
-    position: sticky;
+    padding:  0.5rem 1rem 0px 3rem;
+    position: relative;
     top: 0;
     z-index: 30;
     backdrop-filter: blur(50px);

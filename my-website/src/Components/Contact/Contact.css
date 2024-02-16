@@ -289,7 +289,7 @@
 .formContainer{
     flex: 1;
     position: relative;
-    border: 1px solid #09BE67;
+    border: 2px solid #09BE67;
     border-radius: 10px;
     padding: 15px;
     margin: 15px;
@@ -320,17 +320,36 @@
 .formContainer input, textarea{
     padding: 15px;
     background-color: transparent;
-    border: 1px solid #09BE67;
+    border: 2px solid #09BE67;
     color: #ffff;
     border-radius: 5px;
 }
 
+.send-btn-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 1px;
+}
+
+
 .formContainer button{
-    padding: 20px;
+    color: #ffff;
+    padding: 10px;
     border: none;
+    border-radius: 5px;
     background-color: #09BE67;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 40px;
+    width: 300px;
+    height: 76px;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 1040px) {
+    
 }
 
 

@@ -1,20 +1,36 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './NavBar.css'
 import MobileNav from './MobileNav/MobileNav';
 // import { FaBars, FaTimes } from 'react-icons/fa'
 
 const NavBar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+  const [visible, setVisible] = useState(true);
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
   };
 
+  const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+    setVisible(
+      (prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) ||
+        currentScrollPos < 10
+    );
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
   return (
     <>
       <MobileNav isOpen={openMenu} toggleMenu={toggleMenu}/>
 
-      <nav className='nav-wrapper'>
+      <nav  className={`nav-wrapper ${visible ? 'visible' : 'hidden'}`} >
         <div className='nav-content'>
           <img className='mylogo' src="./assets/images/myLogo.png" alt="logo" />
           <ul>

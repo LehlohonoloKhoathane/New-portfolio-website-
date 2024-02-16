@@ -171,8 +171,8 @@ const Contact = () => {
                         <textarea name="Message" id="" cols="30" rows="10"placeholder="Message" value={user.Message} onChange={data}></textarea>
                         <div className="send-btn-container">
                             <ReCAPTCHA className="my-recaptcha" sitekey="6LcGFnApAAAAAAZWCSWxeK0TZ68rzFkdQ519D5ap" onChange={handleCaptchaChange} />
+                            <button className="sendButton"  style={{ textAlign: 'center' }} onClick={getData}>Send</button>
                         </div> 
-                        <button onClick={getData}>Send</button>
                     </motion.form>
                 </div>
             </motion.div>
