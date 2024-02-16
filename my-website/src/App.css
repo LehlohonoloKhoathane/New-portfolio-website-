@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300&display=swap');
+
+
 .container{
   max-width: 1300px;
   margin: 0 auto;
@@ -11,4 +14,17 @@
 } */
 
 
-.blur
+.blur{
+  background-color: rgba(43, 253, 60, 0.733);
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(212px);
+  z-index: -9;
+}
+
+.strokeText{
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}

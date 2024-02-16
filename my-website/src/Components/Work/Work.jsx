@@ -12,77 +12,74 @@ const Work = () => {
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 768, // Adjust breakpoint as needed
+                breakpoint: 768, 
+                seettings: {
+                    slidesToShow: 1, // Display 3 items on tablets
+                    slidesToScroll: 1, // Scroll 3 items at a time
+                }
+            },
+            {
+                breakpoint: 480, 
                 settings: {
-                    slidesToShow: 1, // Display two items at a time on tablets
-                    slidesToScroll: 1, // Scroll two items at a time
+                    slidesToShow: 1, // Display 2 items on mobile devices
+                    slidesToScroll: 1, // Scroll 2 items at a time
                 }
             }
         ]
     };
 
-    const [selected, setSelected] = useState(0);
-    const tLength = data.length;
     return (
-        <section className="work-container" id='work-container'>
-                <h2>Creations</h2>
-                <hr />
-                <div className='work-content-subheading'>
-                    <p className='work-content-p'>Witness the harmony of <span>design</span> and <span>functionality</span>, and immerse yourself in the visual allure of <span>innovations</span>. Let my creations speak for themselves.</p>
+        <section className="Services-container" id="Services-container">
+            <h4>Creations</h4>
+            <hr />
+            <div className="service-subheading">
+                <p className="Service-underP">Witness the harmony of <span>design</span> and <span>functionality</span>, immerse yourself in the visual allure of <span>innovations</span> Let my creations speak for themselves</p>
+            </div>
+            <div className="service-content">
+                <div className="service-content-items">
+                    <Slider {...settings}>
+                    {dataW.map((d) => (
+                        <div className="service-item">
+                            <div className="service-image">
+                                <img src={d.img} alt="" />
+                            </div>
+                            <div>
+                                <h4>{d.name}</h4>
+                                <p>{d.description}</p>
+                            </div>
+                        </div>
+                    ))}
+                    </Slider>
                 </div>
-                <div className="work-content">
-                    <div className='work-content-left'>
-                        <span>{data[selected].description}</span>{" "} <br />
-                            <span>
-                                <span style={{color: '#09BE67'}}>
-                                    {data[selected].name}
-                                </span>
-                            </span>
+            </div>
+
+            <div className="work-testimonials">
+                <h2>Hear from those I have collaborated with</h2> 
+                <hr /> 
+                <div className="testimonial-items">
+                    <div className="item-testi">
+                        <img src="./assets/images/khoathane.jp" alt="testmonial" />
+                        <h3 className="name">King, <span>Ceo</span></h3>
+                        <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
                     </div>
-                    <div className='work-content-right'>
-                        <div></div>
-                        <div></div>
-                        <img src={data[selected].img} alt="" />
-                        <div className='testimonial-arrows'>
-                            <img onClick={() => {selected === 0 ? setSelected(tLength - 1) : setSelected((prev) => prev - 1);}} src="./assets/images/rightArrow.png" alt="" />
-                            <img onClick={() => {selected === tLength - 1 ? setSelected(0) : setSelected((prev) => prev + 1);}} src="./assets/images/leftArrow.png" alt="" />
-                        </div>
+                    <div className="item-testi">
+                        <img src="./assets/images/khoathane.jp" alt="testmonial" />
+                        <h3 className="name">King, <span>Ceo</span></h3>
+                        <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
                     </div>
-                </div>
-                
-                {/* <div className="work-testimonials">
-                    <div className='left-part'>
-                        <span>Hear</span>
-                        <span>from those I</span>
-                        <span>have collaborated with</span>
+                    <div className="item-testi">
+                        <img src="./assets/images/khoathane.jp" alt="testmonial" />
+                        <h3 className="name">King, <span>Ceo</span></h3>
+                        <p>Mr Khoathane delivers excellence! Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
                     </div>
-                    <h2>Hear from those I have collaborated with</h2> 
-                     <hr /> 
-                     <div className="testimonial-items">
-                        <div className="item-testi">
-                            <img src="./assets/images/khoathane.jp" alt="testmonial" />
-                            <h3 className="name">King, <span>Ceo</span></h3>
-                            <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
-                        </div>
-                        <div className="item-testi">
-                            <img src="./assets/images/khoathane.jp" alt="testmonial" />
-                            <h3 className="name">King, <span>Ceo</span></h3>
-                            <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
-                        </div>
-                        <div className="item-testi">
-                            <img src="./assets/images/khoathane.jp" alt="testmonial" />
-                            <h3 className="name">King, <span>Ceo</span></h3>
-                            <p>Mr Khoathane delivers excellence! Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
-                        </div>
-                    </div> 
-                </div> */}
+                </div> 
+            </div> 
         </section>
     );
 };
 
 
-
-const data = [
+const dataW = [
     {
         img: `./assets/images/festival.png`,
         description: `Crafted this immersive Cape Town Festival website experience, seamlessly blending sleek design with responsive functionality.`,

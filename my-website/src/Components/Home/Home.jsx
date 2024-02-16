@@ -4,9 +4,10 @@ import './Home.css';
 const Home = () => {
     return (
         <section className="home-container">
+            <div className="blur HomeBlur"></div>
             <div className="home-content">
                 <div className="heading-container">
-                    <h2> Welcome, Embark on a journey through landscape of innovation.</h2>
+                    <h2> <span className="strokeText">Welcome</span> , Embark on a journey through landscape of innovation.</h2>
                 </div>
                 <hr className="custom-hr"/>
                 <div className="paragraph-container">
