@@ -232,12 +232,14 @@
 
 } */
 
+/* Styles for the contact container */
 .contact-container{
     height: 100%;
     max-width: 1366px;
     margin: 4rem;
 }
 
+/* Styles for the heading */
 .contact-container h1{
     text-align: center;
     color: #ffff;
@@ -245,11 +247,13 @@
     font-size: 3rem;
 }
 
+/* Styles for the contact contents */
 .contact-contents{
     display: flex;
     align-items: center;
 }
 
+/* Styles for the text container */
 .textContainer{
     align-items: center;
     flex: 1;
@@ -259,26 +263,32 @@
     margin-top: 0;
 }
 
+/* Styles for the text item */
 .item{
 
     p{
         font-size: 1.3rem;
         color: #ffff;
 
+        /* Styles for the span inside the text item */
         span{
             color: #09BE67;
         }
     }
 }
 
+/* Styles for the map item */
 .item-map{
     justify-content: center;
+
+    /* Styles for the map icon */
     .map{
         color: #ffff;
         font-size: 200px;
         margin-left: 40px;
     }
 
+    /* Styles for the map location text */
     h2{
         color: #ffff;
         font-size: 50px;
@@ -286,6 +296,7 @@
     }
 }
 
+/* Styles for the form container */
 .formContainer{
     flex: 1;
     position: relative;
@@ -294,6 +305,7 @@
     padding: 15px;
     margin: 15px;
 
+    /* Styles for the form heading */
     h2{
         color: #ffff;
         text-align: center;
@@ -301,6 +313,7 @@
         margin: auto;
     }
 
+    /* Styles for the phone SVG */
     .phoneSVG{
         stroke: #09BE67;
         position: absolute;
@@ -311,12 +324,14 @@
     }
 }
 
+/* Styles for the form */
 .formContainer form{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+/* Styles for the form inputs and textarea */
 .formContainer input, textarea{
     padding: 15px;
     background-color: transparent;
@@ -325,6 +340,7 @@
     border-radius: 5px;
 }
 
+/* Styles for the send button container */
 .send-btn-container{
     display: flex;
     flex-direction: row;
@@ -332,7 +348,7 @@
     padding: 1px;
 }
 
-
+/* Styles for the form button */
 .formContainer button{
     color: #ffff;
     padding: 10px;
@@ -348,19 +364,22 @@
     text-align: center;
 }
 
+/* Media query for smaller screens */
 @media (max-width: 1040px) {
     
 }
 
-
+/* Media query for smaller screens */
 @media (max-width:768px) {
 
+    /* Adjusted styles for the contact container */
     .contact-container{
         border-radius: 10px;
         margin: 1rem;
         margin: 0 1rem;
     }
 
+     /* Adjusted styles for the heading */
     .contact-container h1{
         text-align: center;
         color: #ffff;
@@ -368,12 +387,14 @@
         font-size: 1.3rem;
     }
 
+    /* Adjusted styles for the contact contents */
     .contact-contents{
         display: flex;
         flex-direction: column;
         margin: 1rem;
     }
 
+    /* Adjusted styles for the text container paragraph */
     .textContainer p{
         font-size: 13px;
         color: #ffff;
@@ -382,11 +403,13 @@
        
     }
 
+    /* Adjusted styles for the map icon */
     .item-map .map{
         color: #ffff;
         font-size: 3rem;
     }
     
+    /* Adjusted styles for the phone SVG */
     .formContainer .phoneSVG{
         max-width: 100px;
        
@@ -394,11 +417,6 @@
 
 
     /* 
-     
-
-   
-
-    
     .contact-content-info h1{
         color: #ffff;
          text-align: center; 
