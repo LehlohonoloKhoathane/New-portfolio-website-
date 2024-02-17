@@ -1,3 +1,6 @@
+/*Styles for navigation bar*/
+
+/*Navbar wrapper*/
 .nav-wrapper{
     background: #05052C;
     padding:  0.5rem 1rem 0px 3rem;
@@ -8,6 +11,7 @@
     border: 1px solid red;
 }
 
+/*Navbar contents*/
 .nav-content{
     border: 1px solid yellow;
     max-width: 1300px;
@@ -18,11 +22,13 @@
     margin: 0 5px;
 }
 
+/*the logo*/
 .mylogo{
     width: 4rem;
     height: auto;
 }
 
+/*Navigation in unordered lists*/
 .nav-content ul{
     display: flex;
     align-items: center;
@@ -30,10 +36,12 @@
     list-style: none;
 }
 
+/*Navigation lists*/
 .nav-content li{
     margin: 0.1rem;
 }
 
+/*Items in menu*/
 .menu-item{
     text-decoration: none;
     font-size: 2rem;
@@ -43,10 +51,12 @@
     cursor: pointer;
 }
 
+/*When hovering on the menu items*/
 .menu-item:hover{
     color: #09BE67;
 }
 
+/*Menu buttons*/
 .menu-button{
     width: 2.5rem;
     height: 2.5rem;
@@ -56,13 +66,13 @@
     border: none;
     border-radius: 0.4rem;
     color: #ffff;
-    
     line-height: 0;
     cursor: pointer;
     transition: all 0.4s ease;
     display: none;
 }
 
+/*Hovering on menu items*/
 .menu-button:hover{
     color: #09BE67;
 }
@@ -76,6 +86,7 @@
     color: #09BE67;
   }
 
+  /*Mobile phone styling*/
 @media (max-width: 425px) {
     .mylogo{
         width: 3rem;
@@ -92,6 +103,7 @@
     }
 }
 
+/*Tablet styling*/
 @media (max-width: 1325px) {
     .nav-wrapper{
         padding: 0 2rem;
