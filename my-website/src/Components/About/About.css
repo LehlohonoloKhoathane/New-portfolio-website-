@@ -1,3 +1,4 @@
+/* Styles for the container holding the about section */
 .about-container{
     border: 2px solid #09BE67;
     border-radius: 10px;
@@ -5,18 +6,19 @@
     padding: 15px 50px 10px 50px;
 }
 
+/* Styles for the content within the about section */
 .about-content{
   position: relative;
   width: 100%;
   justify-content: space-between;
 }
 
+/* Styles for the main about section */
 .about {
     display: flex; 
 }
 
-
-
+/* Styles for the information section */
 .about-info {
     flex: 1;
     color: #ffff; 
@@ -25,48 +27,57 @@
     line-height: 1.5;
 }
 
+/* Styles for specific spans within the information section */
 .about-info span{
     color: #09BE67;
 }
 
+/* Styles for the profile picture */
 .profile-picture {
     width: 280px; 
     height: auto;
     margin-right: 20px;
   }
   
+  /* Styles for the heading in the about section */
   .about-container h6{
     font-size: 1.5rem;
     color: #ffff;
     margin: 0px;
   }
 
+  /* Styles for the subheading in the about section */
   .about-container h4{
     font-size: 2rem;
     color: #ffff;
     margin-bottom: 10px;
   }
 
+  /* Styles for specific headings in the about section */
   .about-container h4, .about-container h6{
     text-align: center;
     margin: 10px;
   }
 
+/* Styles for the main heading in the about section */
 .about-heading{
   text-align: center;
   font-size: 1.5rem;
   margin: 15px;
 }
 
+/* Styles for the description in the about section */
  .about-description{
     font-size: 1.6rem;
     line-height: 2rem;
   }
 
+  /* Styles for the skills container */
   .skills-container{
     margin-top: 60px;
   }
 
+  /* Styles for the main heading in the skills container */
 .skills-container h1{
     text-align: center;
     color: #ffff;
@@ -75,17 +86,20 @@
     margin-bottom: 10px;
 }
 
+
 .skills-container h2{
     text-align: center;
     color: #ffff;
     padding: 10px;
 }
 
+/* Styles for the subheading in the skills container */
 .skills-subheading{
   text-align: center;
   /* padding-left: 55px; */
 }
 
+/* Styles for specific spans within the skills container */
 .skills-subheading p{
   margin-top: 20px;
   color: #ffff;
@@ -93,10 +107,12 @@
   /* width: 60rem; */
 }
 
+/* Styles for specific spans within the skills container */
 .skills-container p span{
     color: #09BE67;
 }
 
+/* Styles for the development skills section */
 .skills-development{
   border: 2px solid #09BE67;
   border-radius: 10px;
@@ -106,25 +122,31 @@
   flex-direction: column;
   margin-top: 80px;
 }
+
+/* Styles for the skill icons */
 .skill-icon{
     margin-right: 20px;
 }
 
+/* Styles for the images within the skill icons */
 .skill-icon img{
     width: 50px;
     height: auto;
 }
 
+/* Styles for the skills icons */
 .skills-icons{
     display: flex;
     flex-direction: row;
     padding: 5px;
 }
 
+/* Styles for the horizontal line */
 .horizontal-line{
   margin-bottom: 0px;
 }
 
+/* Styles for the data skills section */
 .skills-data{
     border: 2px solid #09BE67;
     border-radius: 10px;
@@ -136,6 +158,7 @@
     margin-bottom: 28px;
 }
 
+/* Styles for the images within the skills section */
 .skills-image{
   width: 200px;
   height: auto;
@@ -145,6 +168,7 @@
   padding: 30px;
 }
 
+/* Styles for the images within the skills section */
 .skills-image img{
   width: 100px;
   height: auto;
@@ -153,6 +177,7 @@
   text-align: center;
 }
 
+/* Media query for smaller screens */
 @media (max-width:768px) {
   .about-container{
     border: 2px solid #09BE67;

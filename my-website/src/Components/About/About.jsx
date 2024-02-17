@@ -6,15 +6,17 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 
-
+//Component for a vertical line
 const VerticalLine = ({ height }) => {
   return (
     <div className='vertical-line' style={{ height: height }}></div>
   );
 }
 
+//Component for the About section
 const About = () => {
 
+    // Settings for the slider
     const settings = {
         dots: true,
         infinite: true,
@@ -68,6 +70,7 @@ const About = () => {
                     <div className="skills-dev">
                         <div className="skills-content-items">
                             <Slider {...settings}>
+                            {/* Map through the data and create slider items */}
                             {dataT.map((d) => (
                                 <div className="skils-item">
                                     <div className="skills-image">
@@ -87,6 +90,7 @@ const About = () => {
                     <div className="skills-data-analysis">
                         <div className="skills-content-items">
                             <Slider {...settings}>
+                            {/* Map through the data and create slider items */}
                             {dataD.map((d) => (
                                 <div className="skils-item">
                                     <div className="skills-image">
@@ -106,6 +110,8 @@ const About = () => {
     )
 }
 
+
+// Data for technology expertise
 const dataT = [
     {
         name: `Node.Js`,
@@ -157,6 +163,7 @@ const dataT = [
     }
 ]
 
+// Data for data analysis expertise
 const dataD = [
     {
         name: `MongoDb`,
