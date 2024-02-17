@@ -1,4 +1,4 @@
-
+/* Styles for the back to top button */
     .back-to-top {
       position: fixed;
       bottom: 20px;
@@ -14,9 +14,13 @@
       align-items: center;
       transition: opacity 0.4s;
     }
+
+    /*Hover effect for the button */
     .back-to-top:hover {
       opacity: 0.7;
     }
+
+    /* Styles for the icon inside the button */
     .icon {
       font-size: 34px;
       color: #05052C;
