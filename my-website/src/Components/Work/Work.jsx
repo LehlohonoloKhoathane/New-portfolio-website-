@@ -4,6 +4,7 @@ import './Work.css';
 import { color } from 'framer-motion';
 
 const Work = () => {
+    //Settings for the carousel/slider
     const settings = {
         dots: true,
         infinite: true,
@@ -30,14 +31,17 @@ const Work = () => {
 
     return (
         <section className="Services-container" id="Services-container">
+            {/* Work Section */}
             <h4>Creations</h4>
             <hr />
             <div className="service-subheading">
                 <p className="Service-underP">Witness the harmony of <span>design</span> and <span>functionality</span>, immerse yourself in the visual allure of <span>innovations</span> Let my creations speak for themselves</p>
             </div>
+             {/* Carousel/slider for showcasing work */}
             <div className="service-content">
                 <div className="service-content-items">
                     <Slider {...settings}>
+                    {/* Mapping over dataW to render each work item */}
                     {dataW.map((d) => (
                         <div className="service-item">
                             <div className="service-image">
@@ -53,10 +57,12 @@ const Work = () => {
                 </div>
             </div>
 
+            {/* Testimonials section */}
             <div className="work-testimonials">
                 <h2>Hear from those I have collaborated with</h2> 
                 <hr /> 
                 <div className="testimonial-items">
+                    {/* Testimonial items */}
                     <div className="item-testi">
                         <img src="./assets/images/khoathane.jp" alt="testmonial" />
                         <h3 className="name">King, <span>Ceo</span></h3>
@@ -78,7 +84,7 @@ const Work = () => {
     );
 };
 
-
+// Data for the work items
 const dataW = [
     {
         img: `./assets/images/festival.png`,

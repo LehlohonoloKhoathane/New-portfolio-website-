@@ -1,9 +1,11 @@
+/* Styling for the work section container */
 .Services-container{
     padding: 20px;
     margin: 4rem;
     position: relative;
 }
 
+/* Styling for the work section title */
 .Services-container h4{
     font-size: 2rem;
     font-weight: 600;
@@ -12,39 +14,45 @@
     color: #ffff;
 }
 
+/* Styling for the subheading in the work section */
 .Services-container .Service-underP{
     font-size: 1.5rem;
     color: #ffff;
     margin: 20px;
 }
 
+/* Center align the subheading */
 .service-subheading{
     text-align: center;
 }
 
+/* Styling for the work content container */
 .Services-content{
     display: flex;
     flex-direction: column;
     padding: 100px;
 }
 
-
+/* Styling for each work item */
 .service-item{
     border: 2px solid #09BE67;
     border-radius: 10px;
     padding: 10px;
 }
 
+/* Styling for slider */
 .slick-slide > div{
     margin: 20px 30px;
 }
 
+/* Styling for images inside work items */
 .Service-item img{
     width: 200px;
     height: auto;
     align-content: center;
 }
 
+/* Styling for the work item title */
 .service-item h4{
     text-align: center;
     font-size: 1.7rem;
@@ -52,67 +60,77 @@
     margin-bottom: 10px;
 }
 
+/* Styling for the work item description */
 .service-item p{
     font-size: 1.2rem;
     text-align: center;
     color: #ffff;
 }
 
+/* Styling for the work image container */
 .service-image {
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
+
+/* Styling for images inside the work image container */
 .service-image img {
     max-width: 50%;
     max-height: 100%;
 }
 
+/* Styling for the container of work content items */
 .service-content-items{
     margin: 0px 50px;
 }
 
 
-
+/* Styling for the testimonials section */
 .work-testimonials{
     padding: 10px;
     margin: 3rem 4rem 2rem;
 }
 
+/* Styling for the testimonials section title */
 .work-testimonials h2{
     color: #ffff;
     text-align: center;
 }
 
+/* Styling for the testimonial items container */
 .testimonial-items{
     justify-content: center;
     display: flex;
     flex-direction: row;
 }
 
+/* Styling for the testimonial item images */
 .item-testi img{
     width: 200px;
     height: auto;
     margin: 10px;
 }
 
+/* Styling for the testimonial item name */
 .name{
     color: #ffff;
     margin: 5px;
 }
 
+/* Styling for the span inside the testimonial item name */
 .name span{
     color: #09BE67;
 }
 
+/* Styling for the testimonial item description */
 .item-testi p{
     color: #ffff;
     margin: 10px 5px;
 }
 
-
-
+/* Media query for smaller screens */
 @media (max-width: 768px) {
     .Services-container{
         padding: 10px;
@@ -160,7 +178,7 @@
         color: #ffff;
     }
 
-
+    /* Adjust styles for the testimonials section */
     .work-testimonials{
         padding: 0px;
         margin: 1.5rem 2rem 1rem;
