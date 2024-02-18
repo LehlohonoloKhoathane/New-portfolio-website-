@@ -1,3 +1,4 @@
+ /* Styles for the home container  */
  .home-container{
     /* display: flex;
     justify-content: center;
@@ -6,14 +7,17 @@
     padding: 20px;
 }
 
+ /* Styles for the home content  */
 .home-content{
     flex: 1;
 }
 
+ /* Styles for the links container */
 .links-container{
     text-align: center;
 }
 
+ /* Styles for the heading container */
 .heading-container{
     display: flex;
     justify-content: center;
@@ -23,6 +27,7 @@
     margin: 10px 60px;
 }
 
+ /* Styles for the heading content  */
 .heading-container h2{
     font-size: 3rem;
     color: #ffff;
@@ -37,6 +42,7 @@
     margin-bottom: 10px;
 } */
 
+ /* Styles for the home paragraph content */
 .home-content p{
     margin: 15px;
     margin-left: 50px;
@@ -45,6 +51,7 @@
     line-height: 2rem;
 }
 
+ /* Styles for the home linkes */
 .home-content a{
     position: relative;
     display: inline-block;
@@ -60,18 +67,21 @@
     cursor: pointer;
 }
 
+ /* Styles for the home links while hovering */
 .home-content a:hover{
     background-color: #09BE67;
     color: #ffff;
     
 }
 
+ /* Styles for the horizontal ruler */
 hr{
     border: 1px solid #09BE67;
     margin: 10px auto;
     width: 90% ;
 }
 
+ /*Styles for the home sliding text container*/
 .slidingTextcontainer{
     position: absolute;
     font-size: 20vh;
@@ -81,6 +91,7 @@ hr{
     font-weight: bold;
     z-index: -1;
 }
+
 
 /* .HomeBlur{
     width: 22rem;
@@ -205,6 +216,7 @@ hr{
     background-color: #0056b3;
 } */
 
+/* Media query for screens with a maximum width of 768px */
 @media (max-width: 768px) {
    
     .heading-container{

@@ -2,13 +2,14 @@ import React from "react";
 import './Home.css';
 import { motion } from "framer-motion";
 
+//Variants for text animation
 const textVariants = {
     initial: {
-        x: -500,
-        opacity: 0,
+        x: -500,        //Initial position off-screen to the left
+        opacity: 0,     //Initial opacity set to 0 (transparent)
     },
     animate: {
-        x: 0,
+        x: 0,           //Move to the center
         opacity: 1,
         transition: {
             duration: 1,
@@ -17,20 +18,22 @@ const textVariants = {
     },
 };
 
+//Variants for slider animation
 const sliderVariants = {
     initial: {
         x: 0,
     },
     animate: {
-        x: "-220%",
+        x: "-220%",                     //Slide to the left
         transition: {
-            repeat: Infinity,
-            repeatType:"mirror",
-            duration: 20,
+            repeat: Infinity,           //Repeat indefinitely
+            repeatType:"mirror",        //Reverse direction on repeat
+            duration: 20,               // Animation duration
         },
     },
 };
 
+{/* Home section content */}
 const Home = () => {
     return (
         <motion.section className="home-container" variants={textVariants} initial="initial" animate="animate">
