@@ -1,9 +1,11 @@
+/* Styles for the Services container */
 .Services-container{
     padding: 20px;
     margin: 4rem;
     position: relative;
 }
 
+/* Styles for the h4 inside Services container */
 .Services-container h4{
     font-size: 2rem;
     font-weight: 600;
@@ -12,6 +14,7 @@
     color: #ffff;
 }
 
+/* Styles for the Service-underP class */
 .Services-container .Service-underP{
     font-size: 1.5rem;
     color: #ffff;
@@ -19,18 +22,20 @@
     margin: 20px;
 }
 
+/* Styles for the service subheading */
 .service-subheading{
     text-align: center;
     /* padding-left: 110px; */
 }
 
+/* Styles for the Services content */
 .Services-content{
     display: flex;
     flex-direction: column;
     padding: 100px;
 }
 
-
+/* Styles for the service item */
 .service-item{
     border: 2px solid #09BE67;
     border-radius: 10px;
@@ -46,16 +51,19 @@
     */
 }
 
+/*Styles for the slider*/
 .slick-slide > div{
     margin: 20px 30px;
 }
 
+/*Styles for the image inside service item */
 .Service-item img{
     width: 200px;
     height: auto;
     align-content: center;
 }
 
+/* Styles for the h4 inside service item */
 .service-item h4{
     text-align: center;
     font-size: 1.7rem;
@@ -63,27 +71,32 @@
     margin-bottom: 10px;
 }
 
+/*Styles for the p inside service item */
 .service-item p{
     font-size: 1.2rem;
     text-align: center;
     color: #ffff;
 }
 
+/*Styles for the service image */
 .service-image {
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
+/*Styles for the image inside service image */
 .service-image img {
     max-width: 50%;
     max-height: 100%;
 }
 
+/* Styles for the service content items */
 .service-content-items{
     margin: 0px 50px;
 }
 
+/* Media query for screens with max width of 768px */
 @media (max-width: 768px) {
     .Services-container{
         padding: 10px;

@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick-theme.css'
 
 const Services = () =>{
     
+    //Settings for the Slider component
     const settings = {
         dots: true,
         infinite: true,
@@ -33,6 +34,7 @@ const Services = () =>{
 
     return (
         <section className="Services-container" id="Services-container">
+            {/* Services Section */}
             <h4>Expertise Capabilities</h4>
             <hr />
             <div className="service-subheading">
@@ -40,7 +42,9 @@ const Services = () =>{
             </div>
             <div className="service-content">
                 <div className="service-content-items">
-                    <Slider {...settings}>
+                    {/* Carousel/slider for showcasing services */}
+                    <Slider {...settings}> 
+                    {/* Mapping over data to render each service item */}
                     {data.map((d) => (
                         <div className="service-item">
                             <div className="service-image">
@@ -60,6 +64,7 @@ const Services = () =>{
     );
 };
 
+//Data for the service items
 const data = [
     {
         name: `Web Developer`,

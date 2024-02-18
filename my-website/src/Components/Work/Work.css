@@ -130,7 +130,7 @@
     margin: 10px 5px;
 }
 
-/* Media query for smaller screens */
+/* Media query for screens with max width of 768px */
 @media (max-width: 768px) {
     .Services-container{
         padding: 10px;
