@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './NavBar.css'
 import MobileNav from './MobileNav/MobileNav';
+import {Link} from 'react-scroll'
 // import { FaBars, FaTimes } from 'react-icons/fa'
 
 const NavBar = () => {
@@ -51,7 +52,7 @@ const NavBar = () => {
               <a className='menu-item' href='#Services-container'>Services</a>
             </li>
             <li>
-              <a className='menu-item' href='#work-container' >Work</a>
+              <a className='menu-item' href='#work-container' ><Link to = 'work-container' span={true} smooth={true}></Link>Work</a>
             </li>
             <li>
               <a className='menu-item' href='#contact-container' >Contact</a>

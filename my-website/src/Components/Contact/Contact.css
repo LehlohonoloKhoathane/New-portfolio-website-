@@ -363,6 +363,29 @@
     text-align: center;
 }
 
+
+/* CSS */
+
+.invalid {
+    border: 2px solid red;
+}
+
+.error {
+    color: red;
+    margin-top: 1px;
+}
+
+
+/* 
+.invalid {
+    border: 1px solid red;
+}
+
+.invalid-textarea {
+    border: 1px solid red;
+} */
+
+
 /* Media query for smaller screens */
 @media (max-width: 1020px) {
     .contact-contents{
@@ -438,6 +461,11 @@
     .send-btn-container{
         flex-direction: column;
     }
+
+    /* .sendButton{
+        align-items: center;
+        color: blue;
+    } */
     
     /* 
     .contact-content-info h1{

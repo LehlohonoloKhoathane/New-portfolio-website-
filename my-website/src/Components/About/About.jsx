@@ -4,7 +4,22 @@ import './VerticalLine.css'; // Import CSS file for styling
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import { motion } from 'framer-motion'
 
+const textVariants = {
+    initial: {
+        x: -500,        //Initial position off-screen to the left
+        opacity: 0,     //Initial opacity set to 0 (transparent)
+    },
+    animate: {
+        x: 0,           //Move to the center
+        opacity: 1,
+        transition: {
+            duration: 1,
+            staggerChildren: 0.1,
+        },
+    },
+};
 
 //Component for a vertical line
 const VerticalLine = ({ height }) => {
@@ -43,7 +58,7 @@ const About = () => {
     };
 
     return (
-        <section className='about-container' id='about-container'>
+        <motion.section className='about-container' id='about-container' variants={textVariants} initial="initial" animate="animate">
             <h4>The Person behind the work</h4>
             <hr />
             <h6>Lehlohonolo Khoathane</h6>
@@ -108,7 +123,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

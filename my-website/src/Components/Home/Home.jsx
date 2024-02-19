@@ -42,7 +42,7 @@ const Home = () => {
                 <motion.div className="heading-container"  variants={textVariants}>
                     <motion.h2> <span className="strokeText"  variants={textVariants}>Welcome , Embark on a journey through landscape of innovation.</span></motion.h2>
                 </motion.div>
-                <hr className="custom-hr"/>
+                <motion.hr  className="custom-hr"/>
                 <motion.div className="paragraph-container"  variants={textVariants}>
                     <motion.p  variants={textVariants}>Whether you are seeking a developer or to bring ideas to life or seeking innovative solutions, you are on the right place.</motion.p>
                 </motion.div>
