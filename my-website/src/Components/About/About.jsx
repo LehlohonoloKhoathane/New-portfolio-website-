@@ -26,7 +26,7 @@ const About = () => {
 
         responsive: [
             {
-                breakpoint: 768, 
+                breakpoint: 1020, 
                 seettings: {
                     slidesToShow: 3, // Display 3 items on tablets
                     slidesToScroll: 3, // Scroll 3 items at a time
@@ -48,7 +48,9 @@ const About = () => {
             <hr />
             <h6>Lehlohonolo Khoathane</h6>
             <div className='about-content'>
-                <p className='about-heading'>Aspiring Full Stack Software Developer <VerticalLine height='1em' /> Aspiring Data Scientist</p>
+                <div className='imageCover'>
+                    <p className='about-heading'>Aspiring Full Stack Software Developer <VerticalLine height='1em' /> Aspiring Data Scientist</p>
+                </div>
                 <div className='about'>
                     <img className='profile-picture' src='./assets/images/lehlohonolo.jpg' alt='my profile' />
                     <div className="about-info">

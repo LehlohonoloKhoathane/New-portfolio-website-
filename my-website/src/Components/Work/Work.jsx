@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import './Work.css';
 import { color } from 'framer-motion';
+import { ImQuotesLeft } from "react-icons/im";
+import { ImQuotesRight } from "react-icons/im";
 
 const Work = () => {
     //Settings for the carousel/slider
@@ -64,19 +66,23 @@ const Work = () => {
                 <div className="testimonial-items">
                     {/* Testimonial items */}
                     <div className="item-testi">
+                        
                         <img src="./assets/images/khoathane.jp" alt="testmonial" />
                         <h3 className="name">King, <span>Ceo</span></h3>
-                        <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
+                        <ImQuotesLeft className='myQuote'/>
+                        <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p><ImQuotesRight className='myQuote'/>
                     </div>
                     <div className="item-testi">
                         <img src="./assets/images/khoathane.jp" alt="testmonial" />
                         <h3 className="name">King, <span>Ceo</span></h3>
-                        <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
+                        <ImQuotesLeft className='myQuote'/>
+                        <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p><ImQuotesRight className='myQuote'/>
                     </div>
                     <div className="item-testi">
                         <img src="./assets/images/khoathane.jp" alt="testmonial" />
                         <h3 className="name">King, <span>Ceo</span></h3>
-                        <p>Mr Khoathane delivers excellence! Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p>
+                        <ImQuotesLeft className='myQuote'/>
+                        <p>Mr Khoathane delivers excellence! Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p><ImQuotesRight className='myQuote'/>
                     </div>
                 </div> 
             </div> 

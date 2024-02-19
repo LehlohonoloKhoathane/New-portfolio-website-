@@ -6,6 +6,14 @@
     padding: 15px 50px 10px 50px;
 }
 
+ /* Styles for the subheading in the about section */
+ .about-container h4{
+  font-size: 2rem;
+  color: #ffff;
+  margin-bottom: 10px;
+}
+
+
 /* Styles for the content within the about section */
 .about-content{
   position: relative;
@@ -46,13 +54,7 @@
     margin: 0px;
   }
 
-  /* Styles for the subheading in the about section */
-  .about-container h4{
-    font-size: 2rem;
-    color: #ffff;
-    margin-bottom: 10px;
-  }
-
+ 
   /* Styles for specific headings in the about section */
   .about-container h4, .about-container h6{
     text-align: center;
@@ -177,7 +179,25 @@
   text-align: center;
 }
 
-/* Media query for smaller screens */
+/*Media query for smaller screens with maximum width of 1020px*/
+@media (max-width: 1020px) {
+
+  .about {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .profile-picture {
+    width: 280px; 
+    height: auto;
+    margin: 20px;
+  }
+  
+}
+
+/* Media query for smaller screens with maximum width of 768px*/
 @media (max-width:768px) {
   .about-container{
     border: 2px solid #09BE67;

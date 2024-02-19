@@ -10,48 +10,66 @@ const ContactForm = () => {
     Email: '',
     Message: ''
   });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setUser({...user, [name]: value});
-  };
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-  
-    // Store message in Firebase
+  const storeMessageInFirebase = async (messageData) => {
     const firebaseOptions = {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({
-        FullName: user.FullName,
-        Email: user.Email,
-        Message: user.Message
-      })
+      body: JSON.stringify(messageData)
     };
   
-    // Send email using HeroTofu
+    try {
+      const response = await fetch('https://my-react-portfolio-c6d3e-default-rtdb.firebaseio.com/UserData.json', firebaseOptions);
+      if (response.ok) {
+        return true;
+      } else {
+        throw new Error('Error storing message in Firebase');
+      }
+    } catch (error) {
+      console.error('Error storing message in Firebase:', error);
+      return false;
+    }
+  };
+  
+  const sendEmailWithHeroTofu = async (messageData) => {
     const heroTofuOptions = {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({
-        FullName: user.FullName,
-        Email: user.Email,
-        Message: user.Message
-      })
+      body: JSON.stringify(messageData)
+    };
+  
+    try {
+      const response = await fetch(FORM_ENDPOINT, heroTofuOptions);
+      if (response.ok) {
+        return true;
+      } else {
+        throw new Error('Error sending email with HeroTofu');
+      }
+    } catch (error) {
+      console.error('Error sending email with HeroTofu:', error);
+      return false;
+    }
+  };
+  
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+  
+    const messageData = {
+      FullName: user.FullName,
+      Email: user.Email,
+      Message: user.Message
     };
   
     try {
       const [firebaseRes, heroTofuRes] = await Promise.all([
-        fetch('https://my-react-portfolio-c6d3e-default-rtdb.firebaseio.com/UserData.json', firebaseOptions),
-        fetch(FORM_ENDPOINT, heroTofuOptions)
+        storeMessageInFirebase(messageData),
+        sendEmailWithHeroTofu(messageData)
       ]);
   
-      if (firebaseRes.ok && heroTofuRes.ok) {
+      if (firebaseRes && heroTofuRes) {
         alert('Message Stored and Email Sent');
       } else {
         throw new Error('Error Occurred');
@@ -69,15 +87,6 @@ const ContactForm = () => {
     }
   };
   
-  if (status) {
-    return (
-      <>
-        <div className="text-2xl">Thank you!</div>
-        <div className="text-md">{status}</div>
-      </>
-    );
-  }
-
   return (
     <form
       action={FORM_ENDPOINT}
@@ -92,7 +101,7 @@ const ContactForm = () => {
           className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border-0 rounded shadow outline-none"
           required
           value={user.FullName}
-          onChange={handleChange}
+          // onChange={handleChange}
         />
       </div>
       <div className="pt-0 mb-3">
@@ -103,7 +112,7 @@ const ContactForm = () => {
           className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border-0 rounded shadow outline-none"
           required
           value={user.Email}
-          onChange={handleChange}
+          // onChange={handleChange}
         />
       </div>
       <div className="pt-0 mb-3">
@@ -113,7 +122,7 @@ const ContactForm = () => {
           className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border-0 rounded shadow outline-none"
           required
           value={user.Message}
-          onChange={handleChange}
+          // onChange={handleChange}
         />
       </div>
       <div className="pt-0 mb-3">

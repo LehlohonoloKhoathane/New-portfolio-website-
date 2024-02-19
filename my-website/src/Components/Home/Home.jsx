@@ -40,7 +40,7 @@ const Home = () => {
             <div className="blur HomeBlur"  variants={textVariants}></div>
             <motion.div className="home-content"  variants={textVariants}>
                 <motion.div className="heading-container"  variants={textVariants}>
-                    <motion.h2> <span className="strokeText"  variants={textVariants}>Welcome</span> , Embark on a journey through landscape of innovation.</motion.h2>
+                    <motion.h2> <span className="strokeText"  variants={textVariants}>Welcome , Embark on a journey through landscape of innovation.</span></motion.h2>
                 </motion.div>
                 <hr className="custom-hr"/>
                 <motion.div className="paragraph-container"  variants={textVariants}>
