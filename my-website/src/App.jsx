@@ -11,10 +11,8 @@ import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Cursor from './Components/Cursor/Cursor';
 import BackToTopButton from './Components/BackToTop/BackToTop';
-import ContactForm from './Components/Contact/form';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import ScrollFeature from './Components/ScrollFeature/ScrollFeature';
 
 const App = () => {
   return (
@@ -25,15 +23,12 @@ const App = () => {
         <Home />
         <About/>
         <ToastContainer />
-        
         <Services/>
         <Work />
         <Contact/>
         <BackToTopButton/>
       </div>
-      <ScrollFeature/>
       <Footer/>
-      <ContactForm/>
     </>
   );
 };
