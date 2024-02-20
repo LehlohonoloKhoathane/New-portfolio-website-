@@ -4,6 +4,7 @@ import './Work.css';
 import { color } from 'framer-motion';
 import { ImQuotesLeft } from "react-icons/im";
 import { ImQuotesRight } from "react-icons/im";
+import { motion } from 'framer-motion';
 
 const Work = () => {
     //Settings for the carousel/slider
@@ -30,6 +31,21 @@ const Work = () => {
             }
         ]
     };
+
+    const testmonialContainerVariants = {
+        hidden: {opacity: 0},
+        show: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.25,
+            },
+        },
+    }
+
+    const testimonialVariants = {
+        hidden: {opacity: 0},
+        show: { opacity: 1},
+    }
 
     return (
         <section className="Services-container" id="Services-container">
@@ -63,28 +79,36 @@ const Work = () => {
             <div className="work-testimonials">
                 <h2>Hear from those I have collaborated with</h2> 
                 <hr /> 
-                <div className="testimonial-items">
+                <motion.div variants={testmonialContainerVariants}
+                initial="hidden"
+                animate="show" 
+                className="testimonial-items">
                     {/* Testimonial items */}
-                    <div className="item-testi">
-                        
+                    <motion.div 
+                    variants={testimonialVariants}
+                    className="item-testi">
                         <img src="./assets/images/khoathane.jp" alt="testmonial" />
                         <h3 className="name">King, <span>Ceo</span></h3>
                         <ImQuotesLeft className='myQuote'/>
                         <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p><ImQuotesRight className='myQuote'/>
-                    </div>
-                    <div className="item-testi">
+                    </motion.div>
+                    <motion.div
+                    variants={testimonialVariants}
+                    className="item-testi">
                         <img src="./assets/images/khoathane.jp" alt="testmonial" />
                         <h3 className="name">King, <span>Ceo</span></h3>
                         <ImQuotesLeft className='myQuote'/>
                         <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p><ImQuotesRight className='myQuote'/>
-                    </div>
-                    <div className="item-testi">
+                    </motion.div>
+                    <motion.div
+                    variants={testimonialVariants}
+                    className="item-testi">
                         <img src="./assets/images/khoathane.jp" alt="testmonial" />
                         <h3 className="name">King, <span>Ceo</span></h3>
                         <ImQuotesLeft className='myQuote'/>
                         <p>Mr Khoathane delivers excellence! Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p><ImQuotesRight className='myQuote'/>
-                    </div>
-                </div> 
+                    </motion.div>
+                </motion.div> 
             </div> 
         </section>
     );

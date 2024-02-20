@@ -15,6 +15,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState, useEffect } from 'react';
 import Loader from './Components/Loader/Loader';
+import SlideInOnScroll from './Components/SLideInOnScroll/SLideInOnScroll';
 
 
 

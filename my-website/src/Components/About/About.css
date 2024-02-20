@@ -163,21 +163,25 @@
 
 /* Styles for the images within the skills section */
 .skills-image{
-  width: 200px;
-  height: auto;
-  align-content: center;
-  align-items: center;
-  text-align: center;
+  width: 150px; /* Set the width of the container */
+  height: 150px; /* Set the height of the container */
   padding: 30px;
+  margin-left: 60px;
 }
 
 /* Styles for the images within the skills section */
 .skills-image img{
-  width: 100px;
-  height: auto;
+  max-width: 100%; /* Ensure the image fits inside the container */
+  max-height: 100%; /* Ensure the image fits inside the container */
   align-items: center;
   align-content: center;
   text-align: center;
+}
+
+.skills-image h4{
+  font-size: 20px;
+  color: #09BE67;
+  margin: 5px;
 }
 
 /*Media query for smaller screens with maximum width of 1020px*/
@@ -306,3 +310,20 @@
   }
   
 }
+
+
+/* Style for the carousel arrows */
+.react-multi-carousel-arrow {
+  background-color: #ffffff; /* Set the background color of the arrows */
+  border: 1px solid #000000; /* Add a border around the arrows */
+  border-radius: 5px; /* Set the border radius to make the arrows more rectangular */
+  padding: 5px; /* Add some padding to the arrows */
+  font-size: 20px; /* Set the font size of the arrows */
+}
+
+/* Style for the carousel arrow icons */
+.react-multi-carousel-arrow:before {
+  color: #000000; /* Set the color of the arrow icons */
+}
+/*################################################*/
+
