@@ -1,9 +1,5 @@
  /* Styles for the home container  */
  .home-container{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* margin: 0 5rem 0 5rem; */
     padding: 20px;
 }
 
@@ -33,19 +29,10 @@
     color: #ffff;
 }
 
-/* .home-content h2{
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 5rem;
-    color: #ffff;
-    text-align: center;
-    margin-bottom: 10px;
-} */
-
- /* Styles for the home paragraph content */
+/* Styles for the paragraph content  */
 .home-content p{
     margin: 15px;
-    margin-left: 50px;
+    margin-left: 65px;
     font-size: 2rem;
     font-weight: 400;
     line-height: 2rem;
@@ -81,144 +68,28 @@ hr{
     width: 90% ;
 }
 
+body {
+    overflow-x: hidden; /* Prevent horizontal overflow for the entire document */
+}
+
  /*Styles for the home sliding text container*/
 .slidingTextcontainer{
     position: absolute;
     font-size: 20vh;
     color: #ffffff1f;
     white-space: nowrap;
-    top: 250px;width: 50%;
-    font-weight: bold;
-    z-index: -1;
-}
-
-
-/* .HomeBlur{
-    width: 22rem;
-    height: 30rem;
-    left: 0;
-} */
-/*
-@media (max-width: 1025px) {
-    .home-content h2{
-        font-size: 3rem;
-        line-height: 4rem;
-    }
-    .home-content p{
-        font-size: 0.9rem;
-        line-height: 1.6rem;
-    }
-    hr{
-        width: auto;
-    }
-    .home-content a{
-        font-size: 1rem;
-    }
-}
-@media (max-width: 768px) {
-    .home-container{
-        flex-direction: column;
-    }
-
-    .home-content h2{
-       
-    }
-
-    hr{
-        width: auto;
-    }
-
-    .home-content a{
-        flex-direction: row;
-    }
-
-    .home-content h2, .home-content p{
-        width: auto;
-        text-align: center;
-    }
-
-    .home-container::after, .home-container::before{
-        content: "";
-        width: 18rem;
-        height: 18rem;
-    }
-
-    .home-container::after{
-        top: 0rem;
-        left: 0rem;
-    }
-
-    .home-container::before{
-        bottom: 2rem;
-        right: 0rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .home-content h2{
-        font-size: 2.2rem;
-        line-height: 3rem;
-    }
-    .home-content p{
-        font-size: 0.8rem;
-        line-height: 1.3rem;
-    }
-    hr{
-        width: auto;
-    }
-    .home-content a{
-        font-size: 0,.8rem;
-        line-height: 3rem;
-    }
-} */
-
-
-
-/* Home.css */
-
-/* .home-container {
-    padding: 20px;
-}
-
-.home-content {
-    text-align: center;
-}
-
-.home-content h2 {
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-.custom-hr {
+    top: 250px;
     width: 50%;
-    margin: 0 auto 20px;
-    border: 1px solid #ccc;
-}
-
-.links-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.links-container a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
     font-weight: bold;
-    text-align: center;
+    z-index: -1; 
 }
-
-.links-container a:hover {
-    background-color: #0056b3;
-} */
 
 /* Media query for screens with a maximum width of 768px */
 @media (max-width: 768px) {
-   
+    .slidingTextContainer {
+        font-size: 10vh; /* Adjust font size for smaller screens */
+    }
+
     .heading-container{
         margin: 0px;
     }

@@ -13,12 +13,27 @@ import Cursor from './Components/Cursor/Cursor';
 import BackToTopButton from './Components/BackToTop/BackToTop';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useState, useEffect } from 'react';
+import Loader from './Components/Loader/Loader';
+
+
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+      const timeout = setTimeout(() => {
+          setLoading(false);
+      }, 2000); // Simulating a 2-second loading time
+
+      return () => clearTimeout(timeout);
+  }, []);
+  
   return (
     <>
       <NavBar />
       <div className='container'>
+        {/* <Loader/> */}
         <Cursor/>
         <Home />
         <About/>
