@@ -33,18 +33,17 @@ const App = () => {
   return (
     <>
       <NavBar />
-      <div className='container'>
-        {/* <Loader/> */}
+       <div className='container'>
         <Cursor/>
         <Home />
-        <About/>
-        <ToastContainer />
+         <About/>
+        {/*<ToastContainer />
         <Services/>
         <Work />
         <Contact/>
-        <BackToTopButton/>
+        <BackToTopButton/> */}
       </div>
-      <Footer/>
+      {/* <Footer/>  */}
     </>
   );
 };

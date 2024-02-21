@@ -1,111 +1,115 @@
 /*Styles for navigation bar*/
 
 /*Navbar wrapper*/
-.nav-wrapper{
-    background: #05052C;
-    padding:  0.5rem 1rem 0px 3rem;
-    position: relative;
-    top: 0;
-    z-index: 30;
-    backdrop-filter: blur(50px);
-    border: 1px solid red;
-}
 
-/*Navbar contents*/
-.nav-content{
-    border: 1px solid yellow;
-    max-width: 1300px;
+.NavBar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
-    margin: 0 5px;
+    justify-content: flex-end;
+    height: 10vh;
+    padding: 0 6rem;
+    border: 2px solid red;
+    position: relative; /* Add this line */
 }
 
-/*the logo*/
-.mylogo{
-    width: 4rem;
-    height: auto;
-}
-
-/*Navigation in unordered lists*/
-.nav-content ul{
+.menuItems {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    justify-content: flex-end;
+    gap: 4rem;
     list-style: none;
+    z-index: 10000;
+    width: 70vw;
+  }
+ 
+.mylogo {
+    width: 3rem;
+    height: auto;
+    margin-top: 1.5rem;
+    position: absolute; 
+    left: 2rem; 
+    margin-right: 5rem;
+    margin-left: 5rem;
+    cursor: pointer;
 }
 
-/*Navigation lists*/
-.nav-content li{
-    margin: 0.1rem;
+.navToggler {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 2rem; 
+    top: 50%; 
+    transform: translateY(-50%); 
 }
 
-/*Items in menu*/
 .menu-item{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #ffff;
     position: relative;
     cursor: pointer;
 }
 
-/*When hovering on the menu items*/
 .menu-item:hover{
     color: #09BE67;
 }
 
-/*Menu buttons*/
-.menu-button{
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    border: none;
-    border-radius: 0.4rem;
-    color: #ffff;
-    line-height: 0;
+.navToggler{
     cursor: pointer;
-    transition: all 0.4s ease;
     display: none;
 }
 
-/*Hovering on menu items*/
-.menu-button:hover{
-    color: #09BE67;
-}
-
-
-.socialIcon {
-    color: black;
-    transition: color 0.3s;
-  }
-  .icon:hover {
-    color: #09BE67;
+.navToggler svg {
+    width: 3rem;
+    height: 3rem; /* Set the height to make sure the SVG is visible */
+    transition: 0.4s ease-in;
+    margin-top: 2rem;
   }
 
-  /*Mobile phone styling*/
-@media (max-width: 425px) {
-    .mylogo{
+
+  @media screen and (max-width: 768px) {
+    .navToggler {
+        display: block;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        position: fixed;
+        top: 2rem; /* Adjust as needed */
+        right: 2rem;
+        z-index: 999;
+    }
+
+    .menuItems {
+        position: fixed;
+        top: 10vh;
+        right: 0;
+        width: 100%;
+        height: 50vh;
+        background:  #05052C;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+        gap: 3rem; /* Reduce the gap between menu items */
+        justify-content: flex-start;
+        padding: 3rem 0 0 0;
+      }
+
+      .mylogo {
         width: 3rem;
         height: auto;
+        margin-top: 1.5rem;
+        position: absolute; 
+        left: 2rem; 
+        margin-right: 5rem;
+        margin-left: 1rem;
+        cursor: pointer;
     }
 }
 
-@media (max-width: 769px) {
-    .menu-button{
-        display: block;
-    }
-    .nav-content ul{
-        display: none;
-    }
-}
-
-/*Tablet styling*/
-@media (max-width: 1325px) {
-    .nav-wrapper{
-        padding: 0 2rem;
-    }
-}
+.menuActive{
+    transform: translateX(0);
+  }
