@@ -123,7 +123,8 @@
   background-color: #202041;
   display: flex;
   flex-direction: column;
-  margin-top: 80px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 /* Styles for the skill icons */
@@ -154,7 +155,7 @@
     border: 2px solid #09BE67;
     border-radius: 10px;
     padding: 10px;
-    background-color: #010127;
+    background-color: #202041;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -176,12 +177,12 @@
   align-items: center;
   align-content: center;
   text-align: center;
+   filter: brightness(80%);
 }
 
-.skills-image h4{
+.skills-item h4{
   font-size: 20px;
   color: #09BE67;
-  margin: 5px;
 }
 
 /*Media query for smaller screens with maximum width of 1020px*/
@@ -287,15 +288,40 @@
     align-items: center;
     text-align: center;
     padding: 30px;
+    border: 2px solid red;
   }
   
-  .skills-image img{
+  /* .skills-image img{
     width: 50px;
     height: auto;
     align-items: center;
     align-content: center;
     text-align: center;
-  }
+  } */
+
+  .skills-image img{
+  max-width: 100%; /* Ensure the image fits inside the container */
+  max-height: 100%; /* Ensure the image fits inside the container */
+  align-items: center;
+  align-content: center;
+  text-align: center;
+   filter: brightness(70%);
+}
+
+.skill-name{
+  border: 2px solid red;
+  margin: 0 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-item h4{
+  font-size: 20px;
+  color: #09BE67;
+  margin: 0 10px;
+}
+
+
 
   .skills-data{
     border: 2px solid #09BE67;
@@ -323,7 +349,7 @@
 
 /* Style for the carousel arrow icons */
 .react-multi-carousel-arrow:before {
-  color: #000000; /* Set the color of the arrow icons */
+  color: white; /* Set the color of the arrow icons */
 }
 /*################################################*/
 

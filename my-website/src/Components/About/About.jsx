@@ -1,140 +1,13 @@
+
 import React from 'react';
-import './About.css'
-import './VerticalLine.css'; // Import CSS file for styling
-import Slider from 'react-slick'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-import { motion } from 'framer-motion'
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { motion } from 'framer-motion';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import './VerticalLine.css';
+import './About.css'; // Your custom CSS file
 
-const textVariants = {
-    initial: {
-        x: -500,        //Initial position off-screen to the left
-        opacity: 0,     //Initial opacity set to 0 (transparent)
-    },
-    animate: {
-        x: 0,           //Move to the center
-        opacity: 1,
-        transition: {
-            duration: 1,
-            staggerChildren: 0.1,
-        },
-    },
-};
-
-//Component for a vertical line
-const VerticalLine = ({ height }) => {
-  return (
-    <div className='vertical-line' style={{ height: height }}></div>
-  );
-}
-
-//Component for the About section
 const About = () => {
-
-    // Settings for the slider
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,   //Display 3 items on a tables
-        slidesToScroll: 2, //Scroll 2 items at a time
-
-        responsive: [
-            {
-                breakpoint: 1020, 
-                seettings: {
-                    slidesToShow: 3, // Display 3 items on tablets
-                    slidesToScroll: 3, // Scroll 3 items at a time
-                }
-            },
-            {
-                breakpoint: 480, 
-                settings: {
-                    slidesToShow: 2, // Display 2 items on mobile devices
-                    slidesToScroll: 2, // Scroll 2 items at a time
-                }
-            }
-        ]
-    };
-
-    return (
-        <motion.section className='about-container' id='about-container'>
-        <h4>The Person behind the work</h4>
-        <hr />
-        <h6>Lehlohonolo Khoathane</h6>
-        <div className='about-content'>
-            <div className='imageCover'>
-                <p className='about-heading'>Aspiring Full Stack Software Developer <span className='line'></span> Aspiring Data Scientist</p>
-            </div>
-            <div className='about'>
-                <img className='profile-picture' src='./assets/images/lehlohonolo.jpg' alt='my profile' />
-                <div className="about-info">
-                    <p className='about-description'>I'm a versatile aspiring full-stack software developer with a solid background in <span className='degree'>BSc Computer Science and
-                        Statistics.</span> Equipped with a degree in these fields and <span>one year of experience</span> in software development, I bring a unique blend of analytical thinking and technical
-                        prowess to projects. Proficient in diverse programming languages and technologies, I excel in crafting end-to-end solutions, seamlessly integrating front-end and back-end 
-                        development. My passion lies in delivering products that not only meet but exceed client expectations.</p>
-                </div>
-            </div>
-        </div>
-        <div className='skills-container'>
-            <h1>Tech Expertise</h1>
-            <hr className='horizontal-line'/>
-            <div className='skills-subheading'>
-                <p>I bring dynamic set of skills to propel projects forward. Dive deeper into my <span>technological prowess.</span></p>
-            </div>
-            <div className='skills-development'>
-                <h2>Development</h2>
-                <div className="skills-dev">
-                    <div className="skills-content-items">
-                        <Carousel showArrows={true} showStatus={false} showThumbs={false} emulateTouch={true} showIndicators={false} selectedItem={4} infiniteLoop={true} centerMode={false} slidesToScroll={4} >
-                            {dataT.map((d) => (
-                                <div className="skills-item">
-                                    <div className="skills-image">
-                                        <img src={d.img} alt="" />
-                                        <h4>{d.name}</h4>
-                                    </div>
-                                </div>
-                            ))}
-                        </Carousel>
-                    </div>
-                </div>
-            </div>
-            <div className='skills-data'>
-                <h2>Data Analysis</h2>
-                <div className="skills-data-analysis">
-                    <div className="skills-content-items">
-                        <Carousel showArrows={true} 
-                                showStatus={false} 
-                                showThumbs={false} 
-                                emulateTouch={true} 
-                                showIndicators={false} 
-                                selectedItem={0} 
-                                infiniteLoop={true} 
-                                centerMode={false} 
-                                slidesToShow={7} // Show four items at a time
-                                slidesToScroll={1} // Scroll one item at a time
-                                >
-                            {dataD.map((d) => (
-                                <div className="skills-item">
-                                    <div className="skills-image">
-                                        <img src={d.img} alt="" />
-                                        <h4>{d.name}</h4>
-                                    </div>
-                                </div>
-                            ))}
-                        </Carousel>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </motion.section>
-    )
-}
-
-
-// Data for technology expertise
+    // Data for technology expertise
 const dataT = [
     {
         name: `Node.Js`,
@@ -222,5 +95,110 @@ const dataD = [
     }
 ]
 
+    const responsive = {
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 4,
+            slidesToSlide: 2 // Optional
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 3,
+            slidesToSlide: 2 // Optional
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 2,
+            slidesToSlide: 2 // Optional
+        }
+    };
+
+    return (
+        <motion.section className='about-container' id='about-container'>
+            <h4>The Person behind the work</h4>
+            <hr />
+            <h6>Lehlohonolo Khoathane</h6>
+            <div className='about-content'>
+                <div className='imageCover'>
+                    <p className='about-heading'>Aspiring Full Stack Software Developer <span className='vertical-line'></span> Aspiring Data Scientist</p>
+                </div>
+                <div className='about'>
+                    <img className='profile-picture' src='./assets/images/lehlohonolo.jpg' alt='my profile' />
+                    <div className="about-info">
+                        <p className='about-description'>I'm a versatile aspiring full-stack software developer with a solid background in <span className='degree'>BSc Computer Science and
+                            Statistics.</span> Equipped with a degree in these fields and <span>one year of experience</span> in software development, I bring a unique blend of analytical thinking and technical
+                            prowess to projects. Proficient in diverse programming languages and technologies, I excel in crafting end-to-end solutions, seamlessly integrating front-end and back-end 
+                            development. My passion lies in delivering products that not only meet but exceed client expectations.</p>
+                    </div>
+                </div>
+            </div>
+            <div className='skills-container'>
+                <h1>Tech Expertise</h1>
+                <hr className='horizontal-line'/>
+                <div className='skills-subheading'>
+                    <p>I bring dynamic set of skills to propel projects forward. Dive deeper into my <span>technological prowess.</span></p>
+                </div>
+                <div className='skills-development'>
+                    <h2>Development</h2>
+                    <div className="skills-dev">
+                        <Carousel
+                            responsive={responsive}
+                            ssr={true} // Set to true if you are using server-side rendering
+                            infinite={true}
+                            keyBoardControl={true}
+                            customTransition="all .5"
+                            transitionDuration={500}
+                            containerClass="carousel-container"
+                           
+                            deviceType="desktop"
+                            dotListClass="custom-dot-list-style"
+                            itemClass="carousel-item-padding-80-px"
+                        >
+                            {dataT.map((d, index) => (
+                                <div key={index} className="skills-item">
+                                    <div className="skills-image">
+                                        <img src={d.img} alt="" />
+                                    </div>
+                                    <div className='skill-name'>
+                                        <h4>{d.name}</h4>
+                                    </div>
+                                </div>
+                            ))}
+                        </Carousel>
+                    </div>
+                </div>
+                <div className='skills-data'>
+                    <h2>Data Analysis</h2>
+                    <div className="skills-data-analysis">
+                        <Carousel
+                            responsive={responsive}
+                            ssr={true} // Set to true if you are using server-side rendering
+                            infinite={true}
+                            keyBoardControl={true}
+                            customTransition="all .5"
+                            transitionDuration={500}
+                            containerClass="carousel-container"
+                            removeArrowOnDeviceType={["tablet", "mobile"]}
+                            deviceType="desktop"
+                            dotListClass="custom-dot-list-style"
+                            itemClass="carousel-item-padding-40-px"
+                        >
+                            {dataD.map((d, index) => (
+                                <div key={index} className="skills-item">
+                                    <div className="skills-image">
+                                        <img src={d.img} alt="" />
+                                    </div>
+                                    <div>
+                                        <h4>{d.name}</h4>
+                                    </div>
+                                </div>
+                            ))}
+                        </Carousel>
+                    </div>
+                </div>
+            </div>
+        </motion.section>
+    );
+};
 
 export default About;
