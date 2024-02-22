@@ -269,7 +269,7 @@
 
 /* Styles for the text item */
 .item{
-    width: 550px;
+    /* width: 550px; */
     p{
         font-size: 1.3rem;
         color: #ffff;
@@ -381,15 +381,6 @@
 }
 
 
-/* 
-.invalid {
-    border: 1px solid red;
-}
-
-.invalid-textarea {
-    border: 1px solid red;
-} */
-
 
 /* Media query for smaller screens */
 @media (max-width: 1020px) {
@@ -406,12 +397,13 @@
 
     /* Adjusted styles for the contact container */
     .contact-container{
+        border: 2px solid red;
         border-radius: 10px;
         margin: 1rem;
         /* margin: 0 1rem; */
         margin:  15px;
         padding: 5px 5px 5px 5px;
-        width: max-content;
+        
     }
 
      /* Adjusted styles for the heading */
@@ -422,6 +414,9 @@
         font-size: 1.3rem;
     }
 
+    .item{
+        margin: 0 10px;
+    }
     /* Adjusted styles for the contact contents */
     .contact-contents{
         display: flex;
@@ -453,11 +448,11 @@
     }
     
     /* Adjusted styles for the phone SVG */
-    .phoneSVG{
+    /* .phoneSVG{
         display: block;
         width: 50px;
         height: 40px;
-    }
+    } */
 
     .formContainer{
         width: 350px;

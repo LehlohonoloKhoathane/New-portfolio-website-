@@ -17,7 +17,7 @@ const Root = () => {
 
 const Loader = () => {
     return (
-      <div className="loader">  <RingLoader color="#36D7B7" loading={true} size={60} /></div>
+      <div className="loader">  <RingLoader color="#09BE67" loading={true} size={60} /></div>
     );
   };
   
