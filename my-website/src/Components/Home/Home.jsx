@@ -12,7 +12,7 @@ const textVariants = {
         x: 0,           //Move to the center
         opacity: 1,
         transition: {
-            duration: 1,
+            duration: 2,
             staggerChildren: 0.1,
         },
     },

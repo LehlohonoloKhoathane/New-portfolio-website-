@@ -117,7 +117,6 @@ const About = () => {
         }
     };
 
-
     //Variants for text animation
     const textVariants = {
         initial: {
@@ -128,7 +127,7 @@ const About = () => {
             x: 0,           //Move to the center
             opacity: 1,
             transition: {
-                duration: 1,
+                duration: 2,
                 staggerChildren: 0.1,
             },
         },
@@ -146,24 +145,25 @@ const About = () => {
     }, [inView]);
 
     return (
-        <motion.section className='about-container' id='about-container'>
-            <motion.h4 variants={textVariants}>The Person behind the work</motion.h4>
-            <motion.hr variants={textVariants}/>
-            <motion.h6 variants={textVariants}>Lehlohonolo Khoathane</motion.h6>
-            <div className='about-content'>
-                <div className='imageCover'>
-                    <p className='about-heading'>Aspiring Full Stack Software Developer <VerticalLine height='20px' /> Aspiring Data Scientist</p>
-                </div>
-                <div className='about'>
-                    <img className='profile-picture' src='./assets/images/lehlohonolo.jpg' alt='my profile' />
-                    <div className="about-info">
-                        <p className='about-description'>I'm a versatile aspiring full-stack software developer with a solid background in <span className='degree'>BSc Computer Science and
+        <motion.section variants={textVariants} className='about-container' id='about-container'>
+           <motion.h4 variants={textVariants} initial="initial" animate="animate">The Person behind the work</motion.h4>
+            <motion.hr variants={textVariants} initial="initial" animate="animate" />
+            <motion.h6 variants={textVariants} initial="initial" animate="animate">Lehlohonolo Khoathane</motion.h6>
+            <motion.div variants={textVariants} initial="initial" animate="animate" className='about-content'>
+                <motion.div variants={textVariants} initial="initial" animate="animate" className='imageCover'>
+                    <motion.p variants={textVariants} initial="initial" animate="animate" className='about-heading'>Aspiring Full Stack Software Developer <VerticalLine height='20px' /> Aspiring Data Scientist</motion.p>
+                </motion.div>
+                <motion.div variants={textVariants} initial="initial" animate="animate" className='about'>
+                    <motion.img variants={textVariants} initial="initial" animate="animate" className='profile-picture' src='./assets/images/lehlohonolo.jpg' alt='my profile' />
+                    <motion.div variants={textVariants} initial="initial" animate="animate" className="about-info">
+                        <motion.p variants={textVariants} initial="initial" animate="animate" className='about-description'>I'm a versatile aspiring full-stack software developer with a solid background in <span className='degree'>BSc Computer Science and
                             Statistics.</span> Equipped with a degree in these fields and <span>one year of experience</span> in software development, I bring a unique blend of analytical thinking and technical
                             prowess to projects. Proficient in diverse programming languages and technologies, I excel in crafting end-to-end solutions, seamlessly integrating front-end and back-end 
-                            development. My passion lies in delivering products that not only meet but exceed client expectations.</p>
-                    </div>
-                </div>
-            </div>
+                            development. My passion lies in delivering products that not only meet but exceed client expectations.</motion.p>
+                    </motion.div>
+                </motion.div>
+            </motion.div>
+
             <div className='skills-container'>
                 <h1>Tech Expertise</h1>
                 <hr className='horizontal-line'/>
