@@ -87,7 +87,7 @@
 }
 
 /* Styles for the link */
-.work-item a {
+.service-item a {
     display: inline-block;
     margin-top: 10px; /* Adjust as needed */
     color: #09BE67; /* Link color */
@@ -95,7 +95,7 @@
 }
 
 /* Styles for the external link icon */
-.work-item a i {
+.service-item a i {
     margin-left: 5px; /* Space between link text and icon */
 }
 
