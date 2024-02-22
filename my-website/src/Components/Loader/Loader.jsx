@@ -1,5 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
+import { RingLoader } from 'react-spinners';
+
 import './Loader.css';
 
 const Root = () => {
@@ -9,13 +11,13 @@ const Root = () => {
       // Simulating a 2-second delay
       setTimeout(() => {
         setLoading(false);
-      }, 2000);
+      }, 4000);
     }, []);
 }  
 
 const Loader = () => {
     return (
-      <div className="loader">Loading...</div>
+      <div className="loader">  <RingLoader color="#36D7B7" loading={true} size={60} /></div>
     );
   };
   
