@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from "react";
 import Slider from 'react-slick';
 import './Work.css';
+import { FaExternalLinkAlt } from 'react-icons/fa';
+
 import { color } from 'framer-motion';
+import { useInView } from "react-intersection-observer";
 import { ImQuotesLeft } from "react-icons/im";
 import { ImQuotesRight } from "react-icons/im";
 import { motion } from 'framer-motion';
@@ -32,32 +35,70 @@ const Work = () => {
         ]
     };
 
-    const testmonialContainerVariants = {
-        hidden: {opacity: 0},
-        show: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.25,
-            },
-        },
-    }
+    const [isInView, setIsInView] = useState(false);
+    const { ref: serviceRef, inView: serviceInView } = useInView({
+      threshold: 0.5,
+      triggerOnce: true,
+    });
+    const { ref: carouselRef, inView: carouselInView } = useInView({
+      threshold: 0.5,
+      triggerOnce: true,
+    });
+    const { ref: testimonialRef, inView: testimonialInView } = useInView({
+      threshold: 0.5,
+      triggerOnce: true,
+    });
 
-    const testimonialVariants = {
-        hidden: {opacity: 0},
-        show: { opacity: 1},
-    }
+    useEffect(() => {
+      setIsInView(serviceInView && carouselInView && testimonialInView);
+    }, [serviceInView, carouselInView, testimonialInView]);
+
+
+    // const [isInView, setIsInView] = useState(false);
+    // const { ref, inView } = useInView({
+    //   threshold: 0.5,
+    //   triggerOnce: true,
+    // });
+  
+    // useEffect(() => {
+    //   setIsInView(inView);
+    // }, [inView]);
+
 
     return (
-        <section className="Services-container" id="Services-container">
+        <motion.section
+        ref={serviceRef}
+        initial={{ x: 0, opacity: 0 }} 
+        animate={{ x: isInView ? 0 : -100, opacity: isInView ? 1 : 0 }}
+        transition={{ duration: 1, ease: 'easeOut' }} className="Services-container" id="Services-container">
             {/* Work Section */}
-            <h4>Creations</h4>
-            <hr />
-            <div className="service-subheading">
+            <motion.h4 
+            initial={{ x: 0, opacity: 0 }} 
+                animate={{ x: isInView? 0 : -100, opacity: isInView ? 1 : 0 }}
+                transition={{ duration: 1, ease: 'easeOut' }}>Creations</motion.h4>
+            <motion.hr  
+            initial={{ x: 0, opacity: 0 }} 
+                animate={{ x: isInView ? 0 : -100, opacity: isInView? 1 : 0 }}
+                transition={{ duration: 1, ease: 'easeOut' }}/>
+            <motion.div 
+            initial={{ x: 0, opacity: 0 }} 
+                animate={{ x: isInView ? 0 : -100, opacity: isInView? 1 : 0 }}
+                transition={{ duration: 1, ease: 'easeOut' }} className="service-subheading">
                 <p className="Service-underP">Witness the harmony of <span>design</span> and <span>functionality</span>, immerse yourself in the visual allure of <span>innovations</span> Let my creations speak for themselves</p>
-            </div>
+            </motion.div>
+
              {/* Carousel/slider for showcasing work */}
-            <div className="service-content">
-                <div className="service-content-items">
+            <motion.div ref={carouselRef}
+            initial={{ x: 0, opacity: 0 }} 
+            animate={{ x: isInView? 0 : -100, opacity: isInView ? 1 : 0 }}
+            transition={{ duration: 1, ease: 'easeOut' }} 
+            className="service-content">
+
+                <motion.div 
+                initial={{ x: 0, opacity: 0 }} 
+                animate={{ x: isInView ? 0 : -100, opacity: isInView ? 1 : 0 }}
+                transition={{ duration: 1, ease: 'easeOut' }}
+                className="service-content-items">
                     <Slider {...settings}>
                     {/* Mapping over dataW to render each work item */}
                     {dataW.map((d) => (
@@ -68,49 +109,70 @@ const Work = () => {
                             <div>
                                 <h4>{d.name}</h4>
                                 <p>{d.description}</p>
+                                <a href="">{d.link} < FaExternalLinkAlt/></a>
                             </div>
                         </div>
                     ))}
                     </Slider>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
 
             {/* Testimonials section */}
-            <div className="work-testimonials">
-                <h2>Hear from those I have collaborated with</h2> 
-                <hr /> 
-                <motion.div variants={testmonialContainerVariants}
-                initial="hidden"
-                animate="show" 
+            <motion.div className="work-testimonials">
+                
+                <motion.h2   ref={testimonialRef}
+                initial={{ x: 0, opacity: 0 }} 
+                animate={{ x: isInView ? 0 : -100, opacity: isInView ? 1 : 0 }}
+                transition={{ duration: 1, ease: 'easeOut' }}>Hear from those I have collaborated with</motion.h2> 
+                
+                <motion.hr 
+                initial={{ x: 0, opacity: 0 }} 
+                animate={{ x: isInView ? 0 : -100, opacity: isInView ? 1 : 0 }}
+                transition={{ duration: 1, ease: 'easeOut' }}/>
+
+                <motion.div 
+                initial={{ x: 0, opacity: 0 }} 
+                animate={{ x: isInView ? 0 : -100, opacity: isInView ? 1 : 0 }}
+                transition={{ duration: 1, ease: 'easeOut' }} 
                 className="testimonial-items">
                     {/* Testimonial items */}
                     <motion.div 
-                    variants={testimonialVariants}
+                    
+                    initial={{ x: 0, opacity: 0 }} 
+                    animate={{ x: isInView ? 0 : -100, opacity: isInView ? 1 : 0 }}
+                    transition={{ duration: 1, ease: 'easeOut' }}
                     className="item-testi">
-                        <img src="./assets/images/khoathane.jp" alt="testmonial" />
+
                         <h3 className="name">King, <span>Ceo</span></h3>
                         <ImQuotesLeft className='myQuote'/>
                         <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p><ImQuotesRight className='myQuote'/>
                     </motion.div>
+
                     <motion.div
-                    variants={testimonialVariants}
+                   
+                   initial={{ x: 0, opacity: 0 }} 
+                   animate={{ x: isInView ? 0 : -100, opacity: isInView ? 1 : 0 }}
+                   transition={{ duration: 1, ease: 'easeOut' }}
                     className="item-testi">
-                        <img src="./assets/images/khoathane.jp" alt="testmonial" />
                         <h3 className="name">King, <span>Ceo</span></h3>
                         <ImQuotesLeft className='myQuote'/>
                         <p>Mr Khoathane delivers excellence!Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p><ImQuotesRight className='myQuote'/>
                     </motion.div>
+
                     <motion.div
-                    variants={testimonialVariants}
+                    
+                    initial={{ x: 0, opacity: 0 }} 
+                    animate={{ x: isInView? 0 : -100, opacity: isInView? 1 : 0 }}
+                    transition={{ duration: 1, ease: 'easeOut' }}
                     className="item-testi">
-                        <img src="./assets/images/khoathane.jp" alt="testmonial" />
+
                         <h3 className="name">King, <span>Ceo</span></h3>
                         <ImQuotesLeft className='myQuote'/>
                         <p>Mr Khoathane delivers excellence! Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p><ImQuotesRight className='myQuote'/>
                     </motion.div>
                 </motion.div> 
-            </div> 
-        </section>
+            </motion.div> 
+        </motion.section>
     );
 };
 
@@ -119,17 +181,20 @@ const dataW = [
     {
         img: `./assets/images/festival.png`,
         description: `Crafted this immersive Cape Town Festival website experience, seamlessly blending sleek design with responsive functionality.`,
-        name:`Cape Town Festival`
+        name:`Cape Town Festival`,
+        link: <a href="https://github.com/LehlohonoloKhoathane/The-Cape_Town_Festival-Backend" target="blank">GitHub</a>
     },
     {
         img: `./assets/images/Dashboard.png`,
         description: `This is one of the data analysis projects that was created using power BI and SQL for a student dashboard.`,
-        name:`Student Dashbord`
+        name:`Student Dashbord`,
+        link: <a href="https://github.com/LehlohonoloKhoathane/Student_Dashboard" target="blank">GitHub</a>
     },
     {
         img: `./assets/images/websitecol.png`,
         description: `This website is for an IT group of young people to make them available on the internet and do some work.`,
-        name:`Website`
+        name:`Website`,
+        link: <a href="https://midniters.netlify.app/" target="blank">Go to Website</a>
     }
 ]
 

@@ -86,6 +86,20 @@
     margin: 0px 50px;
 }
 
+/* Styles for the link */
+.service-item a {
+    display: inline-block;
+    margin-top: 10px; /* Adjust as needed */
+    color: #09BE67; /* Link color */
+    text-decoration: none;
+}
+
+/* Styles for the external link icon */
+.service-item a i {
+    margin-left: 5px; /* Space between link text and icon */
+}
+
+
 
 /* Styling for the testimonials section */
 .work-testimonials{

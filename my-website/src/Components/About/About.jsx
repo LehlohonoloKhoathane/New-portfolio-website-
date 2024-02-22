@@ -1,4 +1,4 @@
-//importing necessary libraries for about section
+//importing necessary dependencies for about section
 import React, { useEffect, useState } from "react";
 import { motion } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
@@ -177,7 +177,7 @@ const About = () => {
                 animate={{ x: inView ? 0 : -100, opacity: inView ? 1 : 0 }}
                 transition={{ duration: 1, ease: 'easeOut' }}
                 className='skills-development'
-        >
+                >
                 <motion.h2
                 initial={{ x: 0, opacity: 0 }} 
                 animate={{ x: inView ? 0 : -100, opacity: inView ? 1 : 0 }}

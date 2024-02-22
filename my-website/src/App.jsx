@@ -44,9 +44,10 @@ const App = () => {
         <Home />
          <About/>
          <Services/>
+         <Work />
         {/*<ToastContainer />
        
-        <Work />
+       
         <Contact/>
         <BackToTopButton/> */}
          {/* <Footer/>  */}
