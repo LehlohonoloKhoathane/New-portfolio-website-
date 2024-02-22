@@ -1,3 +1,4 @@
+//Import necessary dependencies from React and other libraries
 import React, { useEffect, useState } from "react";
 import "./Services.css";
 import Slider from "react-slick";
@@ -6,7 +7,10 @@ import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+//Defining the Services component
 const Services = () => {
+
+   //Configuration for the Slick slider
   const settings = {
     dots: true,
     infinite: true,
@@ -31,39 +35,51 @@ const Services = () => {
     ],
   };
 
+   //State and ref for detecting when the section is in view
   const [isInView, setIsInView] = useState(false);
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
   });
 
+   //Update the state when the section comes into view
   useEffect(() => {
     setIsInView(inView);
   }, [inView]);
 
+  //Render the Services component
   return (
     <section className="Services-container" id="Services-container">
-      <motion.h4 initial={{ x: "-100%" }}
-          animate={{ x: isInView ? 0 : "-100%" }}
-          transition={{ duration: 1, ease: "easeOut" }}>Expertise Capabilities</motion.h4>
-      <motion.hr initial={{ x: "-100%" }}
-          animate={{ x: isInView ? 0 : "-100%" }}
-          transition={{ duration: 1, ease: "easeOut" }} />
+       {/*Animate the heading*/}
+      <motion.h4 initial={{ x: 0, opacity: 0 }}
+        animate={{ x: inView ? 0 : -100, opacity: inView ? 1 : 0 }}
+        transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }}
+        >Expertise Capabilities</motion.h4>
+      {/* Animate the horizontal rule */}
+      <motion.hr 
+      initial={{ x: 0, opacity: 0 }} 
+      animate={{ x: inView ? 0 : -100, opacity: inView ? 1 : 0 }}
+      transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }} />
       <div className="service-subheading">
-        <motion.p initial={{ x: "-100%" }}
-          animate={{ x: isInView ? 0 : "-100%" }}
-          transition={{ duration: 1, ease: "easeOut" }} className="Service-underP">
+        {/* Animate the paragraph */}
+        <motion.p 
+        initial={{ x: 0, opacity: 0 }} 
+        animate={{ x: inView ? 0 : -100, opacity: inView ? 1 : 0 }}
+        transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }} 
+        className="Service-underP">
           Explore the synergy of expertise and capabilities that define my
           professional journey.
         </motion.p>
       </div>
       <div className="service-content" ref={ref}>
+           {/* Animate the service content */}
         <motion.div
           className="service-content-items"
-          initial={{ x: "-100%" }}
-          animate={{ x: isInView ? 0 : "-100%" }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          initial={{ x: 0, opacity: 0 }} 
+          animate={{ x: inView ? 0 : -100, opacity: inView ? 1 : 0 }}
+          transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }}
         >
+            {/* Render the Slick slider with service items */}
           <Slider {...settings}>
             {data.map((d) => (
               <div className="service-item" key={d.name}>
@@ -83,6 +99,7 @@ const Services = () => {
   );
 };
 
+// Data for different services
 const data = [
   {
     name: `Web Developer`,
@@ -106,4 +123,5 @@ const data = [
   },
 ];
 
+// Export the Services component
 export default Services;

@@ -165,11 +165,11 @@ const About = () => {
             </motion.div>
 
             <div className='skills-container'>
-                <h1>Tech Expertise</h1>
-                <hr className='horizontal-line'/>
-                <div className='skills-subheading'>
-                    <p>I bring dynamic set of skills to propel projects forward. Dive deeper into my <span>technological prowess.</span></p>
-                </div>
+                <motion.h1 variants={textVariants} initial="initial" animate="animate">Tech Expertise</motion.h1>
+                <motion.hr variants={textVariants} initial="initial" animate="animate" className='horizontal-line'/>
+                <motion.div className='skills-subheading'>
+                    <motion.p variants={textVariants} initial="initial" animate="animate">I bring dynamic set of skills to propel projects forward. Dive deeper into my <span>technological prowess.</span></motion.p>
+                </motion.div>
                  {/* Motion div for Development section */}
                 <motion.div
                 ref={ref}

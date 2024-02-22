@@ -43,8 +43,9 @@ const App = () => {
         <Cursor/>
         <Home />
          <About/>
+         <Services/>
         {/*<ToastContainer />
-        <Services/>
+       
         <Work />
         <Contact/>
         <BackToTopButton/> */}
