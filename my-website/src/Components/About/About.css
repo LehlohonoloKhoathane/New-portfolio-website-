@@ -2,7 +2,7 @@
 .about-container{
     border: 2px solid #09BE67;
     border-radius: 10px;
-    margin:  60px;
+    margin:  60px 7rem;
     padding: 15px 50px 10px 50px;
     box-shadow: 0 5px 25px rgba(138, 240, 163, 0.322);
 }
@@ -188,6 +188,9 @@
 
 /*Media query for smaller screens with maximum width of 1020px*/
 @media (max-width: 1020px) {
+  .about-container{
+    margin:  60px;
+}
 
   .about {
     display: flex;

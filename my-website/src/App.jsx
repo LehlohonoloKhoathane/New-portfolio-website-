@@ -38,22 +38,17 @@ const App = () => {
       <Loader />
     ) : (
       <div className='container'>
-        {/* <NavBar /> */}
-        {/* <Loader/> */}
+        <NavBar /> 
         <Cursor/>
         <Home />
-         <About/>
-         <Services/>
-         <Work />
-         <Contact/>
-        {/*<ToastContainer />
-       
-       
-       
-        <BackToTopButton/> */}
-         {/* <Footer/>  */}
+        <About/>
+        <Services/>
+        <Work />
+        <Contact/>
+        <ToastContainer />
+        <BackToTopButton/> 
+        <Footer/>  
       </div>
-  
     )}
     </>
 );

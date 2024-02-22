@@ -1,7 +1,7 @@
 /* Styles for the Services container */
 .Services-container{
     padding: 20px;
-    margin: 4rem;
+    margin: 4rem 6rem;
     position: relative;
 }
 
@@ -95,6 +95,15 @@
 .service-content-items{
     margin: 0px 50px;
 }
+
+
+@media screen and (max-width: 1020px) {
+    .Services-container{
+        margin: 4rem ;
+    }
+    
+}
+
 
 /* Media query for screens with max width of 768px */
 @media (max-width: 768px) {

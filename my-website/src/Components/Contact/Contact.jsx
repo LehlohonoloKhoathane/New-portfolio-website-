@@ -232,7 +232,7 @@ const Contact = () => {
 
                         {/* Send button and recaptcha implementation*/}
                         <div className="send-btn-container">
-                            <ReCAPTCHA className="my-recaptcha" sitekey="6LcGFnApAAAAAAZWCSWxeK0TZ68rzFkdQ519D5ap" onChange={handleCaptchaChange} />
+                            <ReCAPTCHA className="my-recaptcha" sitekey="6LdCInwpAAAAAIOE4RNOcH_kyjfx6ecNsm2umN50" onChange={handleCaptchaChange} />
                             <button className="sendButton"  style={{ textAlign: 'center' }} onClick={getData}>Send</button>
                         </div> 
                     </motion.form>

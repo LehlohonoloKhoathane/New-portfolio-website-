@@ -3,6 +3,7 @@
     padding: 20px;
     overflow: hidden;
     position: relative;
+    margin: 0 4rem;
 }
 
  /* Styles for the home content  */
@@ -86,8 +87,21 @@ body {
     z-index: -1; 
 }
 
+@media screen and (max-width: 1020px) {
+    .home-container{
+        margin: 0;
+    }
+}
+
 /* Media query for screens with a maximum width of 768px */
 @media (max-width: 768px) {
+
+    .home-container{
+        padding: 20px;
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+    }
     .slidingTextContainer {
         font-size: 10vh; /* Adjust font size for smaller screens */
     }

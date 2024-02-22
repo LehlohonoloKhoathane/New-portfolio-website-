@@ -1,15 +1,13 @@
 /*Styles for navigation bar*/
 
-/*Navbar wrapper*/
-
 .NavBar {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     height: 10vh;
     padding: 0 6rem;
-    border: 2px solid red;
-    position: relative; /* Add this line */
+    position: relative;
+    margin: 1.5rem 3rem; 
 }
 
 .menuItems {
@@ -62,29 +60,51 @@
 
 .navToggler svg {
     width: 3rem;
-    height: 3rem; /* Set the height to make sure the SVG is visible */
+    height: 3rem; 
     transition: 0.4s ease-in;
     margin-top: 2rem;
+  }
+
+  @media screen and (max-width: 1020px) {
+    .NavBar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 10vh;
+        padding: 0 6rem;
+        position: relative;
+        margin: 0 ; 
+    }
+    
   }
 
 
   @media screen and (max-width: 768px) {
     .navToggler {
         display: block;
-        border: 2px solid red;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        position: fixed;
-        top: 2rem; /* Adjust as needed */
+        top: 2rem; 
         right: 2rem;
         z-index: 999;
     }
 
+    .NavBar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 10vh;
+        padding: 0 6rem;
+        position: relative;
+        margin: 0; 
+    }
+    
+
     .menuItems {
         position: fixed;
-        top: 10vh;
+        top: 11vh;
         right: 0;
         width: 100%;
         height: 50vh;
@@ -93,7 +113,7 @@
         flex-direction: column;
         transform: translateX(100%);
         transition: 0.5s ease-in;
-        gap: 3rem; /* Reduce the gap between menu items */
+        gap: 3rem;
         justify-content: flex-start;
         padding: 3rem 0 0 0;
       }

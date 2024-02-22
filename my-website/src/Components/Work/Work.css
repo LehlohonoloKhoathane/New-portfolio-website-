@@ -1,7 +1,7 @@
 /* Styling for the work section container */
 .work-container{
     padding: 20px;
-    margin: 4rem;
+    margin: 4rem 6rem;
     position: relative;
 }
 
@@ -102,12 +102,20 @@
 /* Styling for the testimonials section */
 .work-testimonials{
     padding: 10px;
-    margin: 3rem 4rem 2rem;
+    /* margin: 3rem 4rem 2rem; */
 }
 
 /* Styling for the testimonials section title */
 .work-testimonials h2{
     color: #ffff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.work-testimonials .testPar{
+    color: #ffff;
+    font-size: 1.5rem;
+    margin: 20px;
     text-align: center;
 }
 
@@ -140,7 +148,7 @@
     border: 2px solid #09BE67;
     border-radius: 5px;
     margin: 1rem;
-    box-shadow: 0 5px 25px rgba(170, 165, 165, 0.322);
+    box-shadow: 0 5px 25px rgba(138, 240, 163, 0.322);
 }
 
 
@@ -152,6 +160,13 @@
 
 .myQuote{
     margin-left: 10px;
+}
+
+@media (max-width: 1020px) {
+    .work-container{
+        margin: 4rem ;
+    }
+    
 }
 
 /* Media query for screens with max width of 768px */
@@ -208,9 +223,20 @@
         margin: 1.5rem 2rem 1rem;
     }
 
+    .work-testimonials h2{
+        font-size: 1.2rem;
+    }
+
     .work-testimonials h3{
         font-size: 1.3rem;
         color: #ffff;
+    }
+
+    .work-testimonials .testPar{
+        color: #ffff;
+        font-size: 13px;
+        
+        text-align: center;
     }
 
     .testimonial-items {

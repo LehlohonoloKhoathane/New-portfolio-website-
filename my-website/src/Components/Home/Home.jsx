@@ -48,7 +48,7 @@ const Home = () => {
                 </motion.div>
                 <div className="links-container">
                     <motion.a href=""><span  variants={textVariants}>See Work</span></motion.a>
-                    <motion.a href=""><span  variants={textVariants}>Downoload Cv</span></motion.a>
+                    <motion.a href="https://drive.google.com/file/d/11QZcGIzMg_JJwe1_ned3JGNJWFkzELTD/view?usp=sharing" target="blank"><span  variants={textVariants}>Downoload Cv</span></motion.a>
                 </div>
                 <motion.div className="slidingTextcontainer" variants={sliderVariants} initial="initial" animate="animate">Full Stack Software Developer</motion.div>
             </motion.div>

@@ -112,6 +112,7 @@ const Work = () => {
             className="work-testimonials">
                 <motion.h2>Hear from those I have collaborated with</motion.h2>
                 <motion.hr />
+                <p className="testPar">From clients to collaborators, their words highlight my commitment to excellence and dedication I bring to every project."</p>
                 <motion.div className="testimonial-items">
                     {/* Testimonial items */}
                     <motion.div className="item-testi">

@@ -61,7 +61,7 @@ const Services = () => {
       <motion.hr />
       <div className="service-subheading">
         {/* Animate the paragraph */}
-        <motion.p>
+        <motion.p className="Service-underP">
           Explore the synergy of expertise and capabilities that define my
           professional journey.
         </motion.p>
