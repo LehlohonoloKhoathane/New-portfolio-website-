@@ -180,6 +180,7 @@
    filter: brightness(80%);
 }
 
+/*Styles for skill name*/
 .skills-item h4{
   font-size: 20px;
   color: #09BE67;
@@ -199,6 +200,16 @@
     width: 280px; 
     height: auto;
     margin: 20px;
+  }
+
+  .skills-image{
+    width: 100px;
+    height: auto;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    margin-left: 50px;
   }
   
 }
@@ -288,8 +299,7 @@
     align-items: center;
     text-align: center;
     padding: 30px;
-    border: 2px solid red;
-    margin: 2px;
+    margin-left: 20px;
   }
   
   /* .skills-image img{
@@ -310,7 +320,6 @@
 }
 
 .skill-name{
-  border: 2px solid red;
   margin: 0 30px;
   justify-content: center;
   align-items: center;

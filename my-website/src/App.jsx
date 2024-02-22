@@ -20,20 +20,26 @@ import SlideInOnScroll from './Components/SLideInOnScroll/SLideInOnScroll';
 
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
+  
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-      const timeout = setTimeout(() => {
-          setLoading(false);
-      }, 2000); // Simulating a 2-second loading time
+    // Simulating content loading delay
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
 
-      return () => clearTimeout(timeout);
+    return () => clearTimeout(timer);
   }, []);
   
   return (
     <>
-      <NavBar />
-       <div className='container'>
+    {isLoading ? (
+      <Loader />
+    ) : (
+      <div className='container'>
+        {/* <NavBar /> */}
+        {/* <Loader/> */}
         <Cursor/>
         <Home />
          <About/>
@@ -42,10 +48,12 @@ const App = () => {
         <Work />
         <Contact/>
         <BackToTopButton/> */}
+         {/* <Footer/>  */}
       </div>
-      {/* <Footer/>  */}
+  
+    )}
     </>
-  );
-};
-
+);
+    
+}    
 export default App;
