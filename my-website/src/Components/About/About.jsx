@@ -186,7 +186,7 @@ const About = () => {
                     Development
                 </motion.h2>
                 <motion.div
-                 initial={{ x: 0, opacity: 0 }} 
+                initial={{ x: 0, opacity: 0 }} 
                 animate={{ x: inView ? 0 : -100, opacity: inView ? 1 : 0 }}
                 transition={{ duration: 1, ease: 'easeOut', delay: 0.4 }}
                 className='skills-dev'

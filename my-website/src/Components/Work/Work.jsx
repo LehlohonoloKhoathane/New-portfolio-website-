@@ -32,36 +32,58 @@ const Work = () => {
         ]
     };
 
-    // State and ref for detecting when the section is in view
-    const [isInView, setIsInView] = useState(false);
-    const { ref, inView } = useInView({
-      threshold: 0.5,
-      triggerOnce: true,
-    });
+   // State and ref for detecting when the service section is in view
+   const [isServiceInView, setIsServiceInView] = useState(false);
+   const { ref: serviceRef, inView: serviceInView } = useInView({
+       threshold: 0.5,
+       triggerOnce: true,
+   });
 
-    // Update the state when the section comes into view
-    useEffect(() => {
-      setIsInView(inView);
-    }, [inView]);
+   // State and ref for detecting when the testimonials section is in view
+   const [isTestimonialsInView, setIsTestimonialsInView] = useState(false);
+   const { ref: testimonialsRef, inView: testimonialsInView } = useInView({
+       threshold: 0.5,
+       triggerOnce: true,
+   });
+
+   // Update the state when the service section comes into view
+   useEffect(() => {
+       setIsServiceInView(serviceInView);
+   }, [serviceInView]);
+
+   // Update the state when the testimonials section comes into view
+   useEffect(() => {
+       setIsTestimonialsInView(testimonialsInView);
+   }, [testimonialsInView]);
+
 
     // Render the Work component
     return (
-        <motion.div
-            ref={ref}
-            initial={{ x: 0, opacity: 0 }}
-            animate={{ x: isInView ? 0 : -100, opacity: isInView ? 1 : 0 }}
-            transition={{ duration: 1, ease: 'easeOut' }}
-            className="Services-container" id="Services-container"
-        >
+        <motion.div className="Services-container" id="work-container">
             {/* Work Section */}
-            <motion.h4>Creations</motion.h4>
-            <motion.hr />
+            <motion.h4 
+            ref={serviceRef} 
+            initial={{ x: 0, opacity: 0 }}
+            animate={{ x: isServiceInView ? 0 : -100, opacity: isServiceInView ? 1 : 0 }}
+            transition={{ duration: 1, ease: 'easeOut' }}>Creations</motion.h4>
+            <motion.hr ref={serviceRef} 
+            initial={{ x: 0, opacity: 0 }}
+            animate={{ x: isServiceInView ? 0 : -100, opacity: isServiceInView ? 1 : 0 }}
+            transition={{ duration: 1, ease: 'easeOut' }}/>
             <motion.div className="service-subheading">
-                <p className="Service-underP">Witness the harmony of <span>design</span> and <span>functionality</span>, immerse yourself in the visual allure of <span>innovations</span> Let my creations speak for themselves</p>
+                <motion.p ref={serviceRef} 
+                initial={{ x: 0, opacity: 0 }}
+                animate={{ x: isServiceInView ? 0 : -100, opacity: isServiceInView ? 1 : 0 }}
+                transition={{ duration: 1, ease: 'easeOut' }}className="Service-underP">Witness the harmony of <span>design</span> and <span>functionality</span>, immerse yourself in the visual allure of <span>innovations</span> Let my creations speak for themselves</motion.p>
             </motion.div>
 
             {/* Carousel/slider for showcasing work */}
-            <motion.div className="service-content">
+            <motion.div 
+            ref={serviceRef} 
+            initial={{ x: 0, opacity: 0 }}
+            animate={{ x: isServiceInView ? 0 : -100, opacity: isServiceInView ? 1 : 0 }}
+            transition={{ duration: 1, ease: 'easeOut' }}
+            className="service-content">
                 <motion.div className="service-content-items">
                     <Slider {...settings}>
                         {/* Mapping over dataW to render each work item */}
@@ -82,7 +104,12 @@ const Work = () => {
             </motion.div>
 
             {/* Testimonials section */}
-            <motion.div className="work-testimonials">
+            <motion.div
+            ref={testimonialsRef} 
+            initial={{ x: 0, opacity: 0 }}
+            animate={{ x: isTestimonialsInView ? 0 : -100, opacity: isTestimonialsInView ? 1 : 0 }}
+            transition={{ duration: 1, ease: 'easeOut' }}
+            className="work-testimonials">
                 <motion.h2>Hear from those I have collaborated with</motion.h2>
                 <motion.hr />
                 <motion.div className="testimonial-items">

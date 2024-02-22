@@ -1,12 +1,12 @@
 /* Styling for the work section container */
-.Services-container{
+.work-container{
     padding: 20px;
     margin: 4rem;
     position: relative;
 }
 
 /* Styling for the work section title */
-.Services-container h4{
+.work-container h4{
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -15,26 +15,26 @@
 }
 
 /* Styling for the subheading in the work section */
-.Services-container .Service-underP{
+.work-container .work-underP{
     font-size: 1.5rem;
     color: #ffff;
     margin: 20px;
 }
 
 /* Center align the subheading */
-.service-subheading{
+.work-subheading{
     text-align: center;
 }
 
 /* Styling for the work content container */
-.Services-content{
+.work-content{
     display: flex;
     flex-direction: column;
     padding: 100px;
 }
 
 /* Styling for each work item */
-.service-item{
+.work-item{
     border: 2px solid #09BE67;
     border-radius: 10px;
     padding: 10px;
@@ -46,14 +46,14 @@
 }
 
 /* Styling for images inside work items */
-.Service-item img{
+.work-item img{
     width: 200px;
     height: auto;
     align-content: center;
 }
 
 /* Styling for the work item title */
-.service-item h4{
+.work-item h4{
     text-align: center;
     font-size: 1.7rem;
     color: #09BE67;
@@ -61,14 +61,14 @@
 }
 
 /* Styling for the work item description */
-.service-item p{
+.work-item p{
     font-size: 1.2rem;
     text-align: center;
     color: #ffff;
 }
 
 /* Styling for the work image container */
-.service-image {
+.work-image {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -76,18 +76,18 @@
 
 
 /* Styling for images inside the work image container */
-.service-image img {
+.work-image img {
     max-width: 50%;
     max-height: 100%;
 }
 
 /* Styling for the container of work content items */
-.service-content-items{
+.work-content-items{
     margin: 0px 50px;
 }
 
 /* Styles for the link */
-.service-item a {
+.work-item a {
     display: inline-block;
     margin-top: 10px; /* Adjust as needed */
     color: #09BE67; /* Link color */
@@ -95,7 +95,7 @@
 }
 
 /* Styles for the external link icon */
-.service-item a i {
+.work-item a i {
     margin-left: 5px; /* Space between link text and icon */
 }
 
@@ -158,13 +158,13 @@
 
 /* Media query for screens with max width of 768px */
 @media (max-width: 768px) {
-    .Services-container{
+    .work-container{
         padding: 10px;
         margin: 1rem;
         position: relative;
     }
 
-    .Services-container h4{
+    .work-container h4{
         font-size: 1.2rem;
         font-weight: 600;
         margin-bottom: 1rem;
@@ -172,11 +172,11 @@
         color: #ffff;
     }
 
-    .service-subheading{
+    .work-subheading{
         text-align: center;
     }
 
-    .Services-container .Service-underP{
+    .work-container .work-underP{
         font-size: 13px;
         color: #ffff;
         margin: 10px;
@@ -187,18 +187,18 @@
     }
 
 
-    .service-content-items{
+    .work-content-items{
         margin: 0px 15px;
     }
 
-    .service-item h4{
+    .work-item h4{
         text-align: center;
         font-size: 1.2rem;
         color: #09BE67;
         margin-bottom: 10px;
     }
     
-    .service-item p{
+    .work-item p{
         font-size: 13px;
         text-align: center;
         color: #ffff;
