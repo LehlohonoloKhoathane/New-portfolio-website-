@@ -1,6 +1,8 @@
  /* Styles for the home container  */
  .home-container{
     padding: 20px;
+    overflow: hidden;
+    position: relative;
 }
 
  /* Styles for the home content  */
@@ -74,12 +76,12 @@ body {
 
  /*Styles for the home sliding text container*/
 .slidingTextcontainer{
-    position: absolute;
+    position: fixed;
     font-size: 20vh;
     color: #ffffff1f;
     white-space: nowrap;
     top: 250px;
-    width: 50%;
+    width: 100%;
     font-weight: bold;
     z-index: -1; 
 }

@@ -50,8 +50,9 @@ const Home = () => {
                     <motion.a href=""><span  variants={textVariants}>See Work</span></motion.a>
                     <motion.a href=""><span  variants={textVariants}>Downoload Cv</span></motion.a>
                 </div>
+                <motion.div className="slidingTextcontainer" variants={sliderVariants} initial="initial" animate="animate">Full Stack Software Developer</motion.div>
             </motion.div>
-            <motion.div className="slidingTextcontainer" variants={sliderVariants} initial="initial" animate="animate">Full Stack Software Developer</motion.div>
+           
         </motion.section>
     );
 };

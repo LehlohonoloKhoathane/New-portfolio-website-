@@ -45,10 +45,11 @@ const App = () => {
          <About/>
          <Services/>
          <Work />
+         <Contact/>
         {/*<ToastContainer />
        
        
-        <Contact/>
+       
         <BackToTopButton/> */}
          {/* <Footer/>  */}
       </div>

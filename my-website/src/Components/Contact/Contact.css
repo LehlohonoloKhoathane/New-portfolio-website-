@@ -236,6 +236,11 @@
 .contact-container{
     height: 100%;
     margin: 2rem;
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Styles for the heading */
@@ -406,6 +411,7 @@
         /* margin: 0 1rem; */
         margin:  15px;
         padding: 5px 5px 5px 5px;
+        width: max-content;
     }
 
      /* Adjusted styles for the heading */

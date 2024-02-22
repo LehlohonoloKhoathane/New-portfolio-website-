@@ -49,29 +49,24 @@ const Services = () => {
 
   //Render the Services component
   return (
-    <section className="Services-container" id="Services-container">
+    <motion.section 
+    ref={ref}
+    initial={{ x: 0, opacity: 0 }}
+    animate={{ x: inView ? 0 : -100, opacity: inView ? 1 : 0 }}
+    transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }}
+    className="Services-container" id="Services-container">
        {/*Animate the heading*/}
-      <motion.h4 initial={{ x: 0, opacity: 0 }}
-        animate={{ x: inView ? 0 : -100, opacity: inView ? 1 : 0 }}
-        transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }}
-        >Expertise Capabilities</motion.h4>
+      <motion.h4 >Expertise Capabilities</motion.h4>
       {/* Animate the horizontal rule */}
-      <motion.hr 
-      initial={{ x: 0, opacity: 0 }} 
-      animate={{ x: inView ? 0 : -100, opacity: inView ? 1 : 0 }}
-      transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }} />
+      <motion.hr />
       <div className="service-subheading">
         {/* Animate the paragraph */}
-        <motion.p 
-        initial={{ x: 0, opacity: 0 }} 
-        animate={{ x: inView ? 0 : -100, opacity: inView ? 1 : 0 }}
-        transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }} 
-        className="Service-underP">
+        <motion.p>
           Explore the synergy of expertise and capabilities that define my
           professional journey.
         </motion.p>
       </div>
-      <div className="service-content" ref={ref}>
+      <div className="service-content">
            {/* Animate the service content */}
         <motion.div
           className="service-content-items"
@@ -95,7 +90,7 @@ const Services = () => {
           </Slider>
         </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
