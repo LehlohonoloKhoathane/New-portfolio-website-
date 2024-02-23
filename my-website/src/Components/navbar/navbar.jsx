@@ -38,12 +38,18 @@ const NavBar = () => {
     };
   }, []);
 
+  const scrollToHome = () => {
+    const homeSection = document.getElementById('home-container');
+    homeSection.scrollIntoView({ behavior: 'smooth' });
+  };
+
+
   return (
     <>
     {/* Logo */}
     
       <nav className='NavBar'>
-      <img className='mylogo' src="./assets/images/myLogo.png" alt="logo" />           {/* Menu items */}
+      <img className='mylogo' src="./assets/images/myLogo.png" onClick={scrollToHome}alt="logo" />           {/* Menu items */}
         <ul ref={menuRef} className={active}>
           <li className='navItem'>
             <ScrollLink

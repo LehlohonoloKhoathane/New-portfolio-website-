@@ -1,5 +1,4 @@
 /*Styles for navigation bar*/
-
 .NavBar {
     display: flex;
     align-items: center;
@@ -10,6 +9,7 @@
     margin: 1.5rem 3rem; 
 }
 
+/*Styles for menu items*/
 .menuItems {
     display: flex;
     align-items: center;
@@ -20,6 +20,7 @@
     width: 70vw;
   }
  
+  /*Styles for items*/
 .mylogo {
     width: 3rem;
     height: auto;
@@ -31,6 +32,7 @@
     cursor: pointer;
 }
 
+/*Styles for toggle button*/
 .navToggler {
     cursor: pointer;
     display: block;
@@ -38,26 +40,25 @@
     right: 2rem; 
     top: 50%; 
     transform: translateY(-50%); 
+    display: none;
 }
 
+/*Styles for links*/
 .menu-item{
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
     color: #ffff;
     position: relative;
     cursor: pointer;
 }
 
+/*Styles for links when hovering*/
 .menu-item:hover{
     color: #09BE67;
 }
 
-.navToggler{
-    cursor: pointer;
-    display: none;
-}
-
+/*Styles for icon*/
 .navToggler svg {
     width: 3rem;
     height: 3rem; 
@@ -65,7 +66,9 @@
     margin-top: 2rem;
   }
 
+  /*media queries for tablets*/
   @media screen and (max-width: 1020px) {
+    
     .NavBar {
         display: flex;
         align-items: center;
@@ -75,56 +78,49 @@
         position: relative;
         margin: 0 ; 
     }
+
+    .menuItems {
+        gap: 2rem;
+      }
+
+    .menu-item{
+        font-size: 1.3rem; 
+    }
     
   }
 
-
+/*media queries for mobile phones*/
   @media screen and (max-width: 768px) {
     .navToggler {
-        display: block;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        top: 2rem; 
-        right: 2rem;
-        z-index: 999;
+        top: 2.5rem;
+        margin-right: 1rem; 
+        z-index: 10000;
     }
 
     .NavBar {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        height: 10vh;
-        padding: 0 6rem;
-        position: relative;
         margin: 0; 
     }
-    
 
     .menuItems {
         position: fixed;
-        top: 11vh;
+        top: 0;
         right: 0;
         width: 100%;
-        height: 50vh;
+        height: 100vh;
         background:  #05052C;
-        display: flex;
         flex-direction: column;
         transform: translateX(100%);
         transition: 0.5s ease-in;
-        gap: 3rem;
-        justify-content: flex-start;
+        gap: 5rem;
+        justify-content: center;
         padding: 3rem 0 0 0;
       }
 
       .mylogo {
-        width: 3rem;
-        height: auto;
-        margin-top: 1.5rem;
-        position: absolute; 
-        left: 2rem; 
-        margin-right: 5rem;
         margin-left: 1rem;
         cursor: pointer;
     }

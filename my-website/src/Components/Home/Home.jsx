@@ -36,7 +36,7 @@ const sliderVariants = {
 {/* Home section content */}
 const Home = () => {
     return (
-        <motion.section className="home-container" variants={textVariants} initial="initial" animate="animate">
+        <motion.section className="home-container" id="home-container" variants={textVariants} initial="initial" animate="animate">
             <div className="blur HomeBlur"  variants={textVariants}></div>
             <motion.div className="home-content"  variants={textVariants}>
                 <motion.div className="heading-container"  variants={textVariants}>

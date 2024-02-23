@@ -187,7 +187,7 @@
 }
 
 /*Media query for smaller screens with maximum width of 1020px*/
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
   .about-container{
     margin:  60px;
 }
@@ -305,13 +305,6 @@
     margin-left: 20px;
   }
   
-  /* .skills-image img{
-    width: 50px;
-    height: auto;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-  } */
 
   .skills-image img{
   max-width: 100%; /* Ensure the image fits inside the container */
@@ -364,5 +357,5 @@
 .react-multi-carousel-arrow:before {
   color: white; /* Set the color of the arrow icons */
 }
-/*################################################*/
+
 
