@@ -85,7 +85,6 @@ const Services = () => {
                   <img src={d.img} alt="" />
                 </div>
                 <div>
-                  <img src="../../assets/images/UX.png" alt="" />
                   <h4>{d.name}</h4>
                   <p>{d.description}</p>
                 </div>

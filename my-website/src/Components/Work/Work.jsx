@@ -77,7 +77,7 @@ const Work = () => {
                 <motion.p ref={serviceRef} 
                 initial={{ x: 0, opacity: 0 }}
                 animate={{ x: isServiceInView ? 0 : -100, opacity: isServiceInView ? 1 : 0 }}
-                transition={{ duration: 1, ease: 'easeOut' }}className="Service-underP">Witness the harmony of <span>design</span> and <span>functionality</span>, immerse yourself in the visual allure of <span>innovations</span> Let my creations speak for themselves</motion.p>
+                transition={{ duration: 1, ease: 'easeOut' }}className="Service-underP">Witness the harmony of <span>design</span> and <span>functionality</span>, immerse yourself in the visual allure of <span>innovations</span> Let my creations speak for themselves.</motion.p>
             </motion.div>
 
             {/* Carousel/slider for showcasing work */}
@@ -115,7 +115,7 @@ const Work = () => {
             className="work-testimonials">
                 <motion.h2>Hear from those I have collaborated with</motion.h2>
                 <motion.hr />
-                <p className="testPar">From clients to collaborators, their words highlight <span> my commitment to excellence and dedication</span> I bring to every project."</p>
+                <p className="testPar">From clients to collaborators, their words highlight <span> my commitment to excellence and dedication</span> I bring to every project.</p>
                 <motion.div className="testimonial-items">
                     {/* Testimonial items */}
                     <motion.div className="item-testi">
@@ -126,7 +126,7 @@ const Work = () => {
                     <motion.div className="item-testi">
                         <h3 className="name">Chuma Raxothi,<span> Network Engineer</span></h3>
                         <ImQuotesLeft className='myQuote'/>
-                        <p>Thanks to Lehlohonolo's contributions, our project was completed on time and exceeded our expectations. I would highly recommend him to anyone looking for a talented and reliable software developer."</p><ImQuotesRight className='myQuote'/>
+                        <p>Thanks to Lehlohonolo's contributions, our project was completed on time and exceeded our expectations. I would highly recommend him to anyone looking for a talented and reliable software developer.</p><ImQuotesRight className='myQuote'/>
                     </motion.div>
                     <motion.div className="item-testi">
                         <h3 className="name">Mookgo Lebaka,<span> Client</span></h3>
