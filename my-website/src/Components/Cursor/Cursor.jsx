@@ -23,7 +23,7 @@ const Cursor = () =>{
 
      // Render a motion.div with a 'cursor' class that animates based on mouse position
     return(
-        <motion.div className='cursor' animate={{x:position.x-70, y:position.y-70}}></motion.div>
+        <motion.div className='cursor' animate={{x:position.x-1, y:position.y-108}}></motion.div>
     );
 };
 

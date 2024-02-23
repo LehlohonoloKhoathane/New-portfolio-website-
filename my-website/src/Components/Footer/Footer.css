@@ -1,33 +1,39 @@
+/*Styles for container*/
 .footer-container{
     padding: 20px ;
     background-color: #a5a58a;
 }
 
+/*Styles for social heading*/
 .footer-social h3{
     text-align: center;
     font-size: 2rem;
 }
 
+/*Styles for footer*/
 .footer{
     text-align: center;
     color: black;
     font-weight: 600;
 }
 
+/*Styles for socials*/
 .socials{
     color: black;
     justify-content: center;
-   
     margin: 20px;
     font-size: 2.5rem;
     display: flex;
     gap: 10px;
 }
 
+/*Styles for socials icons when clicked*/
 .footer-social .socials a:visited {
     color: black; 
 }
 
+/*Styles for socials icons when hovering*/
 .socialIcon:hover{
     color: #09BE67;
 }
+

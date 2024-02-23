@@ -67,14 +67,13 @@
   }
 
   /*media queries for tablets*/
-  @media screen and (max-width: 1020px) {
+  @media (max-width: 1024px) {
     
     .NavBar {
         display: flex;
         align-items: center;
         justify-content: flex-end;
         height: 10vh;
-        padding: 0 6rem;
         position: relative;
         margin: 0 ; 
     }
@@ -90,7 +89,7 @@
   }
 
 /*media queries for mobile phones*/
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .navToggler {
         display: flex;
         flex-direction: column;
@@ -123,6 +122,10 @@
       .mylogo {
         margin-left: 1rem;
         cursor: pointer;
+    }
+    
+    @media (max-width: 320px) {
+        
     }
 }
 

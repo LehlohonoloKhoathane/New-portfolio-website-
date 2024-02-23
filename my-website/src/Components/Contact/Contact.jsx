@@ -201,12 +201,13 @@ const Contact = () => {
     return (
         <motion.div
         ref={ref}
-            initial={{ x: 0, opacity: 0 }} 
-            animate={{ x: inView ? 0 : -100, opacity: inView ? 1 : 0 }}
-            transition={{ duration: 1, ease: 'easeOut' }}
-            className="contact-container" id="contact-container" variants={variants} initial="initial" whileInView="animate">
+        initial={{ x: 0, opacity: 0 }} 
+        animate={{ x: inView ? 0 : -100, opacity: inView ? 1 : 0 }}
+        transition={{ duration: 1, ease: 'easeOut' }}
+        className="contact-container" id="contact-container" variants={variants} initial="initial" whileInView="animate">
             <h1>Connect With Me</h1>
             <hr />
+            
             <motion.div className="contact-contents" variants={variants}>
                 <motion.div className="textContainer">
                     <motion.div className="item">

@@ -1,10 +1,11 @@
+//Importing necessary dependancies for Footer
 import React from "react";
 import './Footer.css';
 import { FaGithub } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 
-
+// Functional component for the footer section
 const Footer = () => {
     return (
        <section className="footer-container">

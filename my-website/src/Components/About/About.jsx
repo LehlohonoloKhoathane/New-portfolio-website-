@@ -69,8 +69,8 @@ const About = () => {
             img: `./assets/images/mongodb.png`
         },
         {
-            name: `R`,
-            img: `./asstes/images/r-learn.png`
+            name: `R Language`,
+            img: `./asstes/images/R_program.png`
         },
         {
             name: `SPSS`,

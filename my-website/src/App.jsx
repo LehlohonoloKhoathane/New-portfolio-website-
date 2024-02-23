@@ -1,3 +1,4 @@
+//importing necessary dependencies for the app
 import React from 'react';
 import './App.css';
 import "slick-carousel/slick/slick.css";
@@ -15,14 +16,13 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState, useEffect } from 'react';
 import Loader from './Components/Loader/Loader';
-import SlideInOnScroll from './Components/SLideInOnScroll/SLideInOnScroll';
-
 
 
 const App = () => {
-  
+
   const [isLoading, setIsLoading] = useState(true);
 
+  // Effect to simulate content loading delay
   useEffect(() => {
     // Simulating content loading delay
     const timer = setTimeout(() => {
@@ -31,27 +31,29 @@ const App = () => {
 
     return () => clearTimeout(timer);
   }, []);
-  
-  return (
-    <>
-    {isLoading ? (
-      <Loader />
-    ) : (
-      <div className='container'>
-        <NavBar /> 
-        <Cursor/>
-        <Home />
-        <About/>
-        <Services/>
-        <Work />
-        <Contact/>
-        <ToastContainer />
-        <BackToTopButton/> 
-        <Footer/>  
-      </div>
-    )}
-    </>
-);
     
-}    
+    // Render the loader if loading, otherwise render the app content
+    return (
+      <>
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <div className='container'>       {/* Main container for the app */}
+            <NavBar /> 
+            <Cursor/>
+            <Home />
+            <About/>
+            <Services/>
+            <Work />
+            <Contact/>
+            <ToastContainer />
+            <BackToTopButton/> 
+            <Footer/>  
+          </div>
+        )}
+      </>
+    );
+    
+  }    
+
 export default App;

@@ -33,19 +33,22 @@ const sliderVariants = {
     },
 };
 
-{/* Home section content */}
+/* Home section content */
 const Home = () => {
     return (
         <motion.section className="home-container" id="home-container" variants={textVariants} initial="initial" animate="animate">
             <div className="blur HomeBlur"  variants={textVariants}></div>
             <motion.div className="home-content"  variants={textVariants}>
+                
                 <motion.div className="heading-container"  variants={textVariants}>
                     <motion.h2> <span className="strokeText"  variants={textVariants}>Welcome , Embark on a journey through landscape of innovation.</span></motion.h2>
                 </motion.div>
                 <motion.hr  className="custom-hr"/>
+
                 <motion.div className="paragraph-container"  variants={textVariants}>
                     <motion.p  variants={textVariants}>Whether you are seeking a developer or to bring ideas to life or seeking innovative solutions, you are on the right place.</motion.p>
                 </motion.div>
+
                 <div className="links-container">
                     <motion.a href=""><span  variants={textVariants}>See Work</span></motion.a>
                     <motion.a href="https://drive.google.com/file/d/11QZcGIzMg_JJwe1_ned3JGNJWFkzELTD/view?usp=sharing" target="blank"><span  variants={textVariants}>Downoload Cv</span></motion.a>
