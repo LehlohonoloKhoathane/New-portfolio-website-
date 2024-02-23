@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './NavBar.css';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import logos from "../../assets/images/myLogo.png";
 
 
 const NavBar = () => {
@@ -49,7 +50,7 @@ const NavBar = () => {
     {/* Logo */}
     
       <nav className='NavBar'>
-      <img className='mylogo' src="./assets/images/myLogo.png" onClick={scrollToHome}alt="logo" />           {/* Menu items */}
+      <img className='mylogo' src={logos} onClick={scrollToHome}alt="logo" />           {/* Menu items */}
         <ul ref={menuRef} className={active}>
           <li className='navItem'>
             <ScrollLink

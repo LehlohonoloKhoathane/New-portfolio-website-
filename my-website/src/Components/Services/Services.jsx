@@ -6,6 +6,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import  ux  from "../../assets/images/UX.png";
+import dataA from "../../assets/images/dataA.png";
+import WebD from "../../assets/images/web_dev.png";
+import MobDev from "../../assets/images/mobile_dev.png";
 
 //Defining the Services component
 const Services = () => {
@@ -81,6 +85,7 @@ const Services = () => {
                   <img src={d.img} alt="" />
                 </div>
                 <div>
+                  <img src="../../assets/images/UX.png" alt="" />
                   <h4>{d.name}</h4>
                   <p>{d.description}</p>
                 </div>
@@ -97,22 +102,22 @@ const Services = () => {
 const data = [
   {
     name: `Web Developer`,
-    img: `./assets/images/web_dev.png`,
+    img: WebD,
     description: `I build dynamic and interactive web applications tailored to your specific needs.`,
   },
   {
     name: `Mobile App Developer`,
-    img: `./assets/images/mobile_dev.png`,
+    img: MobDev,
     description: `I craft visually appealing, user-friendly mobile apps for seamless experiences.`,
   },
   {
     name: `Data Analysis`,
-    img: `./assets/images/dataA.png`,
+    img: dataA,
     description: `I analyze and interpret data to derive valuable insights, enabling informed decision-making.`,
   },
   {
     name: `UX/UI Design`,
-    img: `./assets/images/UX.png`,
+    img: ux,
     description: `I create user friendly and visually appealing interfaces for digital products.`,
   },
 ];

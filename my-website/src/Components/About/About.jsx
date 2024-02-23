@@ -6,7 +6,29 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './VerticalLine.css';
 import VerticalLine from './VerticalLine'
-import './About.css'; // Your custom CSS file
+import './About.css'; 
+import myPic from "../../assets/images/lehlohonolo.jpg";
+import image1 from "../../assets/images/django-py.png";
+import image2 from "../../assets/images/git.png";
+import image3 from "../../assets/images/html.png";
+import image4 from "../../assets/images/C++.png";
+import image5 from "../../assets/images/Java.png";
+import image6 from "../../assets/images/vscode.png";
+import image7 from "../../assets/images/tailwind.png";
+import image8 from "../../assets/images/nodejs.png";
+import image9 from "../../assets/images/figma.png";
+import image10 from "../../assets/images/javas.png";
+import image11 from "../../assets/images/react.png";
+import image12 from "../../assets/images/Flutter.png";
+import image13 from "../../assets/images/mongodb.png";
+import image14 from "../../assets/images/r-learn.png";
+import image15 from "../../assets/images/scikit-learn.png";
+import image16 from "../../assets/images/SPSS.webp";
+import image17 from "../../assets/images/Excel.png";
+import image18 from "../../assets/images/sql.png";
+import image19 from "../../assets/images/powerBI.png"
+import image20 from "../../assets/images/python-logo.png"
+
 
 const About = () => {
     
@@ -14,51 +36,51 @@ const About = () => {
     const dataT = [
         {
             name: `Node.Js`,
-            img: `./Assets/Images/nodejs.png`
+            img: image8
         },
         {
             name: `Git`,
-            img: `./Assets/Images/git.png`
+            img: image2
         },
         {
             name: `Vs Code`,
-            img: `./Assets/Images/vscode.png`
+            img: image6
         },
         {
             name: `Flutter`,
-            img: `./Assets/Images/flutter.png`
+            img: image12
         },
         {
             name: `TailWind`,
-            img: `./Assets/Images/tailwind.png`
+            img: image7 
         },
         {
             name: `React.Js`,
-            img: `./Assets/Images/react.png`
+            img: image11
         },
         {
             name: `Django`,
-            img: `./Assets/Images/django-py.png`
+            img: image1
         },
         {
             name: `Figma`,
-            img: `./Assets/Images/figma.png`
+            img: image9
         },
         {
             name: `JavaScript`,
-            img: `./Assets/Images/Java.png`
+            img: image5
         },
         {
             name: `Java`,
-            img: `./Assets/Images/javas.png`
+            img: image10
         },
         {
             name: `Html & CSS`,
-            img: `./Assets/Images/html.png`
+            img: image3
         },
         {
             name: `C++`,
-            img: `./Assets/Images/C++.png`
+            img: image4
         }
     ]
 
@@ -66,35 +88,35 @@ const About = () => {
     const dataD = [
         {
             name: `MongoDb`,
-            img: `./assets/images/mongodb.png`
+            img: image13
         },
         {
             name: `R Language`,
-            img: `./asstes/images/R_program.png`
+            img: image14 
         },
         {
             name: `SPSS`,
-            img: `./assets/images/SPSS.webp`
+            img: image16
         },
         {
             name: `Excel`,
-            img: `./assets/images/excel.png`
+            img: image17
         },
         {
             name: `Power BI`,
-            img: `./assets/images/powerBI.png`
+            img: image19
         },
         {
             name: `Scikit-Learn`,
-            img: `./assets/images/scikit-learn.png`
+            img: image15
         },
         {
             name: `SQL/NoSql`,
-            img: `./assets/images/sql.png`
+            img: image18 
         },
         {
             name:`Python`,
-            img: `./assets/images/python-logo.png`
+            img: image20
         }
     ]
 
@@ -154,7 +176,7 @@ const About = () => {
                     <motion.p variants={textVariants} initial="initial" animate="animate" className='about-heading'>Aspiring Full Stack Software Developer <VerticalLine height='20px' /> Aspiring Data Scientist</motion.p>
                 </motion.div>
                 <motion.div variants={textVariants} initial="initial" animate="animate" className='about'>
-                    <motion.img variants={textVariants} initial="initial" animate="animate" className='profile-picture' src='./assets/images/lehlohonolo.jpg' alt='my profile' />
+                    <motion.img variants={textVariants} initial="initial" animate="animate" className='profile-picture' src={myPic } alt='my profile' />
                     <motion.div variants={textVariants} initial="initial" animate="animate" className="about-info">
                         <motion.p variants={textVariants} initial="initial" animate="animate" className='about-description'>I'm a versatile aspiring full-stack software developer with a solid background in <span className='degree'>BSc Computer Science and
                             Statistics.</span> Equipped with a degree in these fields and <span>one year of experience</span> in software development, I bring a unique blend of analytical thinking and technical
