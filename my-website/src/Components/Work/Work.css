@@ -240,5 +240,12 @@
         text-align: center; 
     }
 
+    .item-testi p{
+        font-size: 13px;
+    }
+
+    .item-testi .name{
+        font-size: 15px;
+    }
 }
 

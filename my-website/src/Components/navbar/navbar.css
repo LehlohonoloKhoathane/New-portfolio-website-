@@ -70,11 +70,6 @@
   @media (max-width: 1024px) {
     
     .NavBar {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        height: 10vh;
-        position: relative;
         margin: 0 ; 
     }
 
@@ -95,8 +90,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        top: 2.5rem;
-        margin-right: 1rem; 
+        top: 2rem;
+        margin-right: 0.5rem; 
         z-index: 10000;
     }
 
