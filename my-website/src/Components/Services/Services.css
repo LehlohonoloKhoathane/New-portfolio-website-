@@ -18,7 +18,6 @@
 .Services-container .Service-underP{
     font-size: 1.5rem;
     color: #ffff;
-    /* width: 55rem; */
     margin: 20px;
 }
 
@@ -29,7 +28,6 @@
 /* Styles for the service subheading */
 .service-subheading{
     text-align: center;
-    /* padding-left: 110px; */
 }
 
 /* Styles for the Services content */
@@ -100,31 +98,19 @@
     
 }
 
-
 /* Media query for screens with max width of 768px */
 @media (max-width: 768px) {
     .Services-container{
         padding: 10px;
         margin: 1rem;
-        position: relative;
     }
 
     .Services-container h4{
         font-size: 1.2rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-        text-align: center;
-        color: #ffff;
-    }
-
-    .service-subheading{
-        text-align: center;
-        /* padding-left: 110px; */
     }
 
     .Services-container .Service-underP{
         font-size: 13px;
-        color: #ffff;
         margin: 10px;
     }
 
@@ -137,16 +123,11 @@
     }
 
     .service-item h4{
-        text-align: center;
         font-size: 1.2rem;
-        color: #09BE67;
-        margin-bottom: 10px;
     }
     
     .service-item p{
         font-size: 13px;
-        text-align: center;
-        color: #ffff;
     }
 
 }
