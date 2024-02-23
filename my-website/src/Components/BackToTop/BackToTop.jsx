@@ -1,3 +1,4 @@
+//importing necessary dependancies for pack to top button
 import React, { useState } from 'react';
 import { FaArrowCircleUp } from 'react-icons/fa';
 import './BackToTop.css'
