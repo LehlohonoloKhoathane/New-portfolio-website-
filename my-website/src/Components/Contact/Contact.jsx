@@ -207,11 +207,11 @@ const Contact = () => {
         className="contact-container" id="contact-container" variants={variants} initial="initial" whileInView="animate">
             <h1>Connect With Me</h1>
             <hr />
-            
+            {/*Form containtents */}
             <motion.div className="contact-contents" variants={variants}>
                 <motion.div className="textContainer">
                     <motion.div className="item">
-                        <motion.p>Are you ready to team up? Find me on socials, connect me through this form, or write to me directly using the following email. <span className="email">khoathanelehlohonolo@gmail.com</span></motion.p>
+                        <motion.p>Are you ready to team up? Find me on socials, connect me through this form, or write to me directly using the following email. <br /> <span className="email">khoathanelehlohonolo@gmail.com</span></motion.p>
                     </motion.div>
                     <motion.div className="item-map">
                         <BiMap className="map"/>

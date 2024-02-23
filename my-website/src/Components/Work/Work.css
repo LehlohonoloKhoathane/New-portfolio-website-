@@ -119,6 +119,10 @@
     text-align: center;
 }
 
+.testPar span{
+    color: #09BE67;
+}
+
 /* Styling for the testimonial items container */
 .testimonial-items{
     justify-content: center;

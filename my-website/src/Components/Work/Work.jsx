@@ -112,23 +112,23 @@ const Work = () => {
             className="work-testimonials">
                 <motion.h2>Hear from those I have collaborated with</motion.h2>
                 <motion.hr />
-                <p className="testPar">From clients to collaborators, their words highlight my commitment to excellence and dedication I bring to every project."</p>
+                <p className="testPar">From clients to collaborators, their words highlight <span> my commitment to excellence and dedication</span> I bring to every project."</p>
                 <motion.div className="testimonial-items">
                     {/* Testimonial items */}
                     <motion.div className="item-testi">
-                        <h3 className="name">King, <span>Ceo</span></h3>
+                        <h3 className="name">Aqueel Honslo, <span> Software Developer</span></h3>
                         <ImQuotesLeft className='myQuote'/>
-                        <p>Mr Khoathane delivers excellence! Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p><ImQuotesRight className='myQuote'/>
+                        <p>Lehlohonolo delivers excellence! Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p><ImQuotesRight className='myQuote'/>
                     </motion.div>
                     <motion.div className="item-testi">
-                        <h3 className="name">King, <span>Ceo</span></h3>
+                        <h3 className="name">Chuma Raxhothi,<span> Network Engineer</span></h3>
                         <ImQuotesLeft className='myQuote'/>
-                        <p>Mr Khoathane delivers excellence! Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p><ImQuotesRight className='myQuote'/>
+                        <p>Thanks to Lehlohonolo's contributions, our project was completed on time and exceeded our expectations. I would highly recommend him to anyone looking for a talented and reliable software developer."</p><ImQuotesRight className='myQuote'/>
                     </motion.div>
                     <motion.div className="item-testi">
-                        <h3 className="name">King, <span>Ceo</span></h3>
+                        <h3 className="name">Mookho Lebaka,<span> Client</span></h3>
                         <ImQuotesLeft className='myQuote'/>
-                        <p>Mr Khoathane delivers excellence! Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p><ImQuotesRight className='myQuote'/>
+                        <p>I hired Lehlohonolo to develop a custom software solution for my business, and I couldn't be happier with the results. He took the time to understand my needs and delivered a product that exceeded my expectation</p><ImQuotesRight className='myQuote'/>
                     </motion.div>
                 </motion.div> 
             </motion.div> 

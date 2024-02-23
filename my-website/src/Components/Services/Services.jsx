@@ -62,8 +62,7 @@ const Services = () => {
       <div className="service-subheading">
         {/* Animate the paragraph */}
         <motion.p className="Service-underP">
-          Explore the synergy of expertise and capabilities that define my
-          professional journey.
+          Explore the synergy of expertise and capabilities that define my <span> professional journey.</span>
         </motion.p>
       </div>
       <div className="service-content">

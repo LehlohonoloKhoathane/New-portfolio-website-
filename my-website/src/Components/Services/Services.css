@@ -22,6 +22,10 @@
     margin: 20px;
 }
 
+.Service-underP span{
+    color: #09BE67;
+}
+
 /* Styles for the service subheading */
 .service-subheading{
     text-align: center;
