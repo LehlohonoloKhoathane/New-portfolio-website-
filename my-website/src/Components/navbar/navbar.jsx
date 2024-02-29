@@ -6,20 +6,24 @@ import logos from "../../assets/images/myLogo.png";
 
 
 const NavBar = () => {
+  // State to manage the active state of the menu
   const [active, setActive] = useState('menuItems');
-  const [toggleIcon, setToggleIcon] = useState('navToggler');
-  const menuRef = useRef(null);
+  const [toggleIcon, setToggleIcon] = useState('navToggler');     // State to manage the toggle state of the menu icon
+  const menuRef = useRef(null);       // Ref to the menu for handling click events outside the menu
 
+  // Function to toggle the menu and menu icon
   const navToggle = () => {
     active === 'menuItems' ? setActive('menuItems menuActive') : setActive('menuItems');
     toggleIcon === 'navToggler' ? setToggleIcon('navToggler toggle') : setToggleIcon('navToggler');
   };
 
+  // Function to cancel the menu and reset the menu icon
   const cancelMenu = () => {
     setActive('menuItems');
     setToggleIcon('navToggler');
   };
 
+  // Effect to handle click outside the menu to cancel the menu
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -39,12 +43,13 @@ const NavBar = () => {
     };
   }, []);
 
+  // Function to scroll to the home section
   const scrollToHome = () => {
     const homeSection = document.getElementById('home-container');
     homeSection.scrollIntoView({ behavior: 'smooth' });
   };
 
-
+ // Rendering the NavBar component
   return (
     <>
     {/* Logo */}

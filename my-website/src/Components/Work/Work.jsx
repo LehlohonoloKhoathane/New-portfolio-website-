@@ -117,22 +117,26 @@ const Work = () => {
                 <motion.hr />
                 <p className="testPar">From clients to collaborators, their words highlight <span> my commitment to excellence and dedication</span> I bring to every project.</p>
                 <motion.div className="testimonial-items">
+                    
                     {/* Testimonial items */}
                     <motion.div className="item-testi">
                         <h3 className="name">Aqeel Honslo, <span> Software Developer</span></h3>
                         <ImQuotesLeft className='myQuote'/>
                         <p>Lehlohonolo delivers excellence! His coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p><ImQuotesRight className='myQuote'/>
                     </motion.div>
+
                     <motion.div className="item-testi">
                         <h3 className="name">Chuma Raxothi,<span> Network Engineer</span></h3>
                         <ImQuotesLeft className='myQuote'/>
                         <p>Thanks to Lehlohonolo's contributions, our project was completed on time and exceeded our expectations. I would highly recommend him to anyone looking for a talented and reliable software developer.</p><ImQuotesRight className='myQuote'/>
                     </motion.div>
+
                     <motion.div className="item-testi">
                         <h3 className="name">Mookgo Lebaka,<span> Client</span></h3>
                         <ImQuotesLeft className='myQuote'/>
                         <p>I hired Lehlohonolo to develop a custom software solution for my business, and I couldn't be happier with the results. He took the time to understand my needs and delivered a product that exceeded my expectation</p><ImQuotesRight className='myQuote'/>
                     </motion.div>
+
                 </motion.div> 
             </motion.div> 
         </motion.div>
