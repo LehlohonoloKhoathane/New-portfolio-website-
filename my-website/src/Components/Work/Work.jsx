@@ -121,7 +121,7 @@ const Work = () => {
                     <motion.div className="item-testi">
                         <h3 className="name">Aqeel Honslo, <span> Software Developer</span></h3>
                         <ImQuotesLeft className='myQuote'/>
-                        <p>Lehlohonolo delivers excellence! Their coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p><ImQuotesRight className='myQuote'/>
+                        <p>Lehlohonolo delivers excellence! His coding skills & attention to detail made our project a success. Highly recommended for top-notch software development.</p><ImQuotesRight className='myQuote'/>
                     </motion.div>
                     <motion.div className="item-testi">
                         <h3 className="name">Chuma Raxothi,<span> Network Engineer</span></h3>

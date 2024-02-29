@@ -9,6 +9,10 @@
     margin: 1.5rem 3rem; 
 }
 
+ul{
+  margin-top: 23px;
+}
+
 /*Styles for menu items*/
 .menuItems {
     display: flex;
