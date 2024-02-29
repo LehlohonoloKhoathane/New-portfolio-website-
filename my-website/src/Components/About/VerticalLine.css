@@ -3,7 +3,12 @@
     background-color: #09BE67; /* Color of the vertical line */
     display: inline-block;
     margin: 0 10px; /* Adjust as needed */
+    height: 20px;
   }
   
-
+  @media (max-width: 768px) {
+    .vertical-line {
+      height: 10px; /* Smaller height for screens smaller than 768px */
+    }
+  }
   

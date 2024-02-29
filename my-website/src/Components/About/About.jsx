@@ -173,8 +173,9 @@ const About = () => {
             <motion.h6 variants={textVariants} initial="initial" animate="animate">Lehlohonolo Khoathane</motion.h6>
             <motion.div variants={textVariants} initial="initial" animate="animate" className='about-content'>
                 <motion.div variants={textVariants} initial="initial" animate="animate" className='imageCover'>
-                    <motion.p variants={textVariants} initial="initial" animate="animate" className='about-heading'>Aspiring Full Stack Software Developer <VerticalLine height='20px' /> Aspiring Data Scientist</motion.p>
+                    <motion.p variants={textVariants} initial="initial" animate="animate" className='about-heading'>Aspiring Full Stack Software Developer  <VerticalLine height='15px' /> Aspiring Data Scientist</motion.p>
                 </motion.div>
+                
                 <motion.div variants={textVariants} initial="initial" animate="animate" className='about'>
                     <motion.img variants={textVariants} initial="initial" animate="animate" className='profile-picture' src={myPic } alt='my profile' />
                     <motion.div variants={textVariants} initial="initial" animate="animate" className="about-info">
@@ -192,6 +193,7 @@ const About = () => {
                 <motion.div className='skills-subheading'>
                     <motion.p variants={textVariants} initial="initial" animate="animate">I bring dynamic set of skills to propel projects forward. Dive deeper into my <span>technological prowess.</span></motion.p>
                 </motion.div>
+
                  {/* Motion div for Development section */}
                 <motion.div
                 ref={ref}
@@ -239,6 +241,7 @@ const About = () => {
                 </Carousel>
             </motion.div>
         </motion.div>
+
         {/* Motion div for Data Analysis section */}
         <motion.div
             ref={ref}

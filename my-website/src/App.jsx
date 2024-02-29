@@ -24,6 +24,7 @@ const App = () => {
 
   // Effect to simulate content loading delay
   useEffect(() => {
+    
     // Simulating content loading delay
     const timer = setTimeout(() => {
       setIsLoading(false);
