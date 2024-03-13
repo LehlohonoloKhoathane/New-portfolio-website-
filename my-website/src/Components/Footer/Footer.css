@@ -28,7 +28,7 @@
 }
 
 /*Styles for socials icons when clicked*/
- .socials a:visited {
+.footer-social .socials a:visited {
     color: black; 
 }
 
