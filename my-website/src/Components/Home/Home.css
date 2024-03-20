@@ -6,6 +6,11 @@
     margin: 0 4rem;
 }
 
+.paragraph-container{
+    text-align: center;
+    margin-right: 20px;
+}
+
  /* Styles for the home content  */
 .home-content{
     flex: 1;

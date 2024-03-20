@@ -54,7 +54,7 @@ const Home = () => {
             <motion.div className="home-content"  variants={textVariants}>
                 
                 <motion.div className="heading-container"  variants={textVariants}>
-                    <motion.h2> <span className="strokeText"  variants={textVariants}>Welcome , Embark on a journey through landscape of innovation.</span></motion.h2>
+                    <motion.h2>  Welcome , Embark on a journey through landscape of innovation.</motion.h2>
                 </motion.div>
                 <motion.hr  className="custom-hr"/>
 
