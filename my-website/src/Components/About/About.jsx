@@ -26,8 +26,12 @@ import image15 from "../../assets/images/scikit-learn.png";
 import image16 from "../../assets/images/SPSS.webp";
 import image17 from "../../assets/images/Excel.png";
 import image18 from "../../assets/images/sql.png";
-import image19 from "../../assets/images/powerBI.png"
-import image20 from "../../assets/images/python-logo.png"
+import image19 from "../../assets/images/powerBI.png";
+import image20 from "../../assets/images/python-logo.png";
+import image21 from "../../assets/images/azure-.png";
+import image22 from "../../assets/images/angular.png";
+import image23 from "../../assets/images/vue-removebg-preview.png";
+import image24 from "../../assets/images/Wordpress_Blue.png"
 
 
 const About = () => {
@@ -55,7 +59,7 @@ const About = () => {
             img: image7 
         },
         {
-            name: `React.Js`,
+            name: `React.Js / Native`,
             img: image11
         },
         {
@@ -81,6 +85,18 @@ const About = () => {
         {
             name: `C++`,
             img: image4
+        },
+        {
+            name: `Vue.Js`,
+            img: image23
+        },
+        {
+            name: `Angular`,
+            img: image22
+        },
+        {
+            name: `Wordpress`,
+            img: image24
         }
     ]
 
@@ -117,6 +133,10 @@ const About = () => {
         {
             name:`Python`,
             img: image20
+        },
+        {
+            name: `Azure`,
+            img: image21
         }
     ]
 
