@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import {motion} from 'framer-motion'
-import './Cursor.css'
+import './cursor.css'
 
 const Cursor = () =>{
 

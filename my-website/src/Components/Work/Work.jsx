@@ -8,6 +8,7 @@ import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import Dashboard from "../../assets/images/Dashboard.PNG";
 import Webs from "../../assets/images/websitecol.png";
 import Festive from "../../assets/images/festival.png";
+import votingWeb from "../../assets/images/OnlineVote1.png"
 
 const Work = () => {
     // Settings for the carousel/slider
@@ -145,6 +146,12 @@ const Work = () => {
 
 // Data for the work items
 const dataW = [
+    {
+        img: votingWeb,
+        description: `Developed an online voting system leveraging Firebase and ReactJS to provide a secure and user-friendly platform for voting.`,
+        name:`Online Voting System`,
+        link: <a href="https://onlinevoting-9d6a1.web.app" target="blank">Online Voting System</a>
+    },
     {
         img: Festive,
         description: `Crafted this immersive Cape Town Festival website experience, seamlessly sleek design with responsive functionality.`,

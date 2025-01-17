@@ -6,7 +6,8 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './VerticalLine.css';
 import VerticalLine from './VerticalLine'
-import './About.css'; 
+import './About.css';
+import myProfile from "../../assets/images/picPro.jpg"; 
 import myPic from "../../assets/images/lehlohonolo.jpg";
 import image1 from "../../assets/images/django-py.png";
 import image2 from "../../assets/images/git.png";
@@ -31,7 +32,8 @@ import image20 from "../../assets/images/python-logo.png";
 import image21 from "../../assets/images/azure-.png";
 import image22 from "../../assets/images/angular.png";
 import image23 from "../../assets/images/vue-removebg-preview.png";
-import image24 from "../../assets/images/Wordpress_Blue.png"
+import image24 from "../../assets/images/Wordpress_Blue.png";
+import image25 from "../../assets/images/firebase.png"
 
 
 const About = () => {
@@ -135,6 +137,10 @@ const About = () => {
             img: image20
         },
         {
+            name: `Firebase`,
+            img: image25
+        },
+        {
             name: `Azure`,
             img: image21
         }
@@ -197,7 +203,7 @@ const About = () => {
                 </motion.div>
                 
                 <motion.div variants={textVariants} initial="initial" animate="animate" className='about'>
-                    <motion.img variants={textVariants} initial="initial" animate="animate" className='profile-picture' src={myPic } alt='my profile' />
+                    <motion.img variants={textVariants} initial="initial" animate="animate" className='profile-picture' src={myProfile } alt='my profile' />
                     <motion.div variants={textVariants} initial="initial" animate="animate" className="about-info">
                         <motion.p variants={textVariants} initial="initial" animate="animate" className='about-description'>I'm a versatile aspiring full-stack software developer with a solid background in <span className='degree'>BSc Computer Science and
                             Statistics.</span> Equipped with a degree in these fields and <span>one year of experience</span> in software development, I bring a unique blend of analytical thinking and technical

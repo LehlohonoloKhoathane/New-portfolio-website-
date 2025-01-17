@@ -1,6 +1,6 @@
 //Importing necessary dependancies for nav bar
 import React, { useState, useEffect, useRef } from 'react';
-import './NavBar.css';
+import './navbar.css';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import logos from "../../assets/images/myLogo.png";
 
