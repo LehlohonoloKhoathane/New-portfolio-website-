@@ -9,6 +9,7 @@ import Dashboard from "../../assets/images/Dashboard.PNG";
 import Webs from "../../assets/images/websitecol.png";
 import Festive from "../../assets/images/festival.png";
 import votingWeb from "../../assets/images/OnlineVote1.png"
+import dashboardC from "../../assets/images/Dashboard-Claims.png"
 
 const Work = () => {
     // Settings for the carousel/slider
@@ -146,6 +147,12 @@ const Work = () => {
 
 // Data for the work items
 const dataW = [
+    {
+        img: dashboardC,
+        description: `Cleaned and transformed health insurance claims data, then developed a Power BI dashboard to visualize claim trends, costs, and key insights.`,
+        name:`Insurance Claims dashboard`,
+        link: <a href="https://github.com/LehlohonoloKhoathane/Insurance-Claims-Analysis" target="blank">Github</a>
+    },
     {
         img: votingWeb,
         description: `Developed an online voting system leveraging Firebase and ReactJS to provide a secure and user-friendly platform for voting.`,

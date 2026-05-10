@@ -100,6 +100,11 @@ const Services = () => {
 // Data for different services
 const data = [
   {
+    name: `Data Analysis`,
+    img: dataA,
+    description: `I analyze and interpret data to derive valuable insights, enabling informed decision-making.`,
+  },
+  {
     name: `Web Developer`,
     img: WebD,
     description: `I build dynamic and interactive web applications tailored to your specific needs.`,
@@ -108,11 +113,6 @@ const data = [
     name: `Mobile App Developer`,
     img: MobDev,
     description: `I craft visually appealing, user-friendly mobile apps for seamless experiences.`,
-  },
-  {
-    name: `Data Analysis`,
-    img: dataA,
-    description: `I analyze and interpret data to derive valuable insights, enabling informed decision-making.`,
   },
   {
     name: `UX/UI Design`,
