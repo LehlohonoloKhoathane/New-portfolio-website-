@@ -236,95 +236,44 @@ const About = () => {
                 </motion.div>
             </motion.div>
 
-        <div className="skills-container">
-            <motion.h1
-                variants={textVariants}
-                initial="initial"
-                whileInView="animate"
-                viewport={{ once: true, amount: 0.3 }}
-            >
-                Tech Expertise
-            </motion.h1>
-
-            <motion.hr
-                variants={textVariants}
-                initial="initial"
-                whileInView="animate"
-                viewport={{ once: true, amount: 0.3 }}
-                className="horizontal-line"
-            />
-
-            <motion.div
-                className="skills-subheading"
-                variants={textVariants}
-                initial="initial"
-                whileInView="animate"
-                viewport={{ once: true, amount: 0.3 }}
-            >
-                <motion.p variants={textVariants}>
-                    I bring dynamic set of skills to propel projects forward. Dive deeper
-                    into my <span>technological prowess.</span>
-                </motion.p>
-            </motion.div>
-
-            {/* Motion div for Data Analysis section */}
-            <motion.div
-                initial={{ x: -100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 1, ease: "easeOut" }}
-                className="skills-data"
-            >
-                <motion.h2
-                    initial={{ x: -100, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
+            <div className="skills-container">
+                <motion.h1
+                    variants={textVariants}
+                    initial="initial"
+                    whileInView="animate"
                     viewport={{ once: true, amount: 0.3 }}
-                    transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
                 >
-                    Data Analysis
-                </motion.h2>
+                    Tech Expertise
+                </motion.h1>
+
+                <motion.hr
+                    variants={textVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="horizontal-line"
+                />
 
                 <motion.div
-                    initial={{ x: -100, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
+                    className="skills-subheading"
+                    variants={textVariants}
+                    initial="initial"
+                    whileInView="animate"
                     viewport={{ once: true, amount: 0.3 }}
-                    transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
-                    className="skills-data-analysis"
                 >
-                    <Carousel
-                        responsive={responsive}
-                        ssr={true}
-                        infinite={true}
-                        keyBoardControl={true}
-                        customTransition="transform 500ms ease-in-out"
-                        transitionDuration={500}
-                        containerClass="carousel-container"
-                        deviceType="desktop"
-                        dotListClass="custom-dot-list-style"
-                        itemClass="carousel-item-padding-40-px"
-                    >
-                        {dataD.map((d, index) => (
-                            <div key={index} className="skills-item">
-                                <div className="skills-image">
-                                    <img src={d.img} alt="" />
-                                </div>
-
-                                <div>
-                                    <h4>{d.name}</h4>
-                                </div>
-                            </div>
-                        ))}
-                    </Carousel>
+                    <motion.p variants={textVariants}>
+                        I bring dynamic set of skills to propel projects forward. Dive deeper
+                        into my <span>technological prowess.</span>
+                    </motion.p>
                 </motion.div>
-            </motion.div>
 
-            {/* Motion div for Development section */}
+                {/* Motion div for Data Analysis section */}
                 <motion.div
                     initial={{ x: -100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 1, ease: "easeOut" }}
-                    className="skills-development"
+                    className="skills-data"
                 >
                     <motion.h2
                         initial={{ x: -100, opacity: 0 }}
@@ -332,45 +281,96 @@ const About = () => {
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
                     >
-                        Software Development
+                        Data Analysis
                     </motion.h2>
 
-                <motion.div
-                    initial={{ x: -100, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    viewport={{ once: true, amount: 0.3 }}
-                    transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
-                    className="skills-dev"
-                >
-                    <Carousel
-                        responsive={responsive}
-                        ssr={true}
-                        infinite={true}
-                        keyBoardControl={true}
-                        customTransition="transform 500ms ease-in-out"
-                        transitionDuration={500}
-                        containerClass="carousel-container"
-                        deviceType="desktop"
-                        dotListClass="custom-dot-list-style"
-                        itemClass="carousel-item-padding-80-px"
+                    <motion.div
+                        initial={{ x: -100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+                        className="skills-data-analysis"
                     >
-                        {dataT.map((d, index) => (
-                            <div key={index} className="skills-item">
-                                <div className="skills-image">
-                                    <img src={d.img} alt="" />
-                                </div>
+                        <Carousel
+                            responsive={responsive}
+                            ssr={true}
+                            infinite={true}
+                            keyBoardControl={true}
+                            customTransition="transform 500ms ease-in-out"
+                            transitionDuration={500}
+                            containerClass="carousel-container"
+                            deviceType="desktop"
+                            dotListClass="custom-dot-list-style"
+                            itemClass="carousel-item-padding-40-px"
+                        >
+                            {dataD.map((d, index) => (
+                                <div key={index} className="skills-item">
+                                    <div className="skills-image">
+                                        <img src={d.img} alt="" />
+                                    </div>
 
-                                <div className="skill-name">
-                                    <h4>{d.name}</h4>
+                                    <div>
+                                        <h4>{d.name}</h4>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
-                    </Carousel>
+                            ))}
+                        </Carousel>
+                    </motion.div>
                 </motion.div>
-            </motion.div>
-        </div>
-    </motion.section>
-);
+
+                {/* Motion div for Development section */}
+                    <motion.div
+                        initial={{ x: -100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 1, ease: "easeOut" }}
+                        className="skills-development"
+                    >
+                        <motion.h2
+                            initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            viewport={{ once: true, amount: 0.3 }}
+                            transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+                        >
+                            Software Development
+                        </motion.h2>
+
+                    <motion.div
+                        initial={{ x: -100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+                        className="skills-dev"
+                    >
+                        <Carousel
+                            responsive={responsive}
+                            ssr={true}
+                            infinite={true}
+                            keyBoardControl={true}
+                            customTransition="transform 500ms ease-in-out"
+                            transitionDuration={500}
+                            containerClass="carousel-container"
+                            deviceType="desktop"
+                            dotListClass="custom-dot-list-style"
+                            itemClass="carousel-item-padding-80-px"
+                        >
+                            {dataT.map((d, index) => (
+                                <div key={index} className="skills-item">
+                                    <div className="skills-image">
+                                        <img src={d.img} alt="" />
+                                    </div>
+
+                                    <div className="skill-name">
+                                        <h4>{d.name}</h4>
+                                    </div>
+                                </div>
+                            ))}
+                        </Carousel>
+                    </motion.div>
+                </motion.div>
+            </div>
+        </motion.section>
+    );
 };
 
 export default About;
