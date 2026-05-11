@@ -18,7 +18,7 @@ const Footer = () => {
                     <a href="https://github.com/LehlohonoloKhoathane" target="_blank" rel="noreferrer"><FaGithub className="socialIcon"/></a>
                 </div>
             </div>
-            <div className="footer"> Copyright &copy; 2024. All rights reserved | Designed & Developed by Lehlohonolo Khoathane</div>
+            <div className="footer"> Copyright &copy; 2026. All rights reserved | Designed & Developed by Lehlohonolo Khoathane</div>
         </div>
        </section>
     );
